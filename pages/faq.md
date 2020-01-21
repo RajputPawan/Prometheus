@@ -2,7 +2,6 @@
 title: FAQ
 permalink: faq.html
 sidebar: default_sidebar
-tags: []
 keywords: frequently asked questions, FAQ, question and answer, collapsible sections, expand, collapse
 last_updated: January 20, 2019
 toc: false
