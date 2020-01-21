@@ -1,17 +1,17 @@
 ---
-title: "Mercedes-Benz Ubuntu Desktop User Documentation"
+title: "Mercedes-Benz RD Ubuntu Desktop User Documentation"
 keywords: ubuntu documentation
 tags: [home]
 sidebar: default_sidebar
 permalink: index.html
 toc: false
-#summary: This site holds information that is necessary or helpful for users of the Mercedes-Benz Ubuntu Desktop
+summary: This site holds information that is necessary or helpful for users of the Mercedes-Benz RD Ubuntu Desktop. ONLY VALID FOR THE RD CLIENT.
 ---
 
 
 ## Introduction
 
-Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this documentation pages, besides <a href="/tickets.html">webtickets</a> and a <a href="/faq.html">FAQ</a>, you will find helpful information and How Tos regarding the Ubuntu Client.
+Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this documentation pages, besides <a href="/tickets/">webtickets</a> and a <a href="/faq.html">FAQ</a>, you will find helpful information and How Tos regarding the Ubuntu Client.
 
 ## Support
 

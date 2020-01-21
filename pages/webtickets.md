@@ -3,7 +3,7 @@ title: "Mercedes-Benz Ubuntu Desktop Webtickets"
 keywords: ubuntu documentation webticket ticket
 tags: [home]
 sidebar: default_sidebar
-permalink: tickets.html
+permalink: /tickets/
 #summary: This site holds information that is necessary or helpful for users of the Mercedes-Benz Ubuntu Desktop
 ---
 
