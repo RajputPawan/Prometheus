@@ -5,7 +5,7 @@ tags: [home]
 sidebar: default_sidebar
 permalink: index.html
 toc: false
-#summary: This site holds information that is necessary or helpful for users of the Mercedes-Benz Ubuntu Desktop
+summary: This site holds information that is necessary or helpful for users of the Mercedes-Benz RD Ubuntu Desktop. This documentation is only for the RD Ubuntu client.
 ---
 
 
