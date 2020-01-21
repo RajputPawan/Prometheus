@@ -1,6 +1,6 @@
 ## Welcome to the Mercedes-Benz Ubuntu RD Desktop User Documentation!
 
-![Ubuntu client operations]({{ site.baseurl }}images/ubuntu_client_operations.png)
+![Ubuntu client operations](/images/ubuntu_client_operations.png)
 
 ### First Steps
 1. clone repo `git clone https://git.daimler.com/ubunturd/ubuntudoc.git`
