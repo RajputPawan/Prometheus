@@ -12,7 +12,7 @@ site_title: Ubuntu Desktop Doc
 company_name: Mercedes-Benz AG
 # this appears in the footer
 
-baseurl: ""
+baseurl: "/pages/ubunturd/ubuntudoc/"
 
 github_editme_path: 
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
