@@ -1,5 +1,5 @@
 ---
-title: "Mercedes-Benz Ubuntu Desktop User Documentation"
+title: "Mercedes-Benz Ubuntu RD Desktop User Documentation"
 keywords: ubuntu documentation
 tags: [home]
 sidebar: default_sidebar
