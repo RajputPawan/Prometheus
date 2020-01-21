@@ -11,7 +11,7 @@ summary: This site holds information that is necessary or helpful for users of t
 
 ## Introduction
 
-Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this documentation pages, besides <a href="/tickets.html">webtickets</a> and a <a href="/faq.html">FAQ</a>, you will find helpful information and How Tos regarding the Ubuntu Client.
+Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this documentation pages, besides <a href="tickets.html">webtickets</a> and a <a href="faq.html">FAQ</a>, you will find helpful information and How Tos regarding the Ubuntu Client.
 
 ## Support
 
