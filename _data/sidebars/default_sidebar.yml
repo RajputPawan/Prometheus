@@ -1,0 +1,55 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Ubuntu Documentation
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Overview
+    output: web, pdf
+    folderitems:
+
+    - title: Webtickets
+      url: /tickets.html
+      output: web, pdf
+      type: homepage
+
+    - title: News
+      url: /news.html
+      output: web, pdf
+
+    - title: FAQ
+      url: /faq.html
+      output: web, pdf
+
+    - title: Linux User Group
+      url: /lug.html
+      output: web, pdf
+
+  - title: Documentation
+    output: web, pdf
+    folderitems:
+
+    - title: General Computer Setup
+      url: /generalsetup.html
+      output: web, pdf
+
+    - title: MAC address passthrough
+      url: /macaddress_passthrough.html
+      output: web, pdf
+    
+    

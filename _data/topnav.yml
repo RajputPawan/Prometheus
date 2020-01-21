@@ -1,0 +1,23 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: News
+      url: /news
+    - title: FAQ
+      url: /faq.html
+    - title: Social Intranet
+      external_url: https://social.intra.corpintra.net/groups/ubunturd
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: Documentation
+      folderitems:
+        - title: General Setup
+          url: /generalsetup.html
+        - title: MAC address passthrough
+          url: /macaddress_passthrough.html
+
