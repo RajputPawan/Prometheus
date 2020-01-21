@@ -14,7 +14,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src="/pages/ITI-EE-GECS/ubuntudoc/images/webtickets/laptop.svg" alt="incident ubuntu ws/nb">
+                           <img src="{{ site.baseurl }}images/webtickets/laptop.svg" alt="incident ubuntu ws/nb">
                      </span>
                  </div>
                  <div class="panel-body">
@@ -28,7 +28,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src="/images/webtickets/laptop-code.svg" alt="incident ubuntu ws/nb">
+                           <img src="{{ site.baseurl }}images/webtickets/laptop-code.svg" alt="incident ubuntu ws/nb">
                      </span>
                  </div>
                  <div class="panel-body">
@@ -42,7 +42,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src="/images/webtickets/file-code.svg" alt="configuration" height="20" width="20">
+                           <img src="{{ site.baseurl }}images/webtickets/file-code.svg" alt="configuration" height="20" width="20">
                      </span>
                  </div>
                  <div class="panel-body">
@@ -56,7 +56,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src = "/images/webtickets/car.svg" alt="car">
+                           <img src = "{{ site.baseurl }}images/webtickets/car.svg" alt="car">
                      </span>
                  </div>
                  <div class="panel-body">
@@ -73,7 +73,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src = "/images/webtickets/car.svg" alt="car">
+                           <img src = "{{ site.baseurl }}images/webtickets/car.svg" alt="car">
                      </span>
                  </div>
                  <div class="panel-body">
@@ -87,7 +87,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src = "/images/webtickets/car.svg" alt="car">
+                           <img src = "{{ site.baseurl }}images/webtickets/car.svg" alt="car">
                      </span>
                  </div>
                  <div class="panel-body">
@@ -101,7 +101,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src = "/images/webtickets/database.svg" alt="car">
+                           <img src = "{{ site.baseurl }}images/webtickets/database.svg" alt="car">
                      </span>
                  </div>
                  <div class="panel-body">
@@ -115,7 +115,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src = "/images/webtickets/user-plus.svg" alt="car">
+                           <img src = "{{ site.baseurl }}images/webtickets/user-plus.svg" alt="car">
                      </span>
                  </div>
                  <div class="panel-body">
@@ -132,7 +132,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src = "/images/webtickets/user-minus.svg" alt="Laptop Code">
+                           <img src = "{{ site.baseurl }}images/webtickets/user-minus.svg" alt="Laptop Code">
                      </span>
                  </div>
                  <div class="panel-body">
@@ -146,7 +146,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src = "/images/webtickets/plus-circle.svg" alt="Laptop Code">
+                           <img src = "{{ site.baseurl }}images/webtickets/plus-circle.svg" alt="Laptop Code">
                      </span>
                  </div>
                  <div class="panel-body">
@@ -160,7 +160,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src = "/images/webtickets/file-contract.svg" alt="Laptop Code">
+                           <img src = "{{ site.baseurl }}images/webtickets/file-contract.svg" alt="Laptop Code">
                      </span>
                  </div>
                  <div class="panel-body">
@@ -174,7 +174,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src = "/images/webtickets/comment.svg" alt="Other">
+                           <img src = "{{ site.baseurl }}images/webtickets/comment.svg" alt="Other">
                      </span>
                  </div>
                  <div class="panel-body">
