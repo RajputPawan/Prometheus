@@ -1,5 +1,7 @@
 ## Welcome to the Mercedes-Benz Ubuntu RD Desktop User Documentation!
 
+<img src="{{ site.baseurl }}images/ubuntu_client_operations.png" alt="ubuntu client operations">
+
 ### First Steps
 1. clone repo `git clone https://git.daimler.com/ubunturd/ubuntudoc.git`
 2. Docker container for local testing `docker run xyz`
