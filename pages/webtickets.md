@@ -14,7 +14,7 @@ permalink: tickets.html
              <div class="panel panel-default text-center">
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
-                           <img src="/pages/ITI-EE-GECS/ubuntudocs/images/webtickets/laptop.svg" alt="incident ubuntu ws/nb">
+                           <img src="/pages/ITI-EE-GECS/ubuntudoc/images/webtickets/laptop.svg" alt="incident ubuntu ws/nb">
                      </span>
                  </div>
                  <div class="panel-body">
