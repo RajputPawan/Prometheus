@@ -3,10 +3,10 @@ repository:
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Ubuntu RD Desktop Documentation
+topnav_title: Mercedes-Benz RD Ubuntu Desktop Documentation
 # this appears on the top navigation bar next to the home button
 
-site_title: Ubuntu RD Desktop Doc
+site_title: Mercedes-Benz RD Ubuntu Desktop Doc
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: Mercedes-Benz AG
