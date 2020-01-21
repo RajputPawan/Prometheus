@@ -44,7 +44,7 @@ exclude:
 # feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
-feedback_link: "https://git.daimler.com/ITI-EE-GECS/ubuntudoc/issues"
+feedback_link: "https://git.daimler.com/ubunturd/ubuntudoc/issues"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
