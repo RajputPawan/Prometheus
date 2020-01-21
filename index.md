@@ -15,7 +15,7 @@ Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this 
 
 ## Support
 
-[{{ site.baseurl }}/tickets.html](<img src="{{ site.baseurl }}images/baseline_playlist_add_black_48pt_3x.png" alt="Raise a ticket ... ">Raise a ticket ...)
+<a href="{{ site.baseurl }}/tickets.html"><img src="{{ site.baseurl }}images/baseline_playlist_add_black_48pt_3x.png" alt="Raise a ticket ... ">Raise a ticket </a>
 
 | What | Where |
 |------|---------|
