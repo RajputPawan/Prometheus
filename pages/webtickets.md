@@ -1,10 +1,8 @@
 ---
-title: "Mercedes-Benz Ubuntu Desktop Webtickets"
+title: "Mercedes-Benz Ubuntu RD Desktop Webtickets"
 keywords: ubuntu documentation webticket ticket
-tags: [home]
 sidebar: default_sidebar
 permalink: tickets.html
-#summary: This site holds information that is necessary or helpful for users of the Mercedes-Benz Ubuntu Desktop
 ---
 
 ## Webtickets
