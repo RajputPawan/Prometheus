@@ -4,9 +4,10 @@
 
 ### First Steps
 1. clone repo `git clone https://git.daimler.com/ubunturd/ubuntudoc.git`
-2. Docker container for local testing `docker run xyz`
-3. Documentation and HowTos in `pages/docs/` directory
-4. News and announcements in `_posts/` directory
+2. For an initial setup of a local jekyll instance execute: `/bin/bash setup.sh`, access local webserver via `http://127.0.0.1:4000/pages/ubunturd/ubuntudoc/`
+3. For further testing purposes execute `bundle exec jekyll serve` in repo directory, access local webserver via `http://127.0.0.1:4000/pages/ubunturd/ubuntudoc/`
+4. Documentation and HowTos in `pages/docs/` directory
+5. News and announcements in `_posts/` directory
 
 ### Create documentation pages
 1. Copy/duplicate existing page from `pages/docs/` directory
