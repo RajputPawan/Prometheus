@@ -2,6 +2,13 @@
 
 [![Ubuntu client operations](/images/ubuntu_client_operations.png)](https://git.daimler.com/pages/ubunturd/ubuntudoc/)
 
+### Contribute
+1. Fork this repo.
+2. Create branch in forked repo.
+3. Add and commit your changes.
+4. Push your changes to your branch.
+5. Create Pull Request to branch "gh-pages" in original repo.
+
 ### First Steps
 1. clone repo `git clone https://git.daimler.com/ubunturd/ubuntudoc.git`
 2. For an initial setup of a local jekyll instance execute: `/bin/bash setup.sh`, access local webserver via `http://127.0.0.1:4000/pages/ubunturd/ubuntudoc/`
