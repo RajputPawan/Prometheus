@@ -1,5 +1,5 @@
 ---
-title: Evolution with EWS plugin  
+title: E-Mail using Evolution with EWS plugin  
 permalink: evolution.html
 sidebar: default_sidebar
 tags: [docs]
@@ -9,11 +9,11 @@ toc: true
 folder: docs
 ---
 
-### E-Mail with Evolution
-
-#### Setup
+## E-Mail with Evolution
 
 Outlook (MS Exchange) can be used on Ubuntu with Evolution and the Evolution EWS plugin.
+
+### Setup
 
 Install the following packages and start Evolution:
 
@@ -30,8 +30,8 @@ On startup the Evolution's inital configuration wizard shows up.
     ![evolution_0](images/docs/evolution/evolution_0.jpg)
 2. Click next.
     1. Choose Server Type: Exchange Web Services
-    2. Replace Username with: <your userid>@emea.corpdir.net
-    3. Replace Host URL with: https://msg-services.wp.corpshared.net/ews/Exchange.asmx
+    2. Replace Username with: `<your userid>@emea.corpdir.net`
+    3. Replace Host URL with: `https://msg-services.wp.corpshared.net/ews/Exchange.asmx`
     4. Select Kerberos for authentication
     5. Click on "Fetch URL"
     ![evolution_1](images/docs/evolution/evolution_1.png)
@@ -39,21 +39,20 @@ On startup the Evolution's inital configuration wizard shows up.
 3. Click Next multiple times until Done. Click Apply.
 4. Outlook connects to Daimler MS Exchange Server w/ full support for Mail, Calendar, Contacts and ToDo.
 
+### Accessing shared calendars
 
-
-#### Accessing shared calendars
 1. Set up evolution with ews and get your inbox functional. Make sure you're online, and syncing.
 2. On the Mail view, right click your exchange account, select "Subscribe to folder of other EWS user."
 3. Type in the name of the account you want, and choose Calendar from the dropdown.
 
 Calendar will then be visible in calendar view.
 
-#### Advanced search / searching the Outlook way
+### Advanced search / searching the Outlook way
 
 To be able to filter and search your email more specifically you can select "Free form expression":
 
 ![evolution_2](images/docs/evolution/evolution_2.png)
 
-Search documentation by evolution: <a href="https://help.gnome.org/users/evolution/stable/mail-searching.html.en">https://help.gnome.org/users/evolution/stable/mail-searching.html.en</a>
+Search documentation by evolution: [https://help.gnome.org/users/evolution/stable/mail-searching.html.en](https://help.gnome.org/users/evolution/stable/mail-searching.html.en)
 
-Documentation of available free form expressions: <a href="https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10">https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10</a>
+Documentation of available free form expressions: [https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10](https://bugzilla.gnome.org/show_bug.cgi?id=550796#c10)

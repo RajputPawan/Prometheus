@@ -8,14 +8,13 @@ toc: false
 summary: This site holds information that is necessary or helpful for users of the Mercedes-Benz RD Ubuntu Desktop. This documentation is only for the RD Ubuntu client.
 ---
 
-
 ## Introduction
 
-Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this documentation pages, besides <a href="{{ site.baseurl }}tickets.html">webtickets</a> and a <a href="{{ site.baseurl }}faq.html">FAQ</a>, you will find helpful information and How Tos regarding the Ubuntu Client.
+Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this documentation pages, besides [webtickets]({{ site.baseurl }}tickets.html) and a [FAQ]([{{ site.baseurl }}faq.html), you will find helpful information and How Tos regarding the Ubuntu Client.
 
 ## Support
 
-<a href="{{ site.baseurl }}/tickets.html"><img src="{{ site.baseurl }}images/baseline_playlist_add_black_48pt_3x.png" alt="Raise a ticket ... ">Raise a ticket </a>
+[![Create Ticket]({{ site.baseurl }}images/baseline_playlist_add_black_48pt_3x.png)Raise Ticket...]({{ site.baseurl }}/tickets.html)
 
 | What | Where |
 |------|---------|
@@ -26,7 +25,8 @@ Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this 
 ## Contribute
 
 Feel free to contribute and help getting new documentation pages and How Tos created.
-1. Fork 
+
+1. Fork
 2. New branch
 3. Commit into your branch
 4. Pull Request on dev-branch (if exists) else on master
