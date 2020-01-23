@@ -52,4 +52,6 @@ entries:
       url: /macaddress_passthrough.html
       output: web, pdf
     
-    
+    - title: Evolution with EWS plugin
+      url: /evolution.html
+      output: web, pdf
