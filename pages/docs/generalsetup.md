@@ -4,7 +4,7 @@ permalink: generalsetup.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: disk encryption, encryption
-last_updated: January 213, 2020
+last_updated: January 23, 2020
 toc: true
 folder: docs
 ---
