@@ -11,6 +11,9 @@ folder: docs
 
 ### E-Mail with Evolution
 
+`Currently this application is not officially supported by Daimler. Use at your own risc. Don't expect support from the Help Desk.`
+`Instead search for help in the community e.g. the Social Intranet or AskDaisy.`
+
 #### Setup
 
 Outlook (MS Exchange) can be used on Ubuntu with Evolution and the Evolution EWS plugin.
