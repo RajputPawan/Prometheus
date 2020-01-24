@@ -21,17 +21,18 @@ Disk encryption is done with cryptsetup Luks. You will be asked for a password o
 changeCryptKey-gui
 ```
 
-Please do not delete or modify Key Slot #7. This is an admin slot for recovery if you forget your password.
+Please do not delete or modify Key Slot #7. This is an admin slot for recovery in case you have forgotten your password.
 
-## Windows terminalserver
+### Windows terminalserver
+Currently there is no solution to read encrypted e-mails on Linux. Therefore every Linux user needs access to MS Outlook on a Windows computer where she/he will be able to read and write encrypted emails.
 
-Every new staff member of Athena who will use Linux is asked if she/he additionally wants to use a dedicated Windows laptop or access to the GEW Windows terminal server farm. As there is no solution yet to read encrypted e-mails on Linux, every Linux user needs a Windows system with Outlook installed to receive encrypted information like DAP certificates.
+In Daimler RD the standard way for Linux users is to use the GEW (Global Engineering Workplace). It is a Windows Terminal Server Solution accessible via Citrix client.
+
+Access to GEW is ordered through ITShop with QEV Number 20019810 (GEW-Basic-RD WTS ZUGANG SIFI - CD-ID) for Daimler employees.
 
 To use GEW, login to [https://gew.rd.corpintra.net/vpn/index.html](https://gew.rd.corpintra.net/vpn/index.html) , select Desktops and then GEW Basic RD -WTS2012-RD-
 
 ![gew_picture](images/docs/general_setup/gew_picture.png)
-
-To use GEW your user must be enabled to use it through IT-Shop.
 
 To be able to use your microphone and camera in GEW you need to change the default configuration by running the Citrix configmanager and change Mic & Webcam configuration:
 
@@ -83,11 +84,11 @@ After you received your token you must change your initial PIN:
 
 1. open [https://emea-cug.sra.corpshared.net/dana-na/auth/url_1/welcome.cgi"](https://emea-cug.sra.corpshared.net/dana-na/auth/url_1/welcome.cgi)
 2. type your username (must look like this: "emea.corpdir.net/$USER")
-3. as password use the following pattern: <Startpin><Tokennumber><Newpin><Newpin>
+3. as password use the following pattern: `<Startpin><Tokennumber><Newpin><Newpin>`
 
 If your StartPIN is 1234, the token display shows number 8765432 and you new PIN should be 5831 the Password for the first time is: 1234876543258315831
 
-After successfully changing your PIN you can test the correct PIN by logging in to the website again using <PIN><Tokennumber> as password.
+After successfully changing your PIN you can test the correct PIN by logging in to the website again using `<PIN><Tokennumber>` as password.
 
 #### Connect to VPN
 
