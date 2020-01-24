@@ -118,7 +118,7 @@ permalink: tickets.html
                  </div>
                  <div class="panel-body">
                      <h4>Ubuntu user creation</h4>
-                     <p>Request Ubuntu functional user creation (For standard users apply through ITShop).</p>
+                     <p>Request Ubuntu user creation. For users in the DE Engineering ITShop order service # 20035002 there.</p>
                      <a href="https://cism-web.es.corpintra.net/cgi-bin/webTickets/webTicket.pl?t=CAX1_User-Anlage" class="btn btn-primary">CISM webticket</a>
                  </div>
              </div>
@@ -135,7 +135,7 @@ permalink: tickets.html
                  </div>
                  <div class="panel-body">
                      <h4>Ubuntu user deletion</h4>
-                     <p>Request Ubuntu functional user deletion (For sandard users apply through ITShop).</p>
+                     <p>Request Ubuntu user deletion. For users in the DE Engineering ITShop deactive the service there.</p>
                      <a href="https://cism-web.es.corpintra.net/cgi-bin/webTickets/webTicket.pl?t=CAX1_User-Loeschung" class="btn btn-primary">CISM webticket</a>
                  </div>
              </div>
