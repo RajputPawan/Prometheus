@@ -84,11 +84,11 @@ After you received your token you must change your initial PIN:
 
 1. open [https://emea-cug.sra.corpshared.net/dana-na/auth/url_1/welcome.cgi"](https://emea-cug.sra.corpshared.net/dana-na/auth/url_1/welcome.cgi)
 2. type your username (must look like this: "emea.corpdir.net/$USER")
-3. as password use the following pattern: <Startpin><Tokennumber><Newpin><Newpin>
+3. as password use the following pattern: `<Startpin><Tokennumber><Newpin><Newpin>`
 
 If your StartPIN is 1234, the token display shows number 8765432 and you new PIN should be 5831 the Password for the first time is: 1234876543258315831
 
-After successfully changing your PIN you can test the correct PIN by logging in to the website again using <PIN><Tokennumber> as password.
+After successfully changing your PIN you can test the correct PIN by logging in to the website again using `<PIN><Tokennumber>` as password.
 
 #### Connect to VPN
 
