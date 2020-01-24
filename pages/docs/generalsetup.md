@@ -21,17 +21,18 @@ Disk encryption is done with cryptsetup Luks. You will be asked for a password o
 changeCryptKey-gui
 ```
 
-Please do not delete or modify Key Slot #7. This is an admin slot for recovery if you forget your password.
+Please do not delete or modify Key Slot #7. This is an admin slot for recovery in case you have forgotten your password.
 
-## Windows terminalserver
+### Windows terminalserver
+Currently there is no solution to read encrypted e-mails on Linux. Therefore every Linux user needs access to MS Outlook on a Windows computer where she/he will be able to read and write encrypted emails.
 
-Every new staff member of Athena who will use Linux is asked if she/he additionally wants to use a dedicated Windows laptop or access to the GEW Windows terminal server farm. As there is no solution yet to read encrypted e-mails on Linux, every Linux user needs a Windows system with Outlook installed to receive encrypted information like DAP certificates.
+In Daimler RD the standard way for Linux users is to use the GEW (Global Engineering Workplace). It is a Windows Terminal Server Solution accessible via Citrix client.
+
+Access to GEW is ordered through ITShop with QEV Number 20019810 (GEW-Basic-RD WTS ZUGANG SIFI - CD-ID) for Daimler employees.
 
 To use GEW, login to [https://gew.rd.corpintra.net/vpn/index.html](https://gew.rd.corpintra.net/vpn/index.html) , select Desktops and then GEW Basic RD -WTS2012-RD-
 
 ![gew_picture](images/docs/general_setup/gew_picture.png)
-
-To use GEW your user must be enabled to use it through IT-Shop.
 
 To be able to use your microphone and camera in GEW you need to change the default configuration by running the Citrix configmanager and change Mic & Webcam configuration:
 
