@@ -23,7 +23,6 @@ changeCryptKey-gui
 
 Please do not delete or modify Key Slot #7. This is an admin slot for recovery in case you have forgotten your password.
 
-<<<<<<< HEAD
 ### Windows terminalserver
 Currently there is no solution to read encrypted e-mails on Linux. Therefore every Linux user needs access to MS Outlook on a Windows computer where she/he will be able to read and write encrypted emails.
 
