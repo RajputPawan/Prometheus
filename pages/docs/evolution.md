@@ -9,12 +9,12 @@ toc: true
 folder: docs
 ---
 
-### E-Mail with Evolution
+## E-Mail with Evolution
 
 `Currently this application is not officially supported by Daimler. Use at your own risc. Don't expect support from the Help Desk.`
 `Instead search for help in the community e.g. the Social Intranet or AskDaisy.`
 
-#### Setup
+### Setup
 
 Outlook (MS Exchange) can be used on Ubuntu with Evolution and the Evolution EWS plugin.
 
@@ -44,14 +44,14 @@ On startup the Evolution's inital configuration wizard shows up.
 
 
 
-#### Accessing shared calendars
+### Accessing shared calendars
 1. Set up evolution with ews and get your inbox functional. Make sure you're online, and syncing.
 2. On the Mail view, right click your exchange account, select "Subscribe to folder of other EWS user."
 3. Type in the name of the account you want, and choose Calendar from the dropdown.
 
 Calendar will then be visible in calendar view.
 
-#### Advanced search / searching the Outlook way
+### Advanced search / searching the Outlook way
 
 To be able to filter and search your email more specifically you can select "Free form expression":
 
