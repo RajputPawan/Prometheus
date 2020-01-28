@@ -6,10 +6,6 @@ summary: "On Jan 23 Ubuntu repo server had limited reachability. Problems have b
 tags: [news, service_malfunction]
 ---
 
-On Jan 23 Ubuntu repo server had limited reachability. Problems have been solved since Jan 23.
-
-## Heading
-
 On Jan 23 2020 the Ubuntu repo server had limited reachability. This was caused by a faulty network in the VMware backend infrastructure. 
 
 Impact was slow downloads of packages or timeouts that broke installations or updates.
