@@ -1,15 +1,19 @@
 ---
-title:  "KISS principle"
+title:  "Ubuntu Repo Server Malfunction"
 published: true
-permalink: samplepost.html
-summary: "This is some summary frontmatter for my sample post."
-tags: [news, getting_started]
+permalink: 2020-01-28_malfunction_reposerver.html
+summary: "On Jan 23 Ubuntu repo server had limited reachability. Problems have been solved since Jan 23."
+tags: [news, service_malfunction]
 ---
 
-KISS, an acronym for "keep it simple, stupid" or "keep it stupid simple", is a design principle noted by the U.S. Navy in 1960.
+On Jan 23 Ubuntu repo server had limited reachability. Problems have been solved since Jan 23.
 
 ## Heading
 
-The KISS principle states that most systems work best if they are kept simple rather than made complicated; therefore, simplicity should be a key goal in design, and unnecessary complexity should be avoided. The phrase has been associated with aircraft engineer Kelly Johnson. The term "KISS principle" was in popular use by 1970. Variations on the phrase include: "Keep it simple, silly", "keep it short and simple", "keep it simple and straightforward", "keep it small and simple", or "keep it stupid simple".
+On Jan 23 2020 the Ubuntu repo server had limited reachability. This was caused by a faulty network in the VMware backend infrastructure. 
+
+Impact was slow downloads of packages or timeouts that broke installations or updates.
+
+Moving the virtual machine to another server solved the problem and service was restored on Jan 23 afternoon.
 
 {% include links.html %}
