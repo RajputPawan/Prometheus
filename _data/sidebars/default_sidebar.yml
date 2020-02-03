@@ -47,6 +47,10 @@ entries:
     - title: General Computer Setup
       url: /generalsetup.html
       output: web, pdf
+    
+    - title: Sudo / Local Admin
+      url: /local_admin_rights.html
+      output: web, pdf
 
     - title: MAC address passthrough
       url: /macaddress_passthrough.html
