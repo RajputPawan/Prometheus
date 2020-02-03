@@ -23,7 +23,7 @@ Further information about the duties and restrictions that apply can be found he
 
 [https://social.intra.corpintra.net/docs/DOC-148313](https://social.intra.corpintra.net/docs/DOC-148313)
 
-## Restictions for local admins
+## Restrictions for local admins
 
 Local admins need to be carefull what they do on their system.
 
