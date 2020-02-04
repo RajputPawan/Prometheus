@@ -59,3 +59,7 @@ entries:
     - title: Evolution with EWS plugin
       url: /evolution.html
       output: web, pdf
+    
+    - title: Git Workflow Saltmigration
+      url: /git_workflow.html
+      output: web, pdf
