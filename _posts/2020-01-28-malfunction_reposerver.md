@@ -1,8 +1,8 @@
 ---
-title:  "Ubuntu Repo Server Malfunction"
+title:  "Solved: Ubuntu Repo Server Malfunction"
 published: true
 permalink: 2020-01-28_malfunction_reposerver.html
-summary: "On Jan 23 Ubuntu repo server had limited reachability. Problems have been solved since Jan 23."
+summary: "Solved: On Jan 23 Ubuntu repo server had limited reachability. Problems have been solved since Jan 23."
 tags: [news, service_malfunction]
 ---
 
