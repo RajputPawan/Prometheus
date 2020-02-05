@@ -1,5 +1,5 @@
 ---
-title: General Git Workflow Saltmigration
+title: General Git Workflow Salt
 permalink: git_general_workflow.html
 sidebar: default_sidebar
 tags: [docs]

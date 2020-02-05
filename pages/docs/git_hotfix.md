@@ -1,5 +1,5 @@
 ---
-title: Hotfix Git Workflow Saltmigration
+title: Hotfix Git Workflow Salt
 permalink: git_hotfix_workflow.html
 sidebar: default_sidebar
 tags: [docs]
