@@ -14,7 +14,7 @@ Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this 
 
 ## Support
 
-[![Create Ticket]({{ site.baseurl }}images/baseline_playlist_add_black_48pt_3x.png)Raise Ticket...]({{ site.baseurl }}/tickets.html)
+[![Create Ticket]({{ site.baseurl }}/images/baseline_playlist_add_black_48pt_3x.png)Raise Ticket...]({{ site.baseurl }}/tickets.html)
 
 | What | Where |
 |------|---------|

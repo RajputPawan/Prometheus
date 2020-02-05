@@ -1,5 +1,5 @@
 ---
-title: General Computer Setup 
+title: Saltmigration Git Workflow 
 permalink: git_workflow.html
 sidebar: default_sidebar
 tags: [docs]
@@ -9,37 +9,14 @@ toc: true
 folder: docs
 ---
 
-<html>
-<head>
-  <!-- Load the JS file -->
-  <script src="js/gitgraph.js"></script>
-</head>
-<body>
-  <div id="graph-container"></div>
+## General Workflow
 
-  <script>
-    const graphContainer = document.getElementById("graph-container");
+There are two permanent branches `master` and `integration`. A new feature gets implemented by creating a new branch from `integration`. After local testing and committing the code, the code can get pushed to your branch. A testing pipeline is running and returns "successful" or "failed". If "successful" a Pull Request can be created from your branch to the `integration` branch. A merge from your branch to the `integration` branch is only possible with a successful execution of the pipeline and the approval of one pre-defined reviewer.
 
-    const gitgraph = GitgraphJS.createGitgraph(graphContainer);
+After a successful merge to `integration` another Pull Request can be opened to merge into the `master` branch.
 
-    // Simulate git commands with Gitgraph API.
-    const master = gitgraph.branch("master");
-    master.commit("Initial commit");
+Click **[here]({{ site.baseurl }}/git_general_workflow.html)** for a graphical representation of the described workflow. 
 
-    const develop = gitgraph.branch("develop");
-    develop.commit("Add TypeScript");
-    develop.commit("Add Test");
+## Hotfixes
 
-    const aFeature = gitgraph.branch("a-feature");
-    aFeature
-      .commit("Make it work")
-      .commit("Make it right")
-      .commit("Make it fast");
-
-    develop.merge(aFeature);
-    develop.commit("Prepare v1");
-
-    master.merge(develop).tag("v1.0.0");
-  </script>
-</body>
-</html>
+For further information look at [Link]({{ site.baseurl }}/git_hotfix_workflow.html)
