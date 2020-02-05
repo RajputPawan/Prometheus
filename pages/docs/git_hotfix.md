@@ -35,18 +35,16 @@ folder: docs
     const integration = gitgraph.branch("integration");
     integration.commit("Add Feature");
 
-    const aFeature = gitgraph.branch("feature/[Task-Number]");
-    aFeature
-      .commit("add saltcheck test")
-      .commit("add saltstate")
-      .commit("add second saltstate function")
-      .commit("fix typo in saltstate");
+    const hotfix = gitgraph.branch("Hotfix");
+    hotfix
+      .commit("remove faulty package")
+      .commit("adjust breaking config");
 
-    integration.merge(aFeature);
-    
-    integration.commit("Prepare next release");
+    integration.merge(hotfix);
+    master.merge(integration);
+    integration.commit("Another feature");
 
-    master.merge(integration).tag("v1.0.1");
+    // master.merge(integration).tag("v1.0.1");
     
 
     

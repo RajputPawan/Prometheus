@@ -60,6 +60,19 @@ entries:
       url: /evolution.html
       output: web, pdf
     
-    - title: Git Workflow Saltmigration
-      url: /git_workflow.html
-      output: web, pdf
+      subfolders:
+      - title: Salt Workflow 
+        output: web
+        subfolderitems:
+        
+        - title: Salt Workflow
+          url: /git_workflow.html
+          output: web, pdf 
+
+        - title: General Git Workflow
+          url: /git_general_workflow.html
+          output: web, pdf
+
+        - title: Hotfix Git Workflow
+          url: /git_hotfix_workflow.html
+          output: web, pdf
