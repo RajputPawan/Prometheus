@@ -8,6 +8,14 @@ toc: false
 summary: This site holds information that is necessary or helpful for users of the Mercedes-Benz RD Ubuntu Desktop. This documentation is only for the RD Ubuntu client.
 ---
 
+## Announcements
+
+{% for post in site.posts limit:3 %}
+  > <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_long_string }} - {{ post.title }}</a>
+  > {{ post.excerpt }}
+{% endfor %}
+
+
 ## Introduction
 
 Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this documentation pages, besides [webtickets]({{ site.baseurl }}tickets.html) and a [FAQ]([{{ site.baseurl }}faq.html), you will find helpful information and How Tos regarding the Ubuntu Client.
