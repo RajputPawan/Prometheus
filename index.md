@@ -34,7 +34,7 @@ Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this 
 
 Feel free to contribute and help getting new documentation pages and How Tos created.
 
-1. Fork
+1. Fork on ([Github](https://git.daimler.com/ubunturd/ubuntudoc/))
 2. New branch
 3. Commit into your branch
 4. Pull Request on dev-branch (if exists) else on master
