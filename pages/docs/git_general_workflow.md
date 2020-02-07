@@ -35,7 +35,7 @@ folder: docs
     const integration = gitgraph.branch("integration");
     integration.commit("Add Feature");
 
-    const aFeature = gitgraph.branch("feature/[Task-Number]");
+    const aFeature = gitgraph.branch({ name: "feature/[Task-Number]", from: master });
     aFeature
       .commit("add saltcheck test")
       .commit("add saltstate")
@@ -44,7 +44,7 @@ folder: docs
 
     integration.merge(aFeature);
 
-    const secondFeature = gitgraph.branch("secondFeature/[Task-Number]");
+    const secondFeature = gitgraph.branch({ name: "secondFeature/[Task-Number]", from: master });
     secondFeature
       .commit("add saltcheck test")
       .commit("add saltstate");
@@ -55,9 +55,7 @@ folder: docs
 
     master.merge(integration).tag("v1.0.1");
     
-    integration.commit("Next Feature");
-
-    const thirdFeature = gitgraph.branch("thirdFeature/[Task-Number]");
+    const thirdFeature = gitgraph.branch({ name: "thirdFeature/[Task-Number]", from: master });
     thirdFeature.commit("add saltcheck test");
 
     integration.merge(thirdFeature)
