@@ -13,7 +13,7 @@ folder: docs
 
 ![task_workflow](images/docs/salt_workflow/task_workflow.png)
 
-> Every feature or hotfix gets a separate task and branch!
+> <font color="red">Every feature or hotfix gets a separate task and branch!</font>
 
 1. [GSEP](https://gsep.daimler.com/)
 2. [Jira](https://gsep.daimler.com/Jira)
@@ -26,11 +26,11 @@ folder: docs
   - Label: Saltmigration
 6. In the created task on the right side there is a section "Development" with a "Create branch" button: <br>
 ![task_create_branch](images/docs/salt_workflow/task_create_branch.png)
-7. Create a branch: <br>
+7. Create a branch from master: <br>
 ![create_branch](images/docs/salt_workflow/create_branch.png)
 8. The assignee of the task pulls the remote changes from the repo and changes to the previously created branch:
 ```bash
-git pull
+git fetch origin
 git checkout <branchname>
 ```
 9. Apply changes
