@@ -35,7 +35,7 @@ folder: docs
     const integration = gitgraph.branch("integration");
     integration.commit("Add Feature");
 
-    const hotfix = gitgraph.branch("Hotfix");
+    const hotfix = gitgraph.branch({ name: "Hotfix", from: master });
     hotfix
       .commit("remove faulty package")
       .commit("adjust breaking config");
