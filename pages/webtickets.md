@@ -91,7 +91,7 @@ permalink: tickets.html
                  <div class="panel-body">
                      <h4>Incident & request Car-PC SJ</h4>
                      <p>Raise an incident or request changes/reinstallation of Car-PCs in the San Jose fleet only.</p>
-                     <a href="{{ site.baseurl }}/tickets.html" class="btn btn-primary">CISM webticket</a>
+                     <a href="https://cism-web.es.corpintra.net/cgi-bin/webTickets/webTicket.pl?t=CAX1_Stoerung_CarPC_SanJose_en" class="btn btn-primary">CISM webticket</a>
                  </div>
              </div>
          </div>
