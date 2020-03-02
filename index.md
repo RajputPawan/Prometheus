@@ -30,6 +30,10 @@ Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this 
 | On-Site Support (Athena project only!) | Provider: science + computing ag / Atos <br>Vaihingen: Monday - Friday 8:30 - 17:00 <br>HKS45: Please open a ticket and wait for appointment |
 | On-Site Support (all other sites)     | Provider: T-Systems <br>On-Site Service Request: Please open a ticket with science + <br>computing and wait for appointment |
 
+## Hardware Basket
+
+An overview of orderable Ubuntu Linux certified hardware is available [here](https://team.sp.wp.corpintra.net/sites/00401/csm/_layouts/15/WopiFrame2.aspx?sourcedoc=/sites/00401/csm/Warenkorb%20HWDokumente/Hardware-basket%20Ubuntu%20Engineering.pptx&action=default).
+
 ## Contribute
 
 Feel free to contribute and help getting new documentation pages and How Tos created.
