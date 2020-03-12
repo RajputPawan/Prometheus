@@ -33,6 +33,7 @@ Thank you for visiting Mercedes-Benz Ubuntu Desktop User Documentation. In this 
 ## Hardware Basket
 
 An overview of Ubuntu Linux certified hardware that can be ordered via ITShop is available [here](https://team.sp.wp.corpintra.net/sites/00401/csm/_layouts/15/WopiFrame2.aspx?sourcedoc=/sites/00401/csm/Warenkorb%20HWDokumente/Hardware-basket%20Ubuntu%20Engineering.pptx&action=default).
+[![Create Ticket]({{ site.baseurl }}/images/hw_basket.png)](https://team.sp.wp.corpintra.net/sites/00401/csm/_layouts/15/WopiFrame2.aspx?sourcedoc=/sites/00401/csm/Warenkorb%20HWDokumente/Hardware-basket%20Ubuntu%20Engineering.pptx&action=default)
 
 ## Contribute
 
