@@ -60,6 +60,10 @@ entries:
       url: /evolution.html
       output: web, pdf
 
+    - title: x2go
+      url: /x2go.html
+      output: web, pdf
+
     - title: Backend Infrastructure
       url: /backend_infrastructure.html
       output: web, pdf
