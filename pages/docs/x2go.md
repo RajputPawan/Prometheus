@@ -30,6 +30,8 @@ Fill in as displayed for your target host and username. We recommend not to star
 
 If you want to use a full remote desktop: GNOME as a session manager does not work currently. Choose KDE or XFCE.
 
+When remoting through AlwaysOn you cannot use port 22 but must use 42022.
+
 ![x2go_session_tab1](images/docs/x2go/x2go_session_tab1.png)
 
 On the second tab you can choose your settings for transport compression. Using the defaults here is a good starting point.
