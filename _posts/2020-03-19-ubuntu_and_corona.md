@@ -9,7 +9,7 @@ tags: [news, corona, remote_access]
 Our provider ATOS (s+c) will be available as usual. Permanent onsite presence in Vaihingen has been suspended. Onsite action is limited to actual cases.
 
 ## Hotline
-As ATOS moved most of their employees to work from home they are still having some issues with their hotline. If you can't get through please open a ticket via http://ubuntu.rd.corpintra.net and request to be called back.
+As ATOS moved most of their employees to work from home they are still having some issues with their hotline. If you can't get through please open a ticket via <http://ubuntu.rd.corpintra.net> and request to be called back.
 
 ## Remote access
 The new ipsec based VPN solution on Windows 10 is not available for Ubuntu. Please stick to AlwaysOn with or w/o Token.
@@ -22,7 +22,7 @@ Any limitations as of bandwidth or general availability are worked on. Currently
 AlwaysOn requires a valid machine certificate and the computer must have booked the service AlwaysOn in ITShop. If you are having issues please open a ticket with ATOS.
 
 ### x2go for Graphical Remote Desktop Access
-We have rolled out x2go to all Ubuntu clients. Find more info here: [x2go.html](/x2go.html)
+We have rolled out x2go to all Ubuntu clients. Find more info [here]({% link /pages/docs/x2go.md %}).
 
 ### Pidgin-Sipe to use Skype
 We are currently working on the rollout of Pidgin with the Sipe plugin. We found this to be a reliable replacement for Sky where we have run out of valid licenses.
