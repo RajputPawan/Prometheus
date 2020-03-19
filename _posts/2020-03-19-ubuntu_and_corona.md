@@ -29,5 +29,4 @@ We are currently working on the rollout of Pidgin with the Sipe plugin. We found
 
 Once Pidgin-Sipe has been installed on your computer there will be a `/usr/local/bin/pidgin-sipe-setup` script available that will configure Pidgin-Sipe to work with the Daimler Skype backend systems and make sure that your password is stored in gnome keyring.
 
-
 {% include links.html %}
