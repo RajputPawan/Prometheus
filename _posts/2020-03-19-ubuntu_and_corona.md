@@ -22,7 +22,7 @@ Any limitations as of bandwidth or general availability are worked on. Currently
 AlwaysOn requires a valid machine certificate and the computer must have booked the service AlwaysOn in ITShop. If you are having issues please open a ticket with ATOS.
 
 ### x2go for Graphical Remote Desktop Access
-We have rolled out x2go to all Ubuntu clients. Find more info [here]({% link /pages/docs/x2go.md %}).
+We have rolled out x2go to all Ubuntu clients. Find more info [here]({{ site.baseurl }}{% link pages/docs/x2go.md %}).
 
 ### Pidgin-Sipe to use Skype
 We are currently working on the rollout of Pidgin with the Sipe plugin. We found this to be a reliable replacement for Sky where we have run out of valid licenses.
