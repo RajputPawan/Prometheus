@@ -6,9 +6,9 @@ summary: "Hints and tools to use during corona lockdown"
 tags: [news, corona, remote_access]
 ---
 
-Our provider ATOS (s+c) will be available as usual. Permanent onsite presence in Vaihingen has been suspended. Onsite action is limited to actual cases.
+Our IT service provider ATOS (s+c) will be available as usual. Permanent onsite presence in Vaihingen has been suspended. Onsite action is limited to actual cases.
 
-## Hotline
+## Hotline Reachability
 As ATOS moved most of their employees to work from home they are still having some issues with their hotline. If you can't get through please open a ticket via <http://ubuntu.rd.corpintra.net> and request to be called back.
 
 ## Remote access
