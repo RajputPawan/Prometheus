@@ -64,6 +64,10 @@ entries:
       url: /x2go.html
       output: web, pdf
 
+    - title: Skype with Pidgin Sipe
+      url: /pidgin-sipe.html
+      output: web, pdf
+
     - title: Backend Infrastructure
       url: /backend_infrastructure.html
       output: web, pdf
