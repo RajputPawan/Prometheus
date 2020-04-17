@@ -27,7 +27,7 @@ Thank you for visiting Mercedes-Benz RD Ubuntu Desktop User Documentation. In th
 | What | Where |
 |------|---------|
 | Service Desk | Provider: science + computing ag / Atos <br>Phone: +49 7071 9457 636 |
-| On-Site Support (Athena project only!) | Service Provider: science + computing ag / Atos <br>Vaihingen: Monday - Friday 8:30 - 17:00 <br>HKS45: Please open a ticket and wait for appointment <br> Starting from April 2020 (resp. after the Corona lockdown) on-site support will be delivered by Demand-Athena in Vaihingen and by T-Systems at the HKS45. |
+| On-Site Support (Athena project only!) | Service Provider: Demand Athena / Comline AG <br>Vaihingen: Monday - Friday 8:30 - 17:00 <br>all other locations are handled by normal onsite support <br>(currently suspended due to COVID-19 restrictions) |
 | On-Site Support (all other sites)     | Service Provider: T-Systems <br>On-Site Service Request: Please open a ticket with science + <br>computing and wait for appointment |
 | Responsible Department | ITT/CE <br>Gerik Huland, gerik.huland@daimler.com, +49 176 30969555 <br>Patrick Banholzer, patrick.banholzer@daimler.com, +49 176 30988391 |
 
