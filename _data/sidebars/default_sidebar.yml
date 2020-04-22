@@ -68,6 +68,10 @@ entries:
       url: /pidgin-sipe.html
       output: web, pdf
 
+    - title: Kiosk Mode
+      url: /kiosk.html
+      output: web, pdf
+
     - title: Backend Infrastructure
       url: /backend_infrastructure.html
       output: web, pdf

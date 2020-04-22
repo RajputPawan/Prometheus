@@ -26,4 +26,6 @@ topnav_dropdowns:
           url: /x2go.html
         - title: Skype with Pidgin Sipe 
           url: /pidgin-sipe.html
+        - title: Kiosk Mode 
+          url: /kiosk.html
 
