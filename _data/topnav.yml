@@ -28,4 +28,6 @@ topnav_dropdowns:
           url: /pidgin-sipe.html
         - title: Kiosk Mode 
           url: /kiosk.html
+        - title: PX-Proxy 
+          url: /px_proxy.html
 

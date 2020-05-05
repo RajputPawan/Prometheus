@@ -71,6 +71,10 @@ entries:
     - title: Kiosk Mode
       url: /kiosk.html
       output: web, pdf
+    
+    - title: PX-Proxy
+      url: /px_proxy.html
+      output: web, pdf
 
     - title: Backend Infrastructure
       url: /backend_infrastructure.html
