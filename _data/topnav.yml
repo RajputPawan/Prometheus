@@ -18,6 +18,8 @@ topnav_dropdowns:
       folderitems:
         - title: General Setup
           url: /generalsetup.html
+        - title: Sudo Permissions 
+          url: /sudo_permissions.html
         - title: MAC address passthrough
           url: /macaddress_passthrough.html
         - title: Evolution with EWS plugin

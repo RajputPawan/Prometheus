@@ -76,6 +76,10 @@ entries:
       url: /px_proxy.html
       output: web, pdf
 
+    - title: Sudo Permissions
+      url: /sudo_permissions.html
+      output: web, pdf
+
     - title: Backend Infrastructure
       url: /backend_infrastructure.html
       output: web, pdf
