@@ -19,4 +19,4 @@ In case of multiple admin rights on a system the applicant will inform about dat
 
 ### Exception: for India, China, MBRDNA and DTNA
 
-The former process via ['Sudo form'](gewaehrung_lokaler_administrationsrechte_ee_final_en_v2019-08-22_wireshark_mehrfach_sudo.pdf) and approval by the E5 is still active.
+The former process via ['Sudo form'](images/docs/sudo_local_admin/gewaehrung_lokaler_administrationsrechte_ee_final_en_v2019-08-22_wireshark_mehrfach_sudo.pdf) and approval by the E5 is still active.
