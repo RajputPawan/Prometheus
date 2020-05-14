@@ -4,7 +4,7 @@ permalink: local_admin_rights.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: admin_rights
-last_updated: February 3, 2020
+last_updated: May 14, 2020
 toc: true
 folder: docs
 ---
@@ -22,6 +22,10 @@ The following general documentation has to be ordered and agreed to before:
 Further information about the duties and restrictions that apply can be found here:
 
 [https://social.intra.corpintra.net/docs/DOC-148313](https://social.intra.corpintra.net/docs/DOC-148313)
+
+### Exception: for India, China, MBRDNA and DTNA
+
+The former process via ['Sudo form'](images/docs/sudo_local_admin/gewaehrung_lokaler_administrationsrechte_ee_final_en_v2019-08-22_wireshark_mehrfach_sudo.pdf) and approval by the E5 is still active.
 
 ## Restrictions for local admins
 
