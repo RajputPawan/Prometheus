@@ -6,6 +6,6 @@ summary: "The telephone system of Atos/s+c will be switched to a new system on W
 tags: [news]
 ---
 
-On Wednesday, June 3rd 2020 between 7am and 9am, the telephone system of Atos/s+c will be switched to a new system. If there are interruptions in accessibility despite careful planning, please understand. In general, Atos/s+c can of course be reached via the web form https://ubuntu.rd.corpintra.net as the preferred medium for reporting incidents and problems.
+On Wednesday, June 3, 2020 between 7 and 9 a.m. the telephone system of Atos/s+c will be migrated onto a new system. Please bear with us if, despite careful planning, there should be interruptions in call availability. Atos/s+c will still be available via the web form <https://ubuntu.rd.corpintra.net> as the main medium for reporting incidents and problems.
 
 {% include links.html %}
