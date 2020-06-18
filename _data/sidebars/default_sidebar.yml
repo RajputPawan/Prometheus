@@ -44,6 +44,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: ADTF installation + license request
+      url: /adtf.html
+      output: web, pdf
+
     - title: General Computer Setup
       url: /generalsetup.html
       output: web, pdf

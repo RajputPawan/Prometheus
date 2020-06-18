@@ -16,6 +16,8 @@ topnav_dropdowns:
   folders:
     - title: Documentation
       folderitems:
+        - title: ADTF installation + license requests
+          url: /adtf.html
         - title: General Setup
           url: /generalsetup.html
         - title: MAC address passthrough
