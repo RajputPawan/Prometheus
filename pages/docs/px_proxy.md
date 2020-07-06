@@ -88,7 +88,7 @@ As gnome-keyring can also be used on non-graphical used systems (gnome-keyring-d
 
 You can request a PoolID in [EMT](https://intra-wiwtools.e.corpintra.net/emt/create?t=poolId&lang=en)
 
-When you received your Pool-ID name and credentials you can request Proxy-Access for this user at [IT-Security-RD](mailto:mbox-059-iso-office-rd@daimler.com).
+When you received your Pool-ID name and credentials you can request Proxy-Access for this user at [Information-Office](mailto:information-office@daimler.com).
 
 ### Store password in keyring
 
