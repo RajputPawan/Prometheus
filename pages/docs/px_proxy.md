@@ -4,10 +4,14 @@ permalink: px_proxy.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: proxy
-last_updated: June 23, 2020
+last_updated: July 07, 2020
 toc: true
 folder: docs
 ---
+
+## Preamble
+
+>`px-proxy` is only available for Ubuntu 18.04 LTS or higher and _NOT_ for other Ubuntu distributions. Users with Ubuntu 16.04 LTS should upgrade to Ubuntu 18.04 LTS.
 
 ## Prerequisites
 
