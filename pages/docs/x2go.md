@@ -21,6 +21,22 @@ It consists of software components for the client and the server side. Connectio
 * sound support
 * shared folders
 
+## Installation
+
+### Ubuntu
+
+x2go server and client are installed per default.
+
+### Windows
+
+On Windows the client will be available via ITShop soon. 
+
+Until then you can install the x2go client on Windows as a portable application:
+
+Download the latest build from [https://code.x2go.org/releases/binary-win32/x2goclient/releases/](https://code.x2go.org/releases/binary-win32/x2goclient/releases/). 
+
+At the time of this writing the latest release is 4.1.2.2. After downloading do not run the installer but open the file with 7zip and unpack the contents to a directory in your user home e.g. c:\\users\\<userid>\\x2go. That's all - start the client by clicking on x2goclient.exe.
+
 ## How to use and configure
 
 First make sure you can login into your target host via ssh. When connecting through AlwaysOn w/o Token you cannot use port 22 but must use 42022.
