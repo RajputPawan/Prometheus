@@ -4,7 +4,7 @@ permalink: kiosk.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: kiosk
-last_updated: June 10, 2020
+last_updated: July 22, 2020
 toc: true
 folder: docs
 ---
@@ -58,7 +58,9 @@ emtc_ee1_kiosk-$HOSTNAME
 
 * More chromium-browser command line switches should be found in the following link:  
  **[List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches/)**
-* Depicted URLS can be appended or deleted in `/lhome/kioskuser/.xinitrc`
+* Depicted URLS can be appended or deleted either
+  * in `/lhome/kioskuser/browsers_monodisplay.sh` for machines with a single display, or
+  * in `/lhome/kioskuser/browsers_multidisplay.sh` for machines with 2 displays.
 
 ### Cronjob
 
