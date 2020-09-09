@@ -4,7 +4,7 @@ permalink: local_admin_rights.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: admin_rights
-last_updated: May 14, 2020
+last_updated: September 9, 2020
 toc: true
 folder: docs
 ---
@@ -15,7 +15,9 @@ Similar to Windows local admin rights for a Ubuntu computer can be ordered throu
 
 `DL CLIENT ADMIN USER UBUNTU (QEV111AH31LR)`
 
-The following general documentation has to be ordered and agreed to before:
+> **`NOTE`:** Multiple/Additional admin rights can also be ordered for a single machine in ITShop.
+
+The following general documentation has to be ordered and agreed to beforehand:
 
 `DL DOKUMENTATION BEDINGUNGEN FUER LOK. ADMINRECHTE (QEV111AFGPI4)`
 
