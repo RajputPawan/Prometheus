@@ -15,7 +15,6 @@ summary: This site holds information that is necessary or helpful for users of t
   > {{ post.excerpt }}
 {% endfor %}
 
-
 ## Introduction
 
 Thank you for visiting Mercedes-Benz RD Ubuntu Desktop User Documentation. In this documentation pages, besides [webtickets]({{ site.baseurl }}tickets.html) and a [FAQ]([{{ site.baseurl }}faq.html), you will find helpful information and How Tos regarding the Ubuntu Client.
@@ -27,7 +26,7 @@ Thank you for visiting Mercedes-Benz RD Ubuntu Desktop User Documentation. In th
 | What | Where |
 |------|---------|
 | Service Desk | Provider: Wipro Technologies GmbH <br>Phone: +49 7031 90 89000 |
-| On-Site Support (Athena project only!) | Service Provider: Demand Athena / Comline AG <br>Vaihingen: Monday - Friday 8:30 - 17:00 <br>all other locations are handled by normal onsite support <br>(currently suspended due to COVID-19 restrictions) |
+| On-Site Support (Athena project only!) | Service Provider: Demand Athena / Comline AG <br>Vaihingen: Monday - Friday 8:30 - 17:00 <br>all other locations are handled by normal onsite support <br>(currently suspended due to COVID-19 restrictions. Please request an appointment via [Demand Athena](mailto:demand-athena@daimler.com)) |
 | On-Site Support (all other sites)     | Service Provider: T-Systems <br>On-Site Service Request: Please open a ticket with Wipro and wait for appointment |
 | Responsible Department | ITT/CE <br>Gerik Huland, gerik.huland@daimler.com, +49 176 30969555 <br>Patrick Banholzer, patrick.banholzer@daimler.com, +49 176 30988391 |
 
