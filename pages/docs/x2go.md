@@ -32,14 +32,7 @@ x2go server and client are installed per default.
 `Currently the Windows client of x2go is not supported by either the UHD or the Ubuntu Helpdesk.`<br>
 `In case of problems search for help in the community`
 
-The client will be available via ITShop soon. 
-
-Until then you can install the client as a portable application:
-
-Download the latest build from [https://code.x2go.org/releases/binary-win32/x2goclient/releases/](https://code.x2go.org/releases/binary-win32/x2goclient/releases/). 
-
-At the time of this writing the latest release is 4.1.2.2. After downloading do not run the installer but open the file with 7zip and unpack the contents to a directory in your user home e.g. c:\\users\\&lt;your userid&gt;\\x2go. That's all - start the client by clicking on x2goclient.exe.
-
+The x2go client is now available via IT-Shop. Please request QEV111AIL4VL for installation on your Windows machine.
 
 ## How to use and configure
 
