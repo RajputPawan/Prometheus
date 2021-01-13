@@ -26,10 +26,13 @@ topnav_dropdowns:
           url: /evolution.html
         - title: x2go
           url: /x2go.html
-        - title: Skype with Pidgin Sipe 
+        - title: Skype with Pidgin Sipe
           url: /pidgin-sipe.html
-        - title: Kiosk Mode 
-          url: /kiosk.html
-        - title: PX-Proxy 
+        - title: PX-Proxy
           url: /px_proxy.html
+        - title: custom apt sources
+          url: /install_sw_from_custom_apt_sources.html
+        - title: Kiosk Mode
+          url: /kiosk.html
+
 

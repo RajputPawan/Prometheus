@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: Ubuntu Documentation
-  version: 
+  version:
   folders:
 
   - title:
@@ -51,7 +51,7 @@ entries:
     - title: General Computer Setup
       url: /generalsetup.html
       output: web, pdf
-    
+
     - title: Sudo / Local Admin
       url: /local_admin_rights.html
       output: web, pdf
@@ -59,7 +59,7 @@ entries:
     - title: MAC address passthrough
       url: /macaddress_passthrough.html
       output: web, pdf
-    
+
     - title: Evolution with EWS plugin
       url: /evolution.html
       output: web, pdf
@@ -72,26 +72,31 @@ entries:
       url: /pidgin-sipe.html
       output: web, pdf
 
-    - title: Kiosk Mode
-      url: /kiosk.html
-      output: web, pdf
-    
     - title: PX-Proxy
       url: /px_proxy.html
       output: web, pdf
 
+    - title: custom apt sources
+      url: /install_sw_from_custom_apt_sources.html
+      output: web, pdf
+
+    - title: Kiosk Mode
+      url: /kiosk.html
+      output: web, pdf
+
+
     - title: Backend Infrastructure
       url: /backend_infrastructure.html
       output: web, pdf
-    
+
       subfolders:
-      - title: Salt Workflow 
+      - title: Salt Workflow
         output: web
         subfolderitems:
-        
+
         - title: Salt Workflow
           url: /git_workflow.html
-          output: web, pdf 
+          output: web, pdf
 
         - title: General Git Workflow
           url: /git_general_workflow.html
