@@ -110,6 +110,24 @@ To create your custom config you can run `px-proxy` without any additional optio
 
 Don't forget to set threads to a high number as this massively impacts on internet performance.
 
+### Enable custom px-proxy.service to use config file
+
+Create a service file in directory `~/.config/systemd/user/px-proxy.service`
+
+Add path to your config file in the service file `--config=/lhome/$USER/.config/px-proxy/px-proxy.ini`
+
+```bash
+systemctl --user stop px-proxy.service
+systemctl --user disable px-proxy.service
+systemctl --user daemon-reload
+systemctl --user enable px-proxy.service
+systemctl --user start px-proxy.service
+```
+
+After that a symlink from the default service file to your service file is generated:
+
+![symlink_px](images/docs/px_proxy/symlink_px-proxy.png)
+
 ### FAQ
 
 <div class="panel-group" id="accordion">
