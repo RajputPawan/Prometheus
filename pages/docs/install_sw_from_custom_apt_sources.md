@@ -24,16 +24,18 @@ To have a properly working apt you need to make sure you have a fully working so
 ## Prepare your environment
 
 ```bash
-mkdir -p ~/apt/custom-sources.lists.d/ ~/apt/sources.lists.d/
+mkdir -p ~/apt/custom-sources.list.d/ ~/apt/sources.list.d/
 cat <<EOF >>~/apt/apt-update.sh
 #!/bin/bash
+rsync -rv --delete /etc/apt/sources.list.d/ ~/apt/sources.list.d/
+rsync -rv ~/apt/custom-sources.list.d/ ~/apt/sources.list.d/
 sudo apt update -o Dir::Etc::sourceparts="~/apt/sources.list.d/"
 EOF
 chmod +x ~/apt/apt-update.sh
 
-## Put your custom sources.list files here: ~/apt/custom-sources.lists.d/
-rsync -rv --delete /etc/apt/sources.list.d/ ~/apt/sources.lists.d/
-rsync -rv ~/apt/custom-sources.lists.d/ ~/apt/sources.lists.d/
+## Put your custom sources.list files here: ~/apt/custom-sources.list.d/
+rsync -rv --delete /etc/apt/sources.list.d/ ~/apt/sources.list.d/
+rsync -rv ~/apt/custom-sources.list.d/ ~/apt/sources.list.d/
 ```
 
 Now you can easily add your own sources to `~/apt/custom-sources.lists.d/` and run the last two commands to setup your personal sourceparts directory.
