@@ -27,7 +27,7 @@ To have a properly working apt you need to make sure you have a fully working so
 mkdir -p ~/apt/custom-sources.lists.d/ ~/apt/sources.lists.d/
 cat <<EOF >>~/apt/apt-update.sh
 #!/bin/bash
-sudo apt update -o Dir::Etc::sourceparts="~/apt/sources.list.d/
+sudo apt update -o Dir::Etc::sourceparts="~/apt/sources.list.d/"
 EOF
 chmod +x ~/apt/apt-update.sh
 
