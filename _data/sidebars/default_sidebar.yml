@@ -89,6 +89,10 @@ entries:
       url: /backend_infrastructure.html
       output: web, pdf
 
+    - title: Active Directory Selfservice
+      url: /ad-self-service.html
+      output: web, pdf
+
       subfolders:
       - title: Salt Workflow
         output: web
