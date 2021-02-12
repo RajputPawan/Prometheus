@@ -34,5 +34,6 @@ topnav_dropdowns:
           url: /install_sw_from_custom_apt_sources.html
         - title: Kiosk Mode
           url: /kiosk.html
-
+        - title: Active Directory Self-Service
+          url: /ad-self-service.html
 
