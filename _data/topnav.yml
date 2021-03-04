@@ -36,4 +36,6 @@ topnav_dropdowns:
           url: /kiosk.html
         - title: Active Directory Self-Service
           url: /ad-self-service.html
+        - title: Reinstall Ubuntu System
+          url: /reinstall-os.html
 

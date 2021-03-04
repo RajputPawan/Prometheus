@@ -93,6 +93,10 @@ entries:
       url: /ad-self-service.html
       output: web, pdf
 
+    - title: Reinstall Ubuntu System
+      url: /reinstall-os.html
+      output: web, pdf
+
       subfolders:
       - title: Salt Workflow
         output: web
