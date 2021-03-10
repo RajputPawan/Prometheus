@@ -14,7 +14,7 @@ folder: docs
 Using the reinstall-os.sh script, makes it possible to reinstall, upgrade or downgrade the Ubuntu system which is installed on your client machine,without using a boot device and without Onsite support.
 
 
-:bangbang: **PLEASE BE AWARE, THAT DURING THE REINSTALLATION ALL DATA ON YOUR CLIENT DEVICE WILL BE COMPLETELY ERASED!** Make sure you have backups of all your important data, if you want to use this script! :bangbang:
+**‼**{: style="color: red"} **PLEASE BE AWARE, THAT DURING THE REINSTALLATION ALL DATA ON YOUR CLIENT DEVICE WILL BE COMPLETELY ERASED!** Make sure you have backups of all your important data, if you want to use this script! **‼**{: style="color: red"}
 
 
 ### Requirements
@@ -26,7 +26,7 @@ The reinstall-os.sh script won't start if:
 - The client device is connected via VPN
 - The client device is connected via Wifi
 
-:warning: The user who wants to use the script, needs sudo rights on the client device
+**⚠**{: style="color: darkorange"} The user who wants to use the script, needs sudo rights on the client device
 
 
 ### Using reinstall-os script
@@ -37,7 +37,7 @@ execute script:
 reinstall-os.sh
 ```
 
-:information_source: Please wait for a few seconds, the script has to determine a few variables from different sources
+**🛈**{: style="color: blue"} Please wait for a few seconds, the script has to determine a few variables from different sources
 
 
 After the script has been successfully loaded, a window will occur. You have the following options:
@@ -58,7 +58,7 @@ After the script has been successfully loaded, a window will occur. You have the
 
 After one of the above section was selected, a warning message will occur, which will inform you for the **last time**, that after continuing **ALL DATA WILL BE ERASED!** (see img 1.3)
 
-:bangbang: Please hit cancel, if you are unsure or if you forgot to create backups of your system. :bangbang:
+**‼**{: style="color: red"} Please hit cancel, if you are unsure or if you forgot to create backups of your system. **‼**{: style="color: red"}
 
 By hitting **"OK"**, the client device will **reboot automatically** after a short time and will reinstall the Ubuntu system you've selected.
 
@@ -66,13 +66,13 @@ By hitting **"OK"**, the client device will **reboot automatically** after a sho
 (img 1.3)
 
 
-:warning: Please do not turn off your client device during the reinstallation. The system will reboot automatically!
+**⚠**{: style="color: darkorange"} Please do not turn off your client device during the reinstallation. The system will reboot automatically!
 
 
-:information_source: During the reinstallation you will see the message **"Initial system configuration"** on the terminal display.
+**🛈**{: style="color: blue"} During the reinstallation you will see the message **"Initial system configuration"** on the terminal display.
 
 
 After the client machine has been rebooted, the reinstallation will get started. After **approx. 1 hour**, you will receive a fresh installed system.
 
 
-:information_source: Please be aware that fetching certificates to your client devive could remain **apporx. 1 hour** after the installation.
+**🛈**{: style="color: blue"} Please be aware that fetching certificates to your client devive could remain **apporx. 1 hour** after the installation.
