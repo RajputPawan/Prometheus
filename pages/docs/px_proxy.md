@@ -90,7 +90,7 @@ As gnome-keyring can also be used on non-graphical used systems (gnome-keyring-d
 
 > Please do never save your personal user accounts password for automation-jobs. Especially never store your password on a shared system. Request a pool-id for this purpose:
 
-You can request a PoolID in [EMT](https://intra-wiwtools.e.corpintra.net/emt/create?t=poolId&lang=en)
+You can request a PoolID in [EMT](https://iam-tools.iam.corpintra.net/emt)
 
 When you received your Pool-ID name and credentials you can request Proxy-Access for this user at [Information-Office](mailto:information-office@daimler.com).
 
