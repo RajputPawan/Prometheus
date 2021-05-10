@@ -15,6 +15,6 @@ folder: docs
 |---------------|---------------------------------------------------------------------------|-----------------------------------|
 | Repositories  | [ubunturepo](http://ubunturepo.rd.corpintra.net/)                         | 1st Mon/month 8am-10am (CET/CEST) |
 | PyPi Mirror   | [pypi mirror](ubunturepo.rd.corpintra.net:4040/root/pypi)                 | 1st Mon/month 8am-10am (CET/CEST) |
-| LDAP          | smtcae0089, smtcae0088, smtcae0014                                        | 1st Mon/month 8am-10am (CET/CEST) |
+| LDAP          | ldap0[1-3].rd.corpintra.net                                               | 1st Mon/month 8am-10am (CET/CEST) |
 | Saltstack     | \[saltmaster-backend,saltmaster-carpc,saltmaster-clients,saltmaster-edge,saltmaster-mboutpost,salt\].rd.corpintra.net | 1st Mon/month 8am-10am (CET/CEST) |
 | Foreman       | [https://foreman.rd.corpintra.net](https://foreman.rd.corpintra.net)      | 1st Mon/month 8am-10am (CET/CEST) |
