@@ -4,15 +4,12 @@ permalink: evolution.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: disk encryption, encryption
-last_updated: January 23, 2020
+last_updated: July 2, 2021
 toc: true
 folder: docs
 ---
 
 ## E-Mail with Evolution
-
-`Currently this application is not officially supported by Daimler. Use at your own risc. Don't expect support from the Help Desk.`
-`Instead search for help in the community e.g. the Social Intranet or AskDaisy.`
 
 ### Setup
 
