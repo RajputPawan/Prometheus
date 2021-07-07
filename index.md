@@ -8,6 +8,11 @@ toc: false
 summary: This site holds information that is necessary or helpful for users of the Mercedes-Benz RD Ubuntu Desktop. This documentation is only for the RD Ubuntu client.
 ---
 
+## Request help
+
+* **[Incident]({{ site.baseurl }}incident.html)** [when something is broken / not working]
+* **[Requests]({{ site.baseurl }}requests.html)** [to request any changes in behaviour / software / users]
+
 ## Announcements
 
 {% for post in site.posts limit:3 %}
@@ -17,11 +22,12 @@ summary: This site holds information that is necessary or helpful for users of t
 
 ## Introduction
 
-Thank you for visiting Mercedes-Benz RD Ubuntu Desktop User Documentation. In this documentation pages, besides [webtickets]({{ site.baseurl }}tickets.html) and a [FAQ]([{{ site.baseurl }}faq.html), you will find helpful information and How Tos regarding the Ubuntu Client.
+Thank you for visiting Mercedes-Benz RD Ubuntu Desktop User Documentation. In this documentation pages, besides **[incidents]({{ site.baseurl }}incident.html)**, [requests]({{ site.baseurl }}requests.html) and a [FAQ]([{{ site.baseurl }}faq.html), you will find helpful information and How Tos regarding the Ubuntu Client.
 
 ## Support
 
-[![Create Ticket]({{ site.baseurl }}/images/baseline_playlist_add_black_48pt_3x.png)Raise Ticket...]({{ site.baseurl }}/tickets.html)
+[![Create Incidient]({{ site.baseurl }}/images/baseline_playlist_add_black_48pt_3x.png)Create INCIDENT - if something is broken.]({{ site.baseurl }}/incident.html)
+[![Create Request]({{ site.baseurl }}/images/baseline_playlist_add_black_48pt_3x.png)Raise Request...]({{ site.baseurl }}/requests.html)
 
 | What | Where |
 |------|---------|

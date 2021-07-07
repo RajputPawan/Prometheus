@@ -23,8 +23,13 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Webtickets
-      url: /tickets.html
+    - title: Incident / Something is broken
+      url: /incident.html
+      output: web, pdf
+      type: homepage
+
+    - title: Service Requests
+      url: /requests.html
       output: web, pdf
       type: homepage
 
