@@ -1,5 +1,5 @@
 ---
-title: Local Admin Rights
+title: Sudo / Local Admin Rights
 permalink: local_admin_rights.html
 sidebar: default_sidebar
 tags: [docs]
