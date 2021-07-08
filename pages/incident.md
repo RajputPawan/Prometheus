@@ -31,7 +31,7 @@ Typing in the text fields will show suggestions. Select **Ubuntu Client Operatio
 
 ![Service Portal](images/servicenow/snow_incident_04.png)
 
-### Not sure what to chose?
+### Not sure what to choose?
 
 If you are not sure what the particular form is about, click on the small **(?)**
 ![Service Portal](images/servicenow/snow_incident_05.png)
