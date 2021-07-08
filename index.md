@@ -10,8 +10,8 @@ summary: This site holds information that is necessary or helpful for users of t
 
 ## Request help
 
-* **[Incident]({{ site.baseurl }}incident.html)** [when something is broken / not working]
-* **[Requests]({{ site.baseurl }}requests.html)** [to request any changes in behaviour / software / users]
+* **[Incident]({{ site.baseurl }}/incident.html)** [when something is broken / not working]
+* **[Requests]({{ site.baseurl }}/requests.html)** [to request any changes in behaviour / software / users]
 
 ## Announcements
 
@@ -22,7 +22,7 @@ summary: This site holds information that is necessary or helpful for users of t
 
 ## Introduction
 
-Thank you for visiting Mercedes-Benz RD Ubuntu Desktop User Documentation. In this documentation pages, besides **[incidents]({{ site.baseurl }}incident.html)**, [requests]({{ site.baseurl }}requests.html) and a [FAQ]([{{ site.baseurl }}faq.html), you will find helpful information and How Tos regarding the Ubuntu Client.
+Thank you for visiting Mercedes-Benz RD Ubuntu Desktop User Documentation. In this documentation pages, besides **[incidents]({{ site.baseurl }}/incident.html)**, [requests]({{ site.baseurl }}requests.html) and a [FAQ]([{{ site.baseurl }}faq.html), you will find helpful information and How Tos regarding the Ubuntu Client.
 
 ## Support
 
