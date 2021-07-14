@@ -23,7 +23,7 @@ The following general documentation has to be ordered and agreed to beforehand:
 
 Further information about the duties and restrictions that apply can be found here:
 
-[https://social.intra.corpintra.net/docs/DOC-148313](https://social.intra.corpintra.net/docs/DOC-148313)
+[https://itshop.app.corpintra.net/itshop/km/ussknowledgebasearticles/detail/2003719120](https://itshop.app.corpintra.net/itshop/km/ussknowledgebasearticles/detail/2003719120)
 
 ### Exception: for India, China, MBRDNA and DTNA
 
