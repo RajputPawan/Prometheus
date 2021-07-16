@@ -1,12 +1,54 @@
 ---
 title: "Mercedes-Benz Ubuntu RD Desktop Webtickets"
-keywords: ubuntu documentation webticket ticket
+keywords: ubuntu documentation webticket ticket request
 sidebar: default_sidebar
 permalink: requests.html
 ---
 
-## Webtickets
+If you have a request that a something should be changed to address your requirements you should create a individual service request ticket.
 
+Having request tickets is important as this is one of the main measures for the SLA of the Ubuntu provider and helps identifying capacity gaps on support personell if implementation time increases. It also makes it transparent  in which state your request is and additionaly makes it easier to investigate if something was not implemented as requested. The biggest measure besides resolution time is the survey and the Customer Satisfaction / Dissatisfaction. So please answer the survey and answer honestly how you feel. (5 Star rating.)
+
+## How to create
+
+Please open [Daimler Service Now - Service Portal https://daimler.service-now.com/sp](https://daimler.service-now.com/sp)
+
+### Go to **"Request Something"**
+
+![Service Portal](images/servicenow/snow_incident_01.png)
+
+### Go to **"Individual Service Request"**
+
+![Service Portal](images/servicenow/snow_request_01.png)
+
+### Select the correct Service Offering
+
+Typing in the text fields will show suggestions. Type ***ubuntu** as ServiceNow searches "Begins with" by default and select **GEO Client Operations Ubuntu Linux**.
+
+![Service Portal](images/servicenow/snow_request_02.png)
+
+### Select the correct template
+
+Selecting a template helps you not to forget required data for your request.
+
+![Service Portal](images/servicenow/snow_request_03.png)
+
+### Select Application service and add attachments
+
+Now you can fill your request by completing the text template for the description (1)
+Optionally you can link your request to the application service (2),(3) **Ubuntu Client Operations - Production** and / or add any attachments (4) if needed for your request.
+
+![Service Portal](images/servicenow/snow_request_04.png)
+
+Proceed by pressing **Order Now** in the top right corner.
+
+### Checkout
+
+Finally you are asked if you want to request this for another person (1), for the delivery information (2) and additional instructions (3).
+
+![Service Portal](images/servicenow/snow_request_05.png)
+
+<!--
 <div class="row">
          <div class="col-md-3 col-sm-6">
              <div class="panel panel-default text-center">
@@ -124,3 +166,4 @@ permalink: requests.html
              </div>
          </div>
 </div>
+-->
