@@ -73,10 +73,6 @@ entries:
       url: /x2go.html
       output: web, pdf
 
-    - title: Skype with Pidgin Sipe
-      url: /pidgin-sipe.html
-      output: web, pdf
-
     - title: PX-Proxy
       url: /px_proxy.html
       output: web, pdf

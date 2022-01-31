@@ -26,8 +26,6 @@ topnav_dropdowns:
           url: /evolution.html
         - title: x2go
           url: /x2go.html
-        - title: Skype with Pidgin Sipe
-          url: /pidgin-sipe.html
         - title: PX-Proxy
           url: /px_proxy.html
         - title: custom apt sources
