@@ -45,10 +45,11 @@ Local admins need to be carefull what they do on their system.
 
 * Adding local users
 * Adding sudo to other users
-* Changing system wide configuration --> this applies to all what is located in /etc. Especially apt, sudoers, sssd, salt, sophos, pam, nsswitch, profile, environment, /etc/hosts ...
+* Changing system wide configuration --> this applies to all what is located in /etc. Especially apt, sudoers, sssd, salt, sophos, pam, nsswitch, profile, environment, /etc/hosts, vpn software ...
 * Updating / changing pre-installed drivers. E.g. nvidia
 * Installation of additional software to the system with other package management systems like pip / npm / snap... Install it to userspace or somewhere in /opt and add it to your $PATH.
 * Playing around with uidNumbers and trying to access data of other users.
+* Changing routing tables to bypass vpn routes or acting as a forwarding gateway.
 
 ### What happens if you don't respect those rules
 
