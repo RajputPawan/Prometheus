@@ -21,13 +21,17 @@ Please open [Daimler Service Now - Service Portal https://daimler.service-now.co
 
 ![Service Portal](images/servicenow/snow_incident_02.png)
 
-### Fill the forms.
+### Fill the forms
 
-Typing in the text fields will show suggestions. Select **Ubuntu Client Operations - Production**
+First select that your issue is about an **Application Service**
+![Service Portal](images/servicenow/snow_incident_03-1.png)
+
+Then start typing in the text fields it will start showing suggestions.
+Select **Ubuntu Client Operations - Production**
 
 ![Service Portal](images/servicenow/snow_incident_03.png)
 
-### Put in all required data.
+### Put in all required data
 
 ![Service Portal](images/servicenow/snow_incident_04.png)
 
