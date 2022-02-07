@@ -20,6 +20,8 @@ topnav_dropdowns:
           url: /adtf.html
         - title: General Setup
           url: /generalsetup.html
+        - title: Nvidia and Cuda setup
+          url: /nvidia.html
         - title: MAC address passthrough
           url: /macaddress_passthrough.html
         - title: Evolution with EWS plugin
@@ -36,4 +38,3 @@ topnav_dropdowns:
           url: /ad-self-service.html
         - title: Reinstall Ubuntu System
           url: /reinstall-os.html
-

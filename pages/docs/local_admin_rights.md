@@ -3,7 +3,7 @@ title: Sudo / Local Admin Rights
 permalink: local_admin_rights.html
 sidebar: default_sidebar
 tags: [docs]
-keywords: admin_rights
+keywords: [admin_rights, sudo, admin]
 last_updated: September 9, 2020
 toc: true
 folder: docs

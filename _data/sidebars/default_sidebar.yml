@@ -61,6 +61,10 @@ entries:
       url: /local_admin_rights.html
       output: web, pdf
 
+    - title: Nvidia & Cuda setup
+      url: /nvidia.html
+      output: web, pdf
+
     - title: MAC address passthrough
       url: /macaddress_passthrough.html
       output: web, pdf
