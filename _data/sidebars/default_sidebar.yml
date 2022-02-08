@@ -65,6 +65,10 @@ entries:
       url: /nvidia.html
       output: web, pdf
 
+    - title: Enable Hibernate
+      url: /hibernate.html
+      output: web, pdf
+
     - title: MAC address passthrough
       url: /macaddress_passthrough.html
       output: web, pdf

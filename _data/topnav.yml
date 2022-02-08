@@ -22,6 +22,8 @@ topnav_dropdowns:
           url: /generalsetup.html
         - title: Nvidia and Cuda setup
           url: /nvidia.html
+        - title: Enable Hibernate
+          url: /hibernate.html
         - title: MAC address passthrough
           url: /macaddress_passthrough.html
         - title: Evolution with EWS plugin
