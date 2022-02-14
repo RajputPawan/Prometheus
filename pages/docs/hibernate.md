@@ -5,7 +5,7 @@ sidebar: default_sidebar
 tags: [docs]
 keywords: hibernate, disk encryption, encryption, swap, small swap
 last_updated: Feburary 8, 2022
-toc: true
+toc: false
 folder: docs
 ---
 
