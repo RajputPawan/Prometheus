@@ -69,6 +69,10 @@ entries:
       url: /hibernate.html
       output: web, pdf
 
+    - title: Alternative default shell
+      url: /shell.html
+      output: web, pdf
+
     - title: MAC address passthrough
       url: /macaddress_passthrough.html
       output: web, pdf

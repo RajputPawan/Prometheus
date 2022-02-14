@@ -24,6 +24,8 @@ topnav_dropdowns:
           url: /nvidia.html
         - title: Enable Hibernate
           url: /hibernate.html
+        - title: Alternative default shell
+          url: /shell.html
         - title: MAC address passthrough
           url: /macaddress_passthrough.html
         - title: Evolution with EWS plugin
