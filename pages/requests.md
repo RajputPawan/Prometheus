@@ -11,7 +11,7 @@ Having request tickets is important as this is one of the main measures for the 
 
 ## How to create
 
-Please open [Daimler Service Now - Service Portal https://daimler.service-now.com/esc?id=sc_category](https://daimler.service-now.com/sp)
+Please open [Daimler Service Now - Service Portal https://daimler.service-now.com/esc?id=sc_category](https://daimler.service-now.com/esc?id=sc_category)
 
 ### Go to **"Individual Service Request"**
 
