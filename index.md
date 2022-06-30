@@ -33,7 +33,7 @@ Thank you for visiting Mercedes-Benz RD Ubuntu Desktop User Documentation. In th
 |------|---------|
 | Service Desk | Provider: Wipro Technologies GmbH <br>Phone: +49 7031 90 89000 |
 | On-Site Support | Service Provider: Wipro <br>On-Site Service Request: Please open a ticket and wait for appointment |
-| Responsible Department | ITT/ME <br>Patrick Banholzer, patrick.banholzer@daimler.com, +49 176 30988391<br>Tobias Ferazzi, tobias.ferazzi@daimler.com, +49 176 30986213 |
+| Responsible Department | ITT/ME <br>Patrick Banholzer, patrick.banholzer@mercedes-benz.com, +49 176 30988391<br>Tobias Ferazzi, tobias.ferazzi@mercedes-benz.com, +49 176 30986213 |
 
 ## Hardware Basket
 
