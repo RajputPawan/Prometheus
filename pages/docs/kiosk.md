@@ -4,7 +4,7 @@ permalink: kiosk.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: kiosk
-last_updated: July 22, 2020
+last_updated: July 07, 2022
 toc: true
 folder: docs
 ---
@@ -61,6 +61,8 @@ emtc_ee1_kiosk-$HOSTNAME
 * Depicted URLS can be appended or deleted either
   * in `/lhome/kioskuser/browsers_monodisplay.sh` for machines with a single display, or
   * in `/lhome/kioskuser/browsers_multidisplay.sh` for machines with 2 displays.
+
+  Eventually you might need to add a `--no-proxy-server \` line to the above mentionen scripts.
 
 ### Cronjob
 
