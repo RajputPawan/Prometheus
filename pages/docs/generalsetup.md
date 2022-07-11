@@ -4,7 +4,7 @@ permalink: generalsetup.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: disk encryption, encryption
-last_updated: January 23, 2020
+last_updated: July 11, 2022
 toc: true
 folder: docs
 ---
@@ -60,7 +60,11 @@ In addition there must be ordered the QEV111AH31LR (DL CLIENT ADMIN USER UBUNTU)
 
 ## VPN
 
-At the moment there are two possibilities to get access to the DCN (Daimler Corporate Network). Both use a connection via openconnect through a Juniper Pulse gateway.
+We currently have three options to vpn into Mercedes-Benz Corporate Network. One recent "GREEN2GO" is faster and removes Proxy-Requirement - but it needs sudo interaction of the users.
+
+You can see the instructions for Green2Go on the Github Project Readme: [https://git.daimler.com/Ubuntu-Tools/green](https://git.daimler.com/Ubuntu-Tools/green)
+
+The two legacy access variants work out of the box. Both use a connection via openconnect through a Juniper Pulse gateway.
 
 ### Certificate-authenticated access
 
@@ -72,27 +76,13 @@ After starting the GUI, you can connect by selecting "Connection" → "Start Dai
 
 Alternatively, run daimler-vpn on a console.
 
-### Token authenticated access
+### Ping.ID authenticated access
 
-To use this solution you need a token assigned to your user in IT-Shop (TOKEN VASCO (QEV111ADPGMA)). Additionally your user must be granted to use AlwaysOn (AlwaysOn User (EMEA) (QEV111AGDB8A))
+Your user must be granted to use AlwaysOn (AlwaysOn User (EMEA) (QEV111AGDB8A)) and afterwards you are able to login to the "Token" VPN by typing the 6 digit One-Time Passcode of the Ping.ID app.
 
-![token](images/docs/general_setup/token.png)
-
-#### Initialize Token
-
-After you received your token you must change your initial PIN:
-
-1. open [https://emea-cug.sra.corpshared.net/dana-na/auth/url_1/welcome.cgi"](https://emea-cug.sra.corpshared.net/dana-na/auth/url_1/welcome.cgi)
-2. type your username (must look like this: "emea.corpdir.net/$USER")
-3. as password use the following pattern: `<Startpin><Tokennumber><Newpin><Newpin>`
-
-If your StartPIN is 1234, the token display shows number 8765432 and you new PIN should be 5831 the Password for the first time is: 1234876543258315831
-
-After successfully changing your PIN you can test the correct PIN by logging in to the website again using `<PIN><Tokennumber>` as password.
+![Ping.ID](images/docs/general_setup/ping.png)
 
 #### Connect to VPN
-
-Now your token is ready to use.
 
 ![vpn_3](images/docs/general_setup/vpn_3.png)
 
@@ -106,18 +96,3 @@ Now your token is ready to use.
 
 All new enrolled systems come with a set of certificates for the usage of VPN and Wifi / WLAN. To use a wifi connection select SITECONNECTRD to connect to Daimler RD network. If you are prompted for any password or configuration, something went wrong with the configuration of your computer. Please contact the Linux support via [ticket]({{ site.baseurl }}/tickets.html).
 
-## Share data between Linux and Windows
-
-All Linux systems share the local filesystem with the local homes through samba. So it is available on Windows hosts. In Windows Explorer you can open `\\%linux_hostname%.rd.corpintra.net\fs1` to access your local home and exchange data between the two worlds.
-
-![home_win](images/docs/general_setup/home_win.png)
-
-If you want to mount your shared home directory (home, not local home directory lhome), you can do so as well. This has the advantage that you have your files ready on any workstation instead of just the one you used when you uploaded the files.
-
-On Windows:
-`\\dfshks.rd.corpintra.net\dfsroot\home\<UserID>`
-
-On Linux:
-`cd /home/$USER`
-
-Note that this Folder is not mounted by default, but instead gets mounted on usage.
