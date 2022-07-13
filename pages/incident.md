@@ -36,15 +36,15 @@ Select the CI **Ubuntu Client Operations - Production**
 
 ![Service Portal](images/servicenow/snow_incident_04.png)
 
-On **Impact level & resolve ugency** (6) (7) select at least one as Medium or higher as we only have ServiceLevel Monitoring on Prio3 and higher incidents. And P4 are not measured. But please answer the urgency / impact correctly to prevent unnecessary interrupts of backoffice support units that are not necessary.
+On **Impact level & resolve ugency** (6) (7) select at least both Medium or higher or at least one as High as we only have ServiceLevel Monitoring on Prio3 and higher incidents. And P4 are not measured. **Avoid producing incidents with P4. See priority matrix**
 
 Have a look at the incident priority matrix - to see which priority is assigned to your incident.
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \ &nbsp;&nbsp;impact<br>urgency &nbsp; \  | 1-High  | 2-Medium  | 3-Low  |
 |--------------------------------- |-------- |---------- |------- |
-| 1-High                           | P1      | P2        | P2     |
-| 2-Medium                         | P2      | P3        | P3     |
-| 3-Low                            | P2      | P3        | P4     |
+| 1-High                           | P1      | P2        | P3     |
+| 2-Medium                         | P2      | P3        | P4     |
+| 3-Low                            | P3      | P4        | P4     |
 
 ### Not sure what to choose?
 
