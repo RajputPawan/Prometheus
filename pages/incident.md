@@ -41,10 +41,10 @@ On **Impact level & resolve ugency** (6) (7) select at least both Medium or high
 Have a look at the incident priority matrix - to see which priority is assigned to your incident.
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \ &nbsp;&nbsp;impact<br>urgency &nbsp; \  | 1-High  | 2-Medium  | 3-Low  |
-|--------------------------------- |-------- |---------- |------- |
-| 1-High                           | P1      | P2        | P3     |
-| 2-Medium                         | P2      | P3        | P4     |
-| 3-Low                            | P3      | P4        | P4     |
+|--------------------------------- |-------- |---------- |--------- |
+| 1-High                           | **P1**  | **P2**    | **P3**   |
+| 2-Medium                         | **P2**  | **P3**    | ***P4*** |
+| 3-Low                            | **P3**  | ***P4***  | ***P4*** |
 
 ### Not sure what to choose?
 
