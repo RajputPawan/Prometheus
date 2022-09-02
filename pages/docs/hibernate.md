@@ -22,7 +22,8 @@ Tested on Dell Precision 7550 and 5560 with Ubuntu 20.04
 
 ```bash
 sudo fallocate -l 32G /swapfile
-sudo chown 0600 /swapfile
+sudo chown root /swapfile
+sudo chmod 0600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 sudo swapoff /dev/mapper/ubuntu-swap_1
