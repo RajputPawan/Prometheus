@@ -11,9 +11,9 @@ Having incident tickets is important as this is one of the main measures for the
 
 ## How to create
 
-You can either use the deeplink and continue with topic "Fill the forms": [ServiceNow Deeplink](https://daimler.service-now.com/sp?id=sc_cat_item&sys_id=062eec1f1b0c605093b43113dd4bcbf0&sysparm_variables=ewoiY2hvb3NlX2lzc3VlX3JlbGF0ZWQiOiJhcHBsaWNhdGlvbiBzZXJ2aWNlIiwKInVfc2VydmljZV9pbnN0YW5jZSI6IjUyMGE2ZWQ3MWI2MGVjMTAxZGMxYmI3MzliNGJjYjc4Igp9Cg) 
+You can either use the deeplink and continue with topic "Fill the forms": [ServiceNow Deeplink](https://servicenow.i.mercedes-benz.com/esc?id=sc_cat_item&sys_id=062eec1f1b0c605093b43113dd4bcbf0) 
 
-Or open [Daimler Service Now - Service Portal https://daimler.service-now.com/esc?id=sc_cat_item](https://daimler.service-now.com/esc?id=sc_cat_item)
+Or open [Daimler Service Now - Service Portal https://servicenow.i.mercedes-benz.com/esc?id=esc_sc_category](https://servicenow.i.mercedes-benz.com/esc?id=esc_sc_category)
 
 ### Go to **"Something is broken"**
 
