@@ -1,0 +1,87 @@
+# Jammy Jellyfish 22.04. finally available in Mercedes-Benz RD environment!
+
+The following summarizes some of the most important changes in comparison to earlier releases. For a full changeset, please consult the upstream [release notes](https://discourse.ubuntu.com/t/jammy-jellyfish-release-notes/24668) and the [release notes](https://discourse.ubuntu.com/t/jammy-jellyfish-point-release-changes/29835) for the point release.
+
+
+As with every new release, not only new features are getting added, but old (deprecated) features are getting removed. Please read the following and the above mentioned release notes carefully before considering an install, especially if you are relying on software not directly shipped by Ubuntu and/or the RD Ubuntu Operations Team.
+
+## Important differences in regard to upstream Ubuntu images:
+
+### Snapd and snaps
+
+*Snapd* and therefore snaps in general currently are not (yet) supported in Mercedes-Benz RD ubuntu images. E.g. for Firefox, we are shipping regular .deb packages. We are currently investigating if we can enable snaps with a future update during the Jammy release cycle, so stay tuned for further announcements in regard to this. 
+
+## Noteworthy changes to Mercedes-Benz related packages/services and changes that might affect you
+
+### Vanilla Flavors
+
+Starting with Ubuntu Jammy, Ubuntu Operations Team introduces vanilla-flavors as an option during installation. While the default installation is pulling in both GNOME and KDE packages, vanilla-flavors will enable more choices in regard to packages that are going to be installed by default.
+
+Currently the following flavors are available:
+- default: The default installation with KDE/Plasma and GNOME packages as known from prior releases
+- vanilla-kde: Vanilla KDE/Plasma Desktop environment
+- vanilla-gnome: Vanilla GNOME environment
+- vanilla-ubuntu: A minimal GNOME based Desktop Environment with ubuntu specific additions
+
+In addition to the above mentioned flavors, there is a 'plain' vanilla flavor not installing any Desktop Environment. This CLI only flavor gives you the most freedom of choice in regard to preinstalled packages, but you should really know what you are doing.
+
+### Changes to browser packages
+*Google Chrome* is now installed by default on every installation but the plain vanilla (CLI-only) one. 
+
+*Firefox* and *Firefox-ESR* are available as regular .deb packages, with *Firefox* getting installed beside Google Chrome on non-vanilla installs.
+
+Aditionally, *MS Edge* browser also is available.
+
+*Chromium* browser will no longer be shipped as a .deb package by Ubuntu Operations Team, hence until snapd can be enabled, this browser will no longer be available in Mercedes-Benz environment.  (This currently *breaks* Kiosk systems. We are aware of this and working on a fix.)
+
+### custom-jammy and custom-jammy-proposed repositories
+Packages built by the Ubuntu Operations Team are now all located in a separate [custom repository](). If you encounter a bug in one of the packages provided by this repository, please contact [Ubuntu Operations Team](mailto:ubuntu-operations@mercedes-benz.com).
+
+While the custom repositories already were added to focal as well, jammy is the first release where the packages built by Ubuntu Operations Team are completely separated from the ones built by other parties.
+
+### Green VPN not supported on Jammy
+There is no support from Ubuntu Operations Team for *GreenVPN* on Ubuntu Jammy, as the solution is deprecated in favour of *ZScaler* and will be sundowned within the next few weeks. *AlwaysOn* keeps to be supported until *ZScaler* is fully rolled out in the environment.
+
+### ROS1 packages no longer available for Ubuntu Jammy
+Starting with Ubuntu Jammy, upstream switched completely to *ROS2*, *ROS1* packages no longer are provided. Hence currently *no* ROS packages are available for Jammy.
+
+In case you/your project are interested in *ROS2* packages for Jammy, please contact [Ubuntu Operations Team](mailto:ubuntu-operations@mercedes-benz.com).
+
+### No python2.7 packages anymore
+While being out of upstream support already since January 1st 2020, Focal still was shipping 2.7.x of python. This is no longer the case for Jammy. There is and there will be no supported way to run python2.7 on Ubuntu Jammy.
+
+### Toolchain Upgrades
+
+- GCC was updated to the 11.2.0 release, binutils to 2.38, and glibc to 2.35. 
+- Python now ships at version 3.10.4
+- Perl ships at version 5.34.0. 
+- LLVM now defaults to version 14. 
+- golang defaults to version 1.18.x. 
+- rustc defaults to version 1.58.
+- In addition to OpenJDK 11, OpenJDK 18 is now provided (but not used for package builds).
+- Ruby was updated from v2.7.4 to v3.0.
+
+### OpenSSL 3.0
+
+Ubuntu upstream upgraded the OpenSSL library to the new 3.0 version, which disables a lot of legacy algorithms by default, as detailed in upstream OpenSSL's [migration guide](https://www.openssl.org/docs/manmaster/man7/migration_guide.html). In particular, certificates using SHA1 or MD5 as hash algorithms are now invalid under the default security level.
+
+In addition to the upstream deprecations, please note that since Ubuntu 20.04 (Focal Fossa), the security level 2 (which is the default) disables the (D)TLS protocols below 1.2 (included).
+
+Since the new version has an API bump, third-party packages that depend on libssl1.1 will need to be rebuilt to instead depend on libssl3, as the older ABI isn’t provided anymore.
+
+### UDP disabled for NFS mounts
+
+Since Ubuntu 20.10 (“Groovy Gorilla”), the kernel option CONFIG_NFS_DISABLE_UDP_SUPPORT=y is set and this disables using UDP as the transport for NFS mounts, regardless of NFS version.
+
+### Security Improvements
+
+*nftables* is now the default backend for the firewall. All applications on the system must agree on whether they will use the legacy *xtables* backend or the newer *nftables* backend. [Bug 1968608](https://bugs.launchpad.net/bugs/1968608) provides some context that may be helpful.
+
+*ssh-rsa* is now disabled by default in OpenSSH. 
+
+### Changes to database packages
+
+- PostgreSQL has been updated to version 14.2.
+- MySQL has been updated to version 8.0.28.
+
+
