@@ -61,5 +61,5 @@ The hard drive selection for installation will use following rules
 
 Reachable via Mercedes Benz Teams or ticket system
 
-[https://pages.git.daimler.com/ubunturd/ubuntudoc/incident.html](Incident How To)
+[Incident How To](https://pages.git.daimler.com/ubunturd/ubuntudoc/incident.html)
 
