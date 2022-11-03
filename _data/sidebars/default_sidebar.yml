@@ -110,6 +110,10 @@ entries:
       url: /reinstall-os.html
       output: web, pdf
 
+    - title: Ubuntu 22 (Jammy) Installation
+      url: /install-jammy.html
+      output: web, pdf
+
       subfolders:
       - title: Salt Workflow
         output: web
