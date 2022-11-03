@@ -42,3 +42,5 @@ topnav_dropdowns:
           url: /ad-self-service.html
         - title: Reinstall Ubuntu System
           url: /reinstall-os.html
+        - title: Ubuntu 22 (Jammy) Installation
+          url: /install-jammy.html
