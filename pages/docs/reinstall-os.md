@@ -3,65 +3,60 @@ title: reinstall-os
 permalink: reinstall-os.html
 sidebar: default_sidebar
 tags: [docs]
-keywords: reinstallation, upgrade, downgrade, ubuntu20
-last_updated: Feb 22, 2021
+keywords: reinstallation, upgrade, downgrade, ubuntu20, ubuntu22
+last_updated: Nov 09, 2022
 toc: true
 folder: docs
 ---
 
-## Reinstall System via reinstall-os
+## Reinstall system with reinstall-os
 
-Using the reinstall-os.sh script, makes it possible to reinstall, upgrade or downgrade the Ubuntu system which is installed on your client machine,without using a boot device and without Onsite support.
-
-**‼**{: style="color: red"} **PLEASE BE AWARE, THAT DURING THE REINSTALLATION ALL DATA ON YOUR CLIENT DEVICE WILL BE COMPLETELY ERASED!** Make sure you have backups of all your important data, if you want to use this script! **‼**{: style="color: red"}
+Using the reinstall-os.sh script makes it possible to reinstall, upgrade or downgrade the Ubuntu system installed on your client machine without using a boot device and without Onsite support.  
+  
+**‼**{: style="color: red"} **PLEASE BE AWARE, THAT DURING THE REINSTALLATION ALL DATA ON YOUR CLIENT DEVICE WILL BE ERASED!** Make sure you have backups of all your important data before using this script **‼**{: style="color: red"}
 
 ### Requirements
 
-Please make sure, that your client device is directly connected to the Daimler network via ethernet cable (eth0).
+Please make sure, that your client device is directly connected to the MB network via ethernet cable (eth0).
+The reinstall-os.sh script won't start an installation if:
 
-The reinstall-os.sh script won't start if:
-
-- The client device is not connected to the Daimler network
+- The client device is not connected to the MB network
 - The client device is connected via VPN
 - The client device is connected via Wifi
 
 ### Using reinstall-os script
 
-execute script:
+To initiate the reinstall process, execute:
 
 ```bash
 reinstall-os.sh
 ```
 
-**🛈**{: style="color: blue"} Please wait for a few seconds, the script has to determine a few variables from different sources
+Script will display different options deppending on the OS version its being run on:
+- Upgrade/installation of Ubuntu 20.04(focal) and 22.04(jammy) is supported from all OS versions
+![reinstall-os](images/docs/reinstall-os/reinstall-os-v2.1.png)
+(img 2.1)
 
-After the script has been successfully loaded, a window will occur. You have the following options:
+- When run on focal, script enables an experimental in-place upgrade feature to jammy
+![reinstall-os](images/docs/reinstall-os/reinstall-os-v2.2.png)
+(img 2.2)
 
-- **Reinstall System** ( available for Ubuntu 18.04, Ubuntu 20.04) => Reinstall the system with the **same OS** which is already installed (see img 1.0)
+- When run on jammy, you can use the reinstall-os script to switch between different OS flavors wo a full OS reinstallation
+![reinstall-os](images/docs/reinstall-os/reinstall-os-v2.3.png)
+(img 2.3)
+![reinstall-os](images/docs/reinstall-os/reinstall-os-v2.4.png)
+(img 2.4)
 
-- **Reinstall/Upgrade System** ( available for Ubuntu 18.04 ) → **Reinstall and upgrade** system from **Ubuntu 18.04** to **Ubuntu 20.04** (see img 1.1)
+### Notes
 
-- **Reinstall/Downgrade System** (available for Ubuntu 20.04) → **Reinstall and downgrade** system from **Ubuntu 20.04** to **Ubuntu 18.04** (see img 1.2)
+**🛈**{: style="color: blue"} Ubuntu 22.04 (jammy) is only supported on systems configured with UEFI firmware
 
-![reinstall-os](images/docs/reinstall-os/reinstall-os-1.png)
-(img 1.1)
+**🛈**{: style="color: blue"} Ubuntu 22.04 (jammy) vanilla flavors pre-install only a limited set of packages, it is therefore recommended to book sudoers persmissions in itshop before choosing this type of installation
 
-![reinstall-os](images/docs/reinstall-os/reinstall-os-2.png)
-(img 1.2)
+**🛈**{: style="color: blue"} It is recommended to review the Ubuntu 22.04 (jammy) [release notes](./2022-11-03-jammy.html) before installing this OS version
 
-After one of the above section was selected, a warning message will occur, which will inform you for the **last time**, that after continuing **ALL DATA WILL BE ERASED!** (see img 1.3)
+**🛈**{: style="color: blue"} Please do not turn off your client device during the installation process. The system will reboot automatically!
 
-**‼**{: style="color: red"} Please hit cancel, if you are unsure or if you forgot to create backups of your system. **‼**{: style="color: red"}
+**🛈**{: style="color: blue"} During the installation you will see the message **"Initial system configuration"** on the terminal display. Initial system configuration can take **approx. 1 hour** to complete
 
-By hitting **"OK"**, the client device will **reboot automatically** after a short time and will reinstall the Ubuntu system you've selected.
-
-![reinstall-os](images/docs/reinstall-os/reinstall-os-3.png)
-(img 1.3)
-
-**⚠**{: style="color: darkorange"} Please do not turn off your client device during the reinstallation. The system will reboot automatically!
-
-**🛈**{: style="color: blue"} During the reinstallation you will see the message **"Initial system configuration"** on the terminal display.
-
-After the client machine has been rebooted, the reinstallation will get started. After **approx. 1 hour**, you will receive a fresh installed system.
-
-**🛈**{: style="color: blue"} Please be aware that fetching certificates to your client devive could remain **apporx. 1 hour** after the installation.
+**🛈**{: style="color: blue"} Installation may trigger several reboots to complete
