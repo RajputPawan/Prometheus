@@ -107,4 +107,4 @@ There are also some additional settings for hibernate and sleep in systemd that 
 
 ### Credits
 
-Thank you for providing this information / how-to, Alexander Kerner <alexander.kerner@daimler.com>
+Thank you for providing this information / how-to, Alexander Kerner <alexander.kerner@mercedes-benz.com>

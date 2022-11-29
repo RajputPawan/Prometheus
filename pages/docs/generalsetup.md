@@ -62,7 +62,7 @@ In addition there must be ordered the QEV111AH31LR (DL CLIENT ADMIN USER UBUNTU)
 
 We currently have three options to vpn into Mercedes-Benz Corporate Network. One recent "GREEN2GO" is faster and removes Proxy-Requirement - but it needs sudo interaction of the users.
 
-You can see the instructions for Green2Go on the Github Project Readme: [https://git.daimler.com/Ubuntu-Tools/green](https://git.daimler.com/Ubuntu-Tools/green)
+You can see the instructions for Green2Go on the Github Project Readme: [https://git.i.mercedes-benz.com/Ubuntu-Tools/green](https://git.i.mercedes-benz.com/Ubuntu-Tools/green)
 
 The two legacy access variants work out of the box. Both use a connection via openconnect through a Juniper Pulse gateway.
 

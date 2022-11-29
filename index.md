@@ -44,7 +44,7 @@ An overview of Ubuntu Linux certified hardware that can be ordered via ITShop is
 
 Feel free to contribute and help getting new documentation pages and How Tos created.
 
-1. Fork on ([Github](https://git.daimler.com/ubunturd/ubuntudoc/)).
+1. Fork on ([Github](https://git.i.mercedes-benz.com/ubunturd/ubuntudoc/)).
 2. Create branch in forked repo.
 3. Add and commit your changes.
 4. Push your changes to your branch.

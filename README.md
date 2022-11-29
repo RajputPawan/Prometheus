@@ -1,6 +1,6 @@
 # Welcome to the Mercedes-Benz Ubuntu RD Desktop User Documentation
 
-[![Ubuntu client operations](/images/ubuntu_client_operations.png)](https://pages.git.daimler.com/ubunturd/ubuntudoc/)
+[![Ubuntu client operations](/images/ubuntu_client_operations.png)](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/)
 
 ## Contribute
 
@@ -12,7 +12,7 @@
 
 ## First Steps
 
-1. clone repo `git clone https://git.daimler.com/ubunturd/ubuntudoc.git`
+1. clone repo `git clone https://git.i.mercedes-benz.com/ubunturd/ubuntudoc.git`
 2. For an initial setup of a local jekyll instance execute: `/bin/bash setup.sh`, access local webserver via `http://127.0.0.1:4000/pages/ubunturd/ubuntudoc/`
 3. For further testing purposes execute `bundle exec jekyll serve` in repo directory, access local webserver via `http://127.0.0.1:4000/pages/ubunturd/ubuntudoc/`
 4. Documentation and HowTos in `pages/docs/` directory
