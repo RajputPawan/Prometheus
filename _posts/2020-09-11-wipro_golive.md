@@ -8,6 +8,6 @@ tags: [news]
 
 Starting from today Wipro Technologies GmbH is the new service provider for Ubuntu clients and replaces science+computing ag/Atos.
 
-For the new contact information please see [Support](https://pages.git.daimler.com/ubunturd/ubuntudoc/#support).
+For the new contact information please see [Support](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/#support).
 
 {% include links.html %}
