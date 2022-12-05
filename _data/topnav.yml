@@ -44,3 +44,5 @@ topnav_dropdowns:
           url: /reinstall-os.html
         - title: Ubuntu 22 (Jammy) Installation
           url: /install-jammy.html
+        - title: Rescue Mode
+          url: /rescue-mode.html

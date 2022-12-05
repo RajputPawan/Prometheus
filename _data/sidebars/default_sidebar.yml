@@ -114,6 +114,10 @@ entries:
       url: /install-jammy.html
       output: web, pdf
 
+    - title: Rescue Mode
+      url: /rescue-mode.html
+      output: web, pdf
+
       subfolders:
       - title: Salt Workflow
         output: web
