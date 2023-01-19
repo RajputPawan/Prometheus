@@ -32,21 +32,21 @@ Enter in Host URL: https://outlook.office365.com/EWS/Exchange.asmx
 
 Instead of "NTLM" choose "OAuth2 (Office365)"
 
-![evolution_6](images/docs/evolution/evolution-o365_2.png)
+![evolution_6](images/docs/evolution/evolution-o365_2.jpeg)
 
 In "Override Office365 OAuth2 settings"
 
 Enter the Application ID: 751cf8be-ca07-484b-9308-fac4b9d85eff
 
-![evolution_7](images/docs/evolution/evolution-o365_3.png)
+![evolution_7](images/docs/evolution/evolution-o365_3.jpeg)
 
 Verify the highlighted items:
 
-![evolution_5](images/docs/evolution/evolution-o365_1.png)
+![evolution_5](images/docs/evolution/evolution-o365_1.jpeg)
 
 You should see the following picture:
 
-![evolution_4](images/docs/evolution/evolution-o365_0.png)
+![evolution_4](images/docs/evolution/evolution-o365_0.jpeg)
 
 Click OK
 
