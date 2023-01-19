@@ -27,19 +27,26 @@ On startup the Evolution's inital configuration wizard shows up.
 Fill in the details as shown in these pictures.
 
 Enter in Username your @mercedes-benz.com Email address
+
 Enter in Host URL: https://outlook.office365.com/EWS/Exchange.asmx
+
 Instead of "NTLM" choose "OAuth2 (Office365)"
-![evolution_6](images/docs/evolution/evolution-o365_2.jpg)
+
+![evolution_6](images/docs/evolution/evolution-o365_2.png)
 
 In "Override Office365 OAuth2 settings"
+
 Enter the Application ID: 751cf8be-ca07-484b-9308-fac4b9d85eff
-![evolution_7](images/docs/evolution/evolution-o365_3.jpg)
+
+![evolution_7](images/docs/evolution/evolution-o365_3.png)
 
 Verify the highlighted items:
-![evolution_5](images/docs/evolution/evolution-o365_1.jpg)
+
+![evolution_5](images/docs/evolution/evolution-o365_1.png)
 
 You should see the following picture:
-![evolution_4](images/docs/evolution/evolution-o365_0.jpg)
+
+![evolution_4](images/docs/evolution/evolution-o365_0.png)
 
 Click OK
 
