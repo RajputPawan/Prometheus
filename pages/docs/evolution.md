@@ -52,7 +52,7 @@ Click OK
 
 Note: Emails can also be read in the web browser via this link: https://outlook.office.com/
 
-### Setup (with Email address @daimler.com)
+### Setup (mailbox not yet migrated to O365)
 
 Outlook (MS Exchange) can be used on Ubuntu with Evolution and the Evolution EWS plugin.
 
