@@ -60,6 +60,11 @@ The hard drive selection for installation will use following rules
 
 ## VM Installation
 
+Following informations are only tested and working for Ubuntu VMs on Ubuntu Hosts.
+
+We can not provide remotely support for VMs which are connected via NAT.
+
+
 ### Firmware
 
 The VM requires UEFI as Firmware Type.
@@ -80,6 +85,8 @@ While for onsite installation, Bridged and NAT network mode will work, installat
 
 
 If Bridged mode is used, the MAC address (can be found in network informations, IT-Shop) needs to be set in the VM settings.
+
+
 
 ![install-jammy](images/docs/install-jammy/install-jammy8.png)
 
