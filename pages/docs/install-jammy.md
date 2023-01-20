@@ -10,6 +10,7 @@ folder: docs
 ---
 
 
+## General
 
 Our Ubuntu Jammy uses a complete different installer than our Ubuntu Focal.
 
@@ -19,7 +20,7 @@ Benefits:
 * Remote support if anything goes wrong
 
 
-## Network Detection
+### Network Detection
 
 The installer will determine automatically the correct network device MAC address if you are connected to Mercedes Benz internal network and your CI has multiple network devices.
 
@@ -42,7 +43,7 @@ On Virtual Machines which are connected via NAT, the MAC address from the first 
 (Image 3)
 
 
-## Hard drive detection
+### Hard drive detection
 
 The hard drive selection for installation will use following rules
 1. Search for old installation and use this hard drive (Image 1,2 & 3)
@@ -57,7 +58,36 @@ The hard drive selection for installation will use following rules
 (Image 5)
 
 
-### Ubuntu Support
+## VM Installation
+
+### Firmware
+
+The VM requires UEFI as Firmware Type.
+
+![install-jammy](images/docs/install-jammy/install-jammy6.png)
+
+
+
+### Network
+
+It is possible to install Ubuntu Jammy on a VM while the host is in home office.
+
+The Host still needs to be connected to Mercedes Benz network. (e.g. via VPN)
+
+While for onsite installation, Bridged and NAT network mode will work, installation in home office or if the host is connected via wifi, the VM needs NAT network.
+
+![install-jammy](images/docs/install-jammy/install-jammy7.png)
+
+
+If Bridged mode is used, the MAC address (can be found in network informations, IT-Shop) needs to be set in the VM settings.
+
+![install-jammy](images/docs/install-jammy/install-jammy8.png)
+
+![install-jammy](images/docs/install-jammy/install-jammy9.png)
+
+
+
+## Ubuntu Support
 
 Reachable via Mercedes Benz Teams or ticket system
 
