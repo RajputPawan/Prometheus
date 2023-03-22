@@ -6,3 +6,4 @@ source "https://rubygems.org"
 # to publich without github page
 gem "jekyll"
 gem "kramdown-parser-gfm"
+gem "webrick", "~> 1.8"

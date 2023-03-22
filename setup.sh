@@ -7,4 +7,5 @@ echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 gem install jekyll bundler
 sudo chown -R $USER _site/
+bundle install
 bundle exec jekyll serve
