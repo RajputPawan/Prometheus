@@ -116,6 +116,10 @@ entries:
     - title: Ubuntu 22 (Jammy) Installation
       url: /install-jammy.html
       output: web, pdf
+    
+    - title: Docker Podman overview
+      url: /docker-podman-overview.html
+      output: web, pdf 
 
     - title: Rescue Mode
       url: /rescue-mode.html
@@ -141,3 +145,4 @@ entries:
     - title: Microsoft Teams
       url: /msteams.html
       output: web, pdf
+
