@@ -18,12 +18,12 @@ basic backup needs and for those who prefer a user-friendly interface.
 However, it may not have as many advanced features as Deja-Dup.
 
 `Deja-Dup` is a more powerful backup solution that provides advanced features
-such as encryption, compression, incremental backups, and remote backups. It is
-a command-line tool that may require some technical knowledge to set up and
-use, but it provides greater flexibility and control over your backups.
-Deja-Dup uses `Duplicity` as the backend.
+such as encryption, compression, incremental backups, via its backend tool
+[duplicity](https://manpages.ubuntu.com/manpages/jammy/man1/duplicity.1.html).
+This command-line tool may require some technical knowledge to
+set up and use, but it provides greater flexibility and control over your backups.
 
-Both tools are pre-installed on RD Ubuntu Clients.
+Both tools are pre-installed on RD Ubuntu Clients, EXCEPT on vanilla flavors.
 
 ### Setup - luckybackup
 
@@ -38,7 +38,7 @@ On startup the follwoing window shows up:
 
 ![backup_1](images/docs/backup-user-data/luckybackkup-startup.png)
 
-To create a backup task Click on the icon at the right side: `+ add` 
+To create a backup task, Click on the icon at the right side: `+ add` 
 then the following window appears:
 
 ![backup_3](images/docs/backup-user-data/luckybackup-add.png)
@@ -64,7 +64,7 @@ Click `Okay`
 
 You get back to the task list. 
 
-Now you have to select the backup task.
+Now you have to **select** the backup task.
 
 You have the option to click on `Dry`, should you wish to perform a dry run of
 the backup task.
@@ -83,8 +83,8 @@ performed) backup run.
 
 Click `Done` which brings you back to the task list.
 
-Say you want to regularly perform this backup task, for which the cron facility
-will be used:
+Say you want to regularly perform this backup task, for which the **cron**
+utility will be used:
 
 Click `Schedule` (round button or select Profile/Schedule).
 
@@ -108,11 +108,11 @@ Click `Okay` then `close` which  brings you back to the task list.
 
 Click the `Quit` button, or select Profile/Quit to exit luckybackkup.
 
-As luckybackup is **rsync** based, the saved files are accessible by
-standard Linux commands on the backup location, in case you want to retrieve
-individual files. You also have the option to create a **restore task** by
-selecting a backup task from within the task list then selecting Task/Create
-Restore task and follow the instructions.
+As [luckybackup](https://manpages.ubuntu.com/manpages/jammy/man8/luckybackup.8.html)
+is **rsync** based, the saved files are accessible by standard Linux commands
+on the backup location, in case you want to retrieve individual files. You also
+have the option to create a **restore task** by selecting a backup task from
+within the task list by selecting Task/Create Restore task and follow the instructions.
 
 
 ### Setup - deja-dup
@@ -140,8 +140,8 @@ Via `+` and/or `-` select what you intend to backup, by selecting the
 
 Click `Forward`
 
-Select `Storage Location`, where you have the options `Local Folder`,
-`Network Server`, and `Google Drive`.
+Select `Storage Location`, where you have the options `Local Folder` and
+`Network Server`.
 
 You have the option to protect your backup by providing a password, otherwise
 select `Allow restoring without a password`.
@@ -153,6 +153,11 @@ Overview window:
 
 Note, via the Triple Bar (aka hamburger menu) you may select `Preferences` to change
 the backup specification.
+
+For making use of advanced features of
+[deja-dup](https://manpages.ubuntu.com/manpages/jammy/man1/deja-dup.1.html),
+see the manual page of the command line tool
+[duplicity](https://manpages.ubuntu.com/manpages/jammy/man1/duplicity.1.html).
 
 ### Documentation
 
