@@ -1,10 +1,10 @@
 ---
-title: E-Mail using Evolution with EWS plugin  
+title: E-Mail using Evolution with EWS plugin
 permalink: evolution.html
 sidebar: default_sidebar
 tags: [docs]
-keywords: disk encryption, encryption, o365
-last_updated: January 18, 2023
+keywords: email, mail, outlook, office, o365
+last_updated: June 22, 2023
 toc: true
 folder: docs
 ---
@@ -28,7 +28,7 @@ Fill in the details as shown in these pictures.
 
 Enter in Username your @mercedes-benz.com Email address
 
-Enter in Host URL: https://outlook.office365.com/EWS/Exchange.asmx
+Enter in Host URL: <https://outlook.office365.com/EWS/Exchange.asmx>
 
 Instead of "NTLM" choose "OAuth2 (Office365)"
 
@@ -50,7 +50,15 @@ You should see the following picture:
 
 Click OK
 
-Note: Emails can also be read in the web browser via this link: https://outlook.office.com/
+Note: Emails can also be read in the web browser via this link: <https://outlook.office.com/>
+
+#### Known Issues
+
+![EvolutionErrorAzureAD](images/docs/evolution/EvolutionErrorAzureAD.png)
+
+If you see an error message "Your administrator has cofigured the Application GNOME Evolution EWS [...] to block users unless they are specifically granted [...]" you most likely are not part of the AzureAD group that is allowed to use Evolution as email client.
+
+You can request to have your users added to this group by sending an email to [michael.denison@mercedes-benz.com](mailto:michael.denison@mercedes-benz.com) or [ubuntu@mercedes-benz.com](mailto:ubuntu@mercedes-benz.com) and request to be added to az_059_UbuntuUsers group or a subgroup.
 
 ### Setup (mailbox not yet migrated to O365)
 
@@ -79,7 +87,6 @@ On startup the Evolution's inital configuration wizard shows up.
     6. Click OK
 3. Click Next multiple times until Done. Click Apply.
 4. Outlook connects to Daimler MS Exchange Server w/ full support for Mail, Calendar, Contacts and ToDo.
-
 
 ### Accessing shared calendars
 
