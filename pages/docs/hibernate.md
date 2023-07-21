@@ -52,7 +52,7 @@ Comment out old swap line and add a new line for /swapfile:
 /swapfile none swap sw 0 0
 ```
 
-Then, Activate the swap file:
+Then, activate the swap file:
 
 ```bash
 swapon -av
