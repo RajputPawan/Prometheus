@@ -36,7 +36,7 @@ chmod 000 /swapfile
 mkswap -L swapfile /swapfile
 ```
 
-Then, Disable old swap volume(s):
+Then, disable old swap volume(s):
 
 ```bash
 swapoff -av
@@ -52,7 +52,7 @@ Comment out old swap line and add a new line for /swapfile:
 /swapfile none swap sw 0 0
 ```
 
-Then activate the swap file:
+Then, Activate the swap file:
 
 ```bash
 swapon -av
