@@ -33,7 +33,7 @@ Thank you for visiting Mercedes-Benz RD Ubuntu Desktop User Documentation. In th
 |------|---------|
 | Service Desk | Provider: Wipro Technologies GmbH <br>Phone: +49 7031 90 89000 |
 | On-Site Support | Service Provider: Wipro <br>On-Site Service Request: Please open a ticket and wait for appointment |
-| Responsible Department | ITT/XE <br>Selim Arslanbek, selim.arslanbek@mercedes-benz.com, +49 151 58605238<br>Ralf Lange, ralf.r.lange@mercedes-benz.com, +49 151 58605728 |
+| Responsible Department | ITT/XE <br>Selim Arslanbek, <selim.arslanbek@mercedes-benz.com>, +49 151 58605238<br>Ralf Lange, <ralf.r.lange@mercedes-benz.com>, +49 151 58605728 |
 
 ## Hardware Basket
 

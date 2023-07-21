@@ -4,86 +4,112 @@ permalink: hibernate.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: hibernate, disk encryption, encryption, swap, small swap
-last_updated: Feburary 8, 2022
+last_updated: July 21, 2023
 toc: false
 folder: docs
 ---
 
 ## How to enable hibernate on Ubuntu laptop
 
-This howto was born as there persists a problem within Ubuntu standard deployments that causes very small
-swap partitions and therefore hibernation does not work properly. As users do not have access to the BIOS
-admin passphrase they cannot boot from a rescue system to change partitioning and therefore the only
-workaround is to have a swapfile on the encrypted disk.
+Ubuntu client deployments have very small swap partitions not suitable
+for hibernation (ACPI S4).  Since all disk space is already assigned
+to logical volumes, the swap area can not be extended.  The workaround
+is to have a swapfile on the encrypted disk. This requires a slight
+modification to the boot configuration which is described below.
 
-Tested on Dell Precision 7550 and 5560 with Ubuntu 20.04
+_This document has been updated because it had errors. Specifically, the
+UUID of the swapfile was used instead of the file system it resides on,
+preventing this guide from working._
 
-### create 32GB /swapfile, activate it and disable standard swap partition
+Tested on `HP ZBook Fury 15.6 inch G8` with Ubuntu 22.04.
+
+All commands and edits are assumed to be run with root privileges,
+either through `sudo` or a root shell.
+
+### Create /swapfile and disable old swap
+
+Allocate and format a swap file:
 
 ```bash
-sudo fallocate -l 32G /swapfile
-sudo chown root /swapfile
-sudo chmod 0600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
-sudo swapoff /dev/mapper/ubuntu-swap_1
+fallocate -l 32G /swapfile
+chmod 000 /swapfile
+mkswap -L swapfile /swapfile
 ```
 
-### add /swapfile to /etc/fstab and comment out previous swap partition
+Then, Disable old swap volume(s):
 
 ```bash
-#/dev/mapper/ubuntu-swap_1 none            swap    sw              0       0
-/swapfile   none    swap     sw      0       0
+swapoff -av
 ```
 
-### find out swapfile UUID
+### Edit /etc/fstab and activate /swapfile
 
-```bash
-$ sudo findmnt -no UUID -T /swapfile
-05742006-29c8-4a14-acd1-51eaca0ba05e
+Comment out old swap line and add a new line for /swapfile:
+
+/etc/fstab:
+```
+#[...]    none swap sw 0 0
+/swapfile none swap sw 0 0
 ```
 
-### find out physical offset of the swapfile
+Then activate the swap file:
 
 ```bash
-$ sudo filefrag -v /swapfile | grep " 0:" | awk '{print $4}' | cut -d. -f1
-87648256
+swapon -av
 ```
 
-### edit /etc/default/grub and add "resume=UUID=<UUID-from-step-3> resume_offset=<resume-offset-from-step-4" to GRUB_CMDLINE_LINUX_DEFAULT
-
-Example (**DO NOT USE those numbers, your system has different values!!!**):
+### Get filesystem UUID
 
 ```bash
-GRUB_CMDLINE_LINUX_DEFAULT=" splash mem_sleep_default=deep resume=UUID=05742006-29c8-4a14-acd1-51eaca0ba05e resume_offset=87648256"
+findmnt / | awk '{print $2}' | xargs blkid | cut -d'"' -f2
 ```
 
-### update grub
+This number will be referenced as `$UUID` from here on.
+
+### Get physical offset of the swapfile on the root filesystem
 
 ```bash
-sudo update-grub
+filefrag -v /swapfile | head -n4 | tail -n1 | awk '{print $4}' | cut -d. -f1
 ```
 
-### edit /etc/initramfs-tools/conf.d/resume and replace the content with "RESUME=UUID=<UUID-from-step-3> resume_offset=<resume-offset-from-step-4"
+This number will be referenced as `$OFFSET` from here on.
 
-Example (**DO NOT USE those numbers, your system has different values!!!**):
+### Edit /etc/default/grub and update grub config
+
+Add `resume=UUID=$UUID resume_offset=$OFFSET` to the variable string
+`GRUB_CMDLINE_LINUX_DEFAULT` in /etc/default/grub.
+
+(Replace the placeholders with your values.)
+
+Then, run:
 
 ```bash
-RESUME=UUID=05742006-29c8-4a14-acd1-51eaca0ba05e resume_offset=87648256
+update-grub
 ```
 
-### udpate initramfs (warning message can be ignored)
+### Edit /etc/initramfs-tools/conf.d/resume and update initramfs
+
 
 ```bash
-$ sudo update-initramfs -c -k all
-W: initramfs-tools configuration sets RESUME=UUID=05742006-29c8-4a14-acd1-51eaca0ba05e
-W: but no matching swap device is available
+RESUME=UUID=$UUID resume_offset=$OFFSET
 ```
 
-### enable hibernate in desktop environment
+(Replace the placeholders with your values.)
+
+Update initramfs like so:
 
 ```bash
-$ sudo tee /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla >/dev/null << EOF
+update-initramfs -u -k all
+```
+
+Warnings can be ignored.
+
+### Enable hibernate in desktop environment
+
+(TODO: Check if this section still applies 1:1.)
+
+```bash
+$ tee /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla >/dev/null << EOF
 [Re-enable hibernate by default in upower]
 Identity=unix-user:*
 Action=org.freedesktop.upower.hibernate
@@ -96,15 +122,19 @@ ResultActive=yes
 EOF
 ```
 
-### manually hibernate or suspend-then-hibernate
+### Manually hibernate or suspend-then-hibernate
 
 ```bash
-sudo systemctl hibernate
-sudo systemctl suspend-then-hibernate
+systemctl hibernate
+systemctl suspend-then-hibernate
 ```
 
-There are also some additional settings for hibernate and sleep in systemd that can be adjusted in `/etc/systemd/sleep.conf`.
+Also try the hibernate menu of your desktop after a reboot.
+
+There are also some additional settings for hibernate and sleep in
+systemd that can be adjusted in `/etc/systemd/sleep.conf`.
 
 ### Credits
 
-Thank you for providing this information / how-to, Alexander Kerner <alexander.kerner@mercedes-benz.com>
+Thank you for providing the originial how-to, Alexander Kerner <alexander.kerner@mercedes-benz.com>.
+Updated by <selim.arslanbek@mercedes-benz.com>.
