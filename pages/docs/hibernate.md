@@ -33,7 +33,7 @@ Allocate and format a swap file:
 ```bash
 fallocate -l 32G /swapfile
 chmod 000 /swapfile
-mkswap -L swapfile /swapfile
+mkswap /swapfile
 ```
 
 Then, disable old swap volume(s):
