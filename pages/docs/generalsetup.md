@@ -60,6 +60,18 @@ In addition there must be ordered the QEV111AH31LR (DL CLIENT ADMIN USER UBUNTU)
 
 ## VPN
 
+### UPDATE - Zscaler
+
+While the VPN options mentioned below might still work, ZScaler will soon be the default and preferred VPN.
+You can already try it if you have `sudo` permissions:
+
+    sudo salt-call state.apply client.zscaler
+    sudo systemctl restart zsaservice.service zstunnel.service
+
+### legacy VPNs
+
+(TODO update the rest of this section)
+
 We currently have three options to vpn into Mercedes-Benz Corporate Network. One recent "GREEN2GO" is faster and removes Proxy-Requirement - but it needs sudo interaction of the users.
 
 You can see the instructions for Green2Go on the Github Project Readme: [https://git.i.mercedes-benz.com/Ubuntu-Tools/green](https://git.i.mercedes-benz.com/Ubuntu-Tools/green)
