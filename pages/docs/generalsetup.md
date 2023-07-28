@@ -60,15 +60,15 @@ In addition there must be ordered the QEV111AH31LR (DL CLIENT ADMIN USER UBUNTU)
 
 ## VPN
 
-### UPDATE - Zscaler
+### BETA - ZScaler
 
-While the VPN options mentioned below might still work, ZScaler will soon be the default and preferred VPN.
+ZScaler VPN is currently in testing phase and might become the default VPN soon.
 You can already try it if you have `sudo` permissions:
 
     sudo salt-call state.apply client.zscaler
     sudo systemctl restart zsaservice.service zstunnel.service
 
-### legacy VPNs
+### Other available VPNs
 
 (TODO update the rest of this section)
 
