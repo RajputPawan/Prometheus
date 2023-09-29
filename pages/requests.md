@@ -1,9 +1,18 @@
 ---
-title: "Mercedes-Benz Ubuntu RD Desktop Webtickets"
+title: "Ubuntu RD Desktop Webtickets (SNOW, deprecated)"
 keywords: ubuntu documentation webticket ticket request
 sidebar: default_sidebar
 permalink: requests.html
 ---
+
+## Deprecation note
+
+__ServiceNow is sundowning the previously used "Individual Service Requests"
+starting in 09/2023. While the below guide might still work for some time after
+this date, the new solution is to use an [Inquiry/help ticket as described
+here](inquiry-help.html).__
+
+## Motivation
 
 If you have a request that a something should be changed to address your requirements you should create a individual service request ticket.
 

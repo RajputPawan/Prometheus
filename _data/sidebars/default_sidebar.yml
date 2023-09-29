@@ -28,7 +28,12 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: Service Requests
+    - title: Service Requests (new)
+      url: /inquiry-help.html
+      output: web, pdf
+      type: homepage
+
+    - title: Service Requests (deprecated)
       url: /requests.html
       output: web, pdf
       type: homepage
