@@ -86,6 +86,10 @@ entries:
       url: /evolution.html
       output: web, pdf
 
+    - title: Automount /whome
+      url: /whome.html
+      output: web, pdf
+
     - title: x2go
       url: /x2go.html
       output: web, pdf
