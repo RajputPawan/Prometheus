@@ -9,12 +9,12 @@ folder: docs
 
 ## Introduction
 
-Users coming from the standard Windows Client environment are used to the
-"My Documents" Folder for their user to be synchronized with a network share.
+Users coming from the standard Windows client environment are used to the
+"My Documents" folder for their user to be synchronized with a network share.
 
 ![My Documents on Windows](images/whome/win.png)
 
-This Folder is also by default available on Ubuntu clients, but was not
+This folder is also by default available on Ubuntu clients, but was not
 documented until now.
 
 ## Access through /whome/$USER
