@@ -30,6 +30,8 @@ topnav_dropdowns:
           url: /macaddress_passthrough.html
         - title: Evolution with EWS plugin
           url: /evolution.html
+        - title: /whome
+          url: /whome.html
         - title: x2go
           url: /x2go.html
         - title: PX-Proxy
