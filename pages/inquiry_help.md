@@ -23,7 +23,7 @@ Please open <https://servicenow.i.mercedes-benz.com/esc?id=sc_category>.
 
 ### Select the Service Offering
 
-Typing in the text fields will show suggestions. Type **ubuntu** as
+Typing in the text fields will show suggestions. Type `*ubuntu` as
 ServiceNow searches "Begins with" by default and select **GEO Client
 Operations Ubuntu Linux**.
 
