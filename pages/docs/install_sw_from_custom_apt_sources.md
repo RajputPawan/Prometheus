@@ -4,7 +4,7 @@ permalink: install_sw_from_custom_apt_sources.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: apt
-last_updated: January 13, 2021
+last_updated: October 26, 2023
 toc: true
 folder: docs
 ---
@@ -22,30 +22,39 @@ Knowing about this necessity you can easily work around this by doing a apt upda
 To have a properly working apt you need to make sure you have a fully working source-parts directory:
 
 ## Prepare your environment
+Copy below lines, paste them to a open terminal session and hit enter.
+
 
 ```bash
 mkdir -p ~/apt/custom-sources.list.d/ ~/apt/sources.list.d/
-cat <<EOF >>~/apt/update.sh
+cat << EOF >>~/apt/update.sh
 #!/bin/bash
-rsync -rv --delete /etc/apt/sources.list.d/ ~/apt/sources.list.d/
-rsync -rv ~/apt/custom-sources.list.d/ ~/apt/sources.list.d/
-homedir=$(realpath ~)
-sourceparts="${homedir}/apt/sources.list.d/"
+homedir=\$(realpath ~)
+sourceparts="\${homedir}/apt/sources.list.d/"
 http_proxy="http://127.0.0.1:3128"
-https_proxy=$http_proxy
-sudo -E http_proxy="http://127.0.0.1:3128" https_proxy="http://127.0.0.1:3128" apt-get update -o Dir::Etc::SourceParts=${sourceparts}
-sudo -E http_proxy="http://127.0.0.1:3128" https_proxy="http://127.0.0.1:3128" apt-get dist-upgrade -o Dir::Etc::SourceParts=${sourceparts}
-EOF
-chmod +x ~/apt/update.sh
+https_proxy="\${http_proxy}"
 
 ## Put your custom sources.list files here: ~/apt/custom-sources.list.d/
 rsync -rv --delete /etc/apt/sources.list.d/ ~/apt/sources.list.d/
 rsync -rv ~/apt/custom-sources.list.d/ ~/apt/sources.list.d/
+
+sudo -E http_proxy="\${http_proxy}" https_proxy="\${https_proxy}" apt-get update -o Dir::Etc::SourceParts="\${sourceparts}"
+sudo -E http_proxy="\${http_proxy}" https_proxy="\${https_proxy}" apt-get dist-upgrade -o Dir::Etc::SourceParts="\${sourceparts}"
+echo
+echo "To install a package run:"
+echo "-------------------------"
+echo
+echo "sudo -E http_proxy=\${http_proxy} https_proxy=\${https_proxy} apt-get install -o Dir::Etc::SourceParts=\${sourceparts} <packagename>"
+echo
+EOF
+chmod +x ~/apt/update.sh
 ```
 
-Now you can easily add your own sources to `~/apt/custom-sources.lists.d/` and run the last two commands to setup your personal sourceparts directory.
+This will create a script file `~/apt/update.sh`.
 
-Running the `~/apt/update.sh` script pulls the external sources and you can install your custom sofware.
+Now you can easily add your own sources to `~/apt/custom-sources.lists.d/`.
+
+Running the `~/apt/update.sh` script now pulls the external sources and you can install your custom sofware.
 
 ## Speedup Upgrades when working from home
 
