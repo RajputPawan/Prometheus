@@ -48,3 +48,5 @@ topnav_dropdowns:
           url: /install-jammy.html
         - title: Rescue Mode
           url: /rescue-mode.html
+        - title: Full Partition
+          url: /full-partition.html
