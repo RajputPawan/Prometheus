@@ -155,6 +155,10 @@ entries:
           url: /git_hotfix_workflow.html
           output: web, pdf
 
+    - title: Full Partition
+      url: /full-partition.html
+      output: web, pdf
+
     - title: Microsoft Teams
       url: /msteams.html
       output: web, pdf
