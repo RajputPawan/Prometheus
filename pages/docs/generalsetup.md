@@ -4,7 +4,7 @@ permalink: generalsetup.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: disk encryption, encryption
-last_updated: July 11, 2022
+last_updated: November 27, 2023
 toc: true
 folder: docs
 ---
@@ -60,27 +60,26 @@ In addition there must be ordered the QEV111AH31LR (DL CLIENT ADMIN USER UBUNTU)
 
 ## VPN
 
-### BETA - ZScaler
+### BETA - Zscaler
 
-ZScaler VPN is currently in testing phase and might become the default VPN soon.
+Zscaler VPN is currently in testing phase and is set to become the default VPN soon.
 You can already try it if you have `sudo` permissions:
 
     sudo salt-call state.apply client.zscaler
     sudo systemctl restart zsaservice.service zstunnel.service
 
-### Other available VPNs
+Authentication happens in the Zscaler Client Connector app with your
+credentials.
 
-(TODO update the rest of this section)
+* `<username>@<full-domain>` like `...@emea.corpdir.net`
+* `<username>@mercedes-benz.com` works too. _Note that this is not
+  the same as your email address!_
 
-We currently have three options to vpn into Mercedes-Benz Corporate Network. One recent "GREEN2GO" is faster and removes Proxy-Requirement - but it needs sudo interaction of the users.
+### Certificate-authenticated access: alwayson (legacy option 1)
 
-You can see the instructions for Green2Go on the Github Project Readme: [https://git.i.mercedes-benz.com/Ubuntu-Tools/green](https://git.i.mercedes-benz.com/Ubuntu-Tools/green)
-
-The two legacy access variants work out of the box. Both use a connection via openconnect through a Juniper Pulse gateway.
-
-### Certificate-authenticated access
-
-All new enrolled systems come with a set of certificates for the usage of VPN and Wifi / WLAN. All systems have a VPN GUI preinstalled called "Daimler VPN"
+All new enrolled systems come with a set of certificates for the usage
+of VPN and Wifi / WLAN. All systems have a VPN GUI for the (legacy)
+VPN preinstalled called "Daimler VPN"
 
 ![vpn_1](images/docs/general_setup/vpn_1.png) ![vpn_2](images/docs/general_setup/vpn_2.png)
 
@@ -88,7 +87,7 @@ After starting the GUI, you can connect by selecting "Connection" → "Start Dai
 
 Alternatively, run daimler-vpn on a console.
 
-### Ping.ID authenticated access
+### Ping.ID authenticated access (legacy option 2)
 
 Your user must be granted to use AlwaysOn (AlwaysOn User (EMEA) (QEV111AGDB8A)) and afterwards you are able to login to the "Token" VPN by typing the 6 digit One-Time Passcode of the Ping.ID app.
 
