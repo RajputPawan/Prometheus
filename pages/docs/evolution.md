@@ -4,7 +4,7 @@ permalink: evolution.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: email, mail, outlook, office, o365
-last_updated: June 22, 2023
+last_updated: November 30, 2023
 toc: true
 folder: docs
 ---
@@ -51,6 +51,26 @@ You should see the following picture:
 Click OK
 
 Note: Emails can also be read in the web browser via this link: <https://outlook.office.com/>
+
+#### OAUTH2 authorization via an external browser
+
+Due to changes in the scripts redirecting requests to sso.mercedes-benz.com and login.microsoft.com, the embedded browser component no longer can be used for oauth2 authorization. The Ubuntu Operations RD Team therefore backported upstream patches to allow the use of an external browser for the authorization part.
+
+When the authorization dialog opens in the embedded component, click on the small arrow symbol in the right corner of the address line.
+
+![evolution_oauth2_1](images/docs/evolution/evolution-oauth2-1.jpg)
+
+This will open the same dialog in the default browser. Here the one can continue with the regular logon/PingID procedure.
+
+After a successfull authorization the page in the external browser will be redirected to a login.microsoft.com page without content.
+
+![evolution_oauth2_2](images/docs/evolution/evolution-oauth2-2.jpg)
+
+Copy the entire address line.
+
+![evolution_oauth2_3](images/docs/evolution/evolution-oauth2-3.jpg)
+
+Now paste the copied address to the authorization code field in evolution and click on continue to finish the authorization process.
 
 #### Known Issues
 
