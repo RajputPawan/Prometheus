@@ -86,7 +86,7 @@ entries:
       url: /evolution.html
       output: web, pdf
 
-    - title: Automount /whome
+    - title: Automount /whome and /remote
       url: /whome.html
       output: web, pdf
 
