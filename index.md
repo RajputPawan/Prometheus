@@ -42,7 +42,13 @@ site.baseurl }}/inquiry-help.html)
 |------|---------|
 | Service Desk | Provider: Wipro Technologies GmbH <br>Phone: +49 7031 90 89000 |
 | On-Site Support | Service Provider: Wipro <br>On-Site Service Request: Please open a ticket and wait for appointment |
-| Responsible Department | ITT/XE <br>Selim Arslanbek, <selim.arslanbek@mercedes-benz.com>, +49 151 58605238<br>Ralf Lange, <ralf.r.lange@mercedes-benz.com>, +49 151 58605728 |
+| Responsible Department | ITT/XE |
+| Contacts | Selim Arslanbek, <selim.arslanbek@mercedes-benz.com>, +49 151 58605238<br>Ralf Lange, <ralf.r.lange@mercedes-benz.com>, +49 151 58605728 |
+
+## Links
+
+* [Social Intranet](https://social.cloud.corpintra.net/groups/ubunturd)
+* [Teams Channel](https://teams.microsoft.com/l/team/19%3a5c38f4f2dc2840429e29b64a2eb82aae%40thread.tacv2/conversations?groupId=13fe2da7-5cab-4525-9f67-b54eefb7a8ca&tenantId=9652d7c2-1ccf-4940-8151-4a92bd474ed0)
 
 ## Hardware Basket
 
