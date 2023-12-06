@@ -1,7 +1,7 @@
 ---
 title:  "Evolution login and MFA issue: solution found."
 published: true
-permalink: 2022-12-06-evolution_oauth2.html
+permalink: 2023-12-06-evolution_oauth2.html
 summary: "A workaround for the recent issue regarding PingID login has beed
          rolled out."
 tags: [news]
