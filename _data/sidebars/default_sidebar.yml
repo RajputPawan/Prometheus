@@ -54,91 +54,127 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: ADTF installation + license request
-      url: /adtf.html
-      output: web, pdf
-
-    - title: General Computer Setup
-      url: /generalsetup.html
-      output: web, pdf
-
-    - title: Sudo / Local Admin
-      url: /local_admin_rights.html
-      output: web, pdf
-
-    - title: Nvidia & Cuda setup
-      url: /nvidia.html
-      output: web, pdf
-
-    - title: Enable Hibernate
-      url: /hibernate.html
-      output: web, pdf
-
-    - title: Alternative default shell
-      url: /shell.html
-      output: web, pdf
-
-    - title: MAC address passthrough
-      url: /macaddress_passthrough.html
-      output: web, pdf
-
-    - title: Evolution with EWS plugin
-      url: /evolution.html
-      output: web, pdf
-
-    - title: Automount /whome and /remote
-      url: /whome.html
-      output: web, pdf
-
-    - title: x2go
-      url: /x2go.html
-      output: web, pdf
-
-    - title: PX-Proxy
-      url: /px_proxy.html
-      output: web, pdf
-
-    - title: custom apt sources
-      url: /install_sw_from_custom_apt_sources.html
-      output: web, pdf
-
-    - title: Experimental bluetooth settings & packages
-      url: /bt-next.html
-      output: web, pdf
-
-    - title: Kiosk Mode
-      url: /kiosk.html
-      output: web, pdf
-
-    - title: Backend Infrastructure
-      url: /backend_infrastructure.html
-      output: web, pdf
-
-    - title: Active Directory Selfservice
-      url: /ad-self-service.html
-      output: web, pdf
-
-    - title: Reinstall Ubuntu System
-      url: /reinstall-os.html
-      output: web, pdf
-
-    - title: Ubuntu 22 (Jammy) Installation
-      url: /install-jammy.html
-      output: web, pdf
-    
-    - title: Docker Podman overview
-      url: /docker-podman-overview.html
-      output: web, pdf 
-
-    - title: Backup User Data
-      url: /backup-user-data.html
-      output: web, pdf
-
-    - title: Rescue Mode
-      url: /rescue-mode.html
-      output: web, pdf
+    - title:
+      url:
+      output: web
 
       subfolders:
+      - title: General
+        output: web
+        subfolderitems:
+
+        - title: General Computer Setup
+          url: /generalsetup.html
+          output: web, pdf
+
+        - title: Sudo / Local Admin
+          url: /local_admin_rights.html
+          output: web, pdf
+
+        - title: Alternative default shell
+          url: /shell.html
+          output: web, pdf
+
+        - title: Backup User Data
+          url: /backup-user-data.html
+          output: web, pdf
+
+        - title: Automount /whome and /remote
+          url: /whome.html
+          output: web, pdf
+
+      - title: Email and Messaging
+        output: web
+        subfolderitems:
+
+          - title: Evolution with EWS plugin
+            url: /evolution.html
+            output: web, pdf
+
+          - title: Microsoft Teams
+            url: /msteams.html
+            output: web, pdf
+
+      - title: Proxy & Network
+        output: web
+        subfolderitems:
+
+        - title: PX-Proxy
+          url: /px_proxy.html
+          output: web, pdf
+
+        - title: MAC address passthrough
+          url: /macaddress_passthrough.html
+          output: web, pdf
+
+      - title: Installation
+        output: web
+        subfolderitems:
+
+        - title: Reinstall Ubuntu System
+          url: /reinstall-os.html
+          output: web, pdf
+
+        - title: Ubuntu 22 (Jammy) Installation
+          url: /install-jammy.html
+          output: web, pdf
+
+      - title: Troubleshooting
+        output: web
+        subfolderitems:
+
+        - title: Active Directory Selfservice
+          url: /ad-self-service.html
+          output: web, pdf
+
+        - title: Rescue Mode
+          url: /rescue-mode.html
+          output: web, pdf
+
+        - title: Full Partition
+          url: /full-partition.html
+          output: web, pdf
+
+      - title: Useful applications
+        output: web
+        subfolderitems:
+
+        - title: x2go
+          url: /x2go.html
+          output: web, pdf
+
+      - title: Advanced topics
+        output: web
+        subfolderitems:
+
+        - title: Custom apt sources
+          url: /install_sw_from_custom_apt_sources.html
+          output: web, pdf
+
+        - title: Nvidia & Cuda setup
+          url: /nvidia.html
+          output: web, pdf
+
+        - title: Docker & Podman
+          url: /docker-podman-overview.html
+          output: web, pdf
+
+        - title: Enable Hibernate
+          url: /hibernate.html
+          output: web, pdf
+
+        - title: Experimental bluetooth settings & packages
+          url: /bt-next.html
+          output: web, pdf
+
+      - title: Infrastructure
+        output: web
+        subfolderitems:
+
+        - title: Backend Infrastructure
+          url: /backend_infrastructure.html
+          output: web, pdf
+
       - title: Salt Workflow
         output: web
         subfolderitems:
@@ -155,11 +191,14 @@ entries:
           url: /git_hotfix_workflow.html
           output: web, pdf
 
-    - title: Full Partition
-      url: /full-partition.html
-      output: web, pdf
+      - title: Legacy Items
+        output: web
+        subfolderitems:
 
-    - title: Microsoft Teams
-      url: /msteams.html
-      output: web, pdf
+        - title: ADTF installation + license request
+          url: /adtf.html
+          output: web, pdf
 
+        - title: Kiosk Mode
+          url: /kiosk.html
+          output: web, pdf

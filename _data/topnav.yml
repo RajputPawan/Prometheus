@@ -16,37 +16,45 @@ topnav_dropdowns:
   folders:
     - title: Documentation
       folderitems:
-        - title: ADTF installation + license requests
-          url: /adtf.html
         - title: General Setup
           url: /generalsetup.html
-        - title: Nvidia and Cuda setup
-          url: /nvidia.html
-        - title: Enable Hibernate
-          url: /hibernate.html
+        - title: Sudo / Local Admin
+          url: /local_admin_rights.html
         - title: Alternative default shell
           url: /shell.html
-        - title: MAC address passthrough
-          url: /macaddress_passthrough.html
-        - title: Evolution with EWS plugin
-          url: /evolution.html
+        - title: Backup User Data
+          url: /backup-user-data.html
         - title: Automount /whome and /remote
           url: /whome.html
-        - title: x2go
-          url: /x2go.html
+        - title: Evolution with EWS plugin
+          url: /evolution.html
+        - title: Microsoft Teams
+          url: /msteams.html
         - title: PX-Proxy
           url: /px_proxy.html
-        - title: custom apt sources
-          url: /install_sw_from_custom_apt_sources.html
-        - title: Kiosk Mode
-          url: /kiosk.html
-        - title: Active Directory Self-Service
-          url: /ad-self-service.html
+        - title: MAC address passthrough
+          url: /macaddress_passthrough.html
         - title: Reinstall Ubuntu System
           url: /reinstall-os.html
         - title: Ubuntu 22 (Jammy) Installation
           url: /install-jammy.html
+        - title: Active Directory Self-Service
+          url: /ad-self-service.html
         - title: Rescue Mode
           url: /rescue-mode.html
         - title: Full Partition
           url: /full-partition.html
+        - title: x2go
+          url: /x2go.html
+        - title: Custom apt sources
+          url: /install_sw_from_custom_apt_sources.html
+        - title: Nvidia and Cuda setup
+          url: /nvidia.html
+        - title: Docker & Podman
+          url: /docker-podman-overview.html
+        - title: Enable Hibernate
+          url: /hibernate.html
+        - title: ADTF installation + license requests
+          url: /adtf.html
+        - title: Kiosk Mode
+          url: /kiosk.html
