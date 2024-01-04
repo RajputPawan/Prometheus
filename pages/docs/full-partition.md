@@ -4,11 +4,10 @@ permalink: full-partition.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: partition
-last_updated: December 5, 2022
+last_updated: January 4, 2024
 toc: true
 folder: docs
 ---
-
 
 ## Boot Partition
 
@@ -20,85 +19,65 @@ if your boot partiton is of size ~700MB in this case we suggest a reinstallation
 
 We can solve it only temporarily because the old 700MB partition size is to small for normal operations.
 
-
 Example:
 
 `df -h /boot`
 
-
 Output:
 
-Filesystem      Size  Used Avail Use% Mounted on
-
-/dev/nvme0n1p2  704M  498M  155M  77% /boot
-
-
+    Filesystem      Size  Used Avail Use% Mounted on
+    /dev/nvme0n1p2  704M  498M  155M  77% /boot
 
 ## Root Partition
 
 If your root partition is affected, you can check recursively with (via terminal)
 
-`du -xhd1 <path>`		(beginning with <path> = /)
+`du -xhd1 <path>` (beginning with `<path> = /`)
 
 or
 
-`du -xsh <path>`		(beginning with <path> = /*)
+`du -xsh <path>` (beginning with `<path> = /*`)
 
 which directory consumes the most or nearly all space.
-
 
 You can also sort the results where the highest amount is at the bottom
 
 `du -xhd1 <path> | sort -h`
 
-
 Example: (maybe the most common case where docker containers/cache using the most space)
 
 `du -xhd1 / | sort -h`
 
-
 Output:
 
-...
+    [...]
+    3.2G /lib
+    48G  /var
+    81G  /
 
-3.2G	/lib
-
-48G		/var
-
-81G		/					(the last line can be ignored)
-
-
+(the last line can be ignored)
 
 `du -xhd1 /var | sort -h`
 
-
 Output:
 
-...
+    [...]
+    13G /var/log
+    36G /var/lib
+    48G /var/
 
-13G	/var/log
-
-36G	/var/lib
-
-48G	/var/					(the last line can be ignored)
-
-
+(the last line can be ignored)
 
 `du -xhd1 /var/lib | sort -h`
 
-
 Output:
 
-...
+    [...]
+    131M /var/lib/apt
+    35G  /var/lib/containers
+    36G  /var/lib
 
-131M	/var/lib/apt
-
-35G	/var/lib/containers
-
-36G	/var/lib				(the last line can be ignored)
-
-
-
+(the last line can be ignored)
 
 ## Ubuntu Support
 
