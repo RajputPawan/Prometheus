@@ -71,16 +71,20 @@ entries:
           url: /local_admin_rights.html
           output: web, pdf
 
+        - title: Domain Passwords
+          url: /domain_password_change.html
+          output: web, pdf
+
+        - title: Automount /whome and /remote
+          url: /whome.html
+          output: web, pdf
+
         - title: Alternative default shell
           url: /shell.html
           output: web, pdf
 
         - title: Backup User Data
           url: /backup-user-data.html
-          output: web, pdf
-
-        - title: Automount /whome and /remote
-          url: /whome.html
           output: web, pdf
 
       - title: Email and Messaging
