@@ -20,6 +20,8 @@ topnav_dropdowns:
           url: /generalsetup.html
         - title: Sudo / Local Admin
           url: /local_admin_rights.html
+        - title: Domain Passwords
+          url: /domain_password_change.html
         - title: Alternative default shell
           url: /shell.html
         - title: Backup User Data
