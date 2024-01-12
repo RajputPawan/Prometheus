@@ -35,7 +35,7 @@ That being said, if you just want to know how to properly change your domain pas
 
 This summary does not aim to be comprehensive in any way, nor 100% accurate.
 
-Whenever you authenticate to your computer(for example via sshd or a Desktop Manager login screen), you start your authentication and authorization journey hitting your systems NSS lookup function. NSS will try to get the user details of the user logging in.
+Whenever you authenticate to your computer (for example via sshd or a Desktop Manager login screen), you start your authentication and authorization journey hitting your systems NSS lookup function. NSS will try to get the user details of the user logging in.
 
 Where to look for them is defined system-wide in `/etc/nsswitch.conf`, in our case(truncated output):
 
@@ -47,7 +47,7 @@ automount: sss
 
 The above means, first look in local files (`/etc/passwd, /etc/group`), then fallback to SSSD.
 
-Ubuntu RD OS images are configured to use domain credentials exclusively\*. SSSD will retrieve user details from a (randomized) list of OpenLDAP slave servers, which may vary depending on your clients location. We also configure Kerberos as the primary authentication provider and configure sssd to cache account(nss), authentication(pam) and domain credential information.  
+Ubuntu RD OS images are configured to use domain credentials exclusively\*. SSSD will retrieve user details from a (randomized) list of OpenLDAP slave servers, which may vary depending on your clients location. We also configure Kerberos as the primary authentication provider and configure sssd to cache account (nss), authentication (pam) and domain credential information.  
 Here is the simplified `/etc/sssd/sssd.conf`:
 
 ```bash
@@ -75,7 +75,7 @@ krb5_store_password_if_offline = true # Will store the TGT
 ldap_uri = ldap://ldap02.rd.corpintra.net,ldap://ldap03.rd.corpintra.net,ldap://ldap01.rd.corpintra.net
 ```
 
-As SSSD caches user details on-demand, and can only do a LDAP lookup (for an unknown user) when OpenLDAP servers are reachable, its important to always first login to a newly-installed system while it is connected to the corporate NW(can be done via SSH) if you plan to work from a remote location.
+As SSSD caches user details on-demand, and can only do a LDAP lookup (for an unknown user) when OpenLDAP servers are reachable, its important to always first login to a newly-installed system while it is connected to the corporate NW (can be done via SSH) if you plan to work from a remote location.
 
 Once your sshd or Desktop Manager successfully fetches your user details, it will by default continue the authentication process using the Linux PAM subsystem[^6]. PAM configuration is split into 4 main categories. Below a summary in the order of execution:
 
@@ -140,9 +140,9 @@ password	required			pam_permit.so
 password	optional	pam_gnome_keyring.so
 ```
 
-As you can probably see by now, passwd first triggers the pam_pwquality module, then pam_krb5(skips the next 3 on success), and only if not successful falls-back to the default pam_unix.so module(which would fail by default) and pam_sss(which would again trigger a sssd-based krb5 call as this is the domain auth provider configured in sssd).
+As you can probably see now (ignoring most of the module details), passwd first triggers the pam_pwquality module, then pam_krb5 (for UID ≥ 1000, skips the next 3 on success), and only if not successful falls-back to the default pam_unix.so module (which would fail by default) and pam_sss (which would again trigger a sssd-based krb5 password change because of `chpass_provider = krb5` configured in sssd.conf for the domain).
 
-Using `kpasswd` will directly read your `/etc/krb5.conf` to talk to the configured domain(TGS) and fail right away on error(which is what we want given our setup). As krb5 uses the same credential(TGT) cache as sssd(FILE:/tmp/krb5cc_%U), it will update/trigger an update without an potential PAM roundtrip. T also update your pam_ccreds cache, you would need to trigger the common-auth module somehow - which is where your favorite screen-saver comes into the picture:
+Using `kpasswd` will directly read your `/etc/krb5.conf` to talk to the configured domain(TGS) and fail right away on error (which is what we want in our setup). As krb5 uses the same credential (TGT) cache as sssd (FILE:/tmp/krb5cc_%U), it will update/trigger an update without a potential PAM roundtrip. To also update your pam_ccreds cache, you would need to trigger the common-auth module somehow - which is where your favorite screen-saver comes into the picture:
 
 ```
 $ cat /etc/pam.d/gnome-screensaver
@@ -150,7 +150,7 @@ $ cat /etc/pam.d/gnome-screensaver
 auth optional pam_gnome_keyring.so
 ```
 
-Now that you some idea of the general process :)
+Now that you have some idea of the general process :)
 
 ### How to (properly) change your domain password
 
