@@ -140,9 +140,9 @@ password	required			pam_permit.so
 password	optional	pam_gnome_keyring.so
 ```
 
-As you can probably see by now, passwd first triggers the pam_pwquality module, then pam_krb5(skips the next 3 on success), and only if not successful falls-back to the default pam_unix.so module(which would fail by default) and pam_sss(which would again trigger a sssd-based krb5 call as this is the domain auth provider configured in sssd).
+As you can probably can see now, passwd first triggers the pam_pwquality module, then pam_krb5(skips the next 3 on success), and only if not successful falls-back to the default pam_unix.so module(which would fail by default) and pam_sss(which would again trigger a sssd-based krb5 call as this is the domain auth provider configured in sssd).
 
-Using `kpasswd` will directly read your `/etc/krb5.conf` to talk to the configured domain(TGS) and fail right away on error(which is what we want given our setup). As krb5 uses the same credential(TGT) cache as sssd(FILE:/tmp/krb5cc_%U), it will update/trigger an update without an potential PAM roundtrip. T also update your pam_ccreds cache, you would need to trigger the common-auth module somehow - which is where your favorite screen-saver comes into the picture:
+Using `kpasswd` will directly read your `/etc/krb5.conf` to talk to the configured domain(TGS) and fail right away on error(which is what we want in our setup). As krb5 uses the same credential(TGT) cache as sssd(FILE:/tmp/krb5cc_%U), it will update/trigger an update without a potential PAM roundtrip. To also update your pam_ccreds cache, you would need to trigger the common-auth module somehow - which is where your favorite screen-saver comes into the picture:
 
 ```
 $ cat /etc/pam.d/gnome-screensaver
@@ -150,7 +150,7 @@ $ cat /etc/pam.d/gnome-screensaver
 auth optional pam_gnome_keyring.so
 ```
 
-Now that you some idea of the general process :)
+Now that you have some idea of the general process :)
 
 ### How to (properly) change your domain password
 
