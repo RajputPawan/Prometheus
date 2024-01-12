@@ -47,7 +47,7 @@ To be able to use your microphone and camera in GEW you need to change the defau
 As of today there is no officially supported email client on Linux. You can access your email and calendar with these solutions:
 
 1. Use Outlook on [Terminalserver / GEW](#windows-terminalserver) or on a Windows pc
-2. Use the Outlook WebAccess: [https://webmail.wp.corpshared.net](https://webmail.wp.corpshared.net/owa/) (encrypted email not supported)
+2. Use the Outlook WebAccess: [https://outlook.office.com](https://outlook.office.com/) (encrypted email not supported) or the preinstalled Chrome/Edge PWA
 3. Use Evolution with EWS Plugin (encrypted email not supported)
 4. Use Thunderbird with EWS Plugin (encrypted email not supported)
 
