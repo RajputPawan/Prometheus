@@ -29,7 +29,7 @@ systemd-timesyncd[...]: Timed out waiting for reply from 100.64.1.36:123 (time1.
 
 #### Timeline
 
-* 2024-12-06: reported
+* 2023-12-06: reported
 * 2024-01-31: reported again
 
 ### VNC
