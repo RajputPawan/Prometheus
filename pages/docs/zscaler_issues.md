@@ -34,14 +34,11 @@ systemd-timesyncd[...]: Timed out waiting for reply from 100.64.1.36:123 (time1.
 
 ### VNC
 
-TCP Port Range 5900 - 5999.
+TCP Port Range 5900 - 5999, e.g. to cmtcdeu68384635.rd.corpintra.net
 
 #### Timeline
 
 * 2023-11-17: reported
-
-
-
 
 ### MTTF Dashboards
 
