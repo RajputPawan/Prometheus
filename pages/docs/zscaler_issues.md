@@ -48,3 +48,15 @@ http://smtcagd00321.rd.corpintra.net:5602/
 
 * 2023-11-xx: requested to be opened not working since
 * still not working, works when tunneling through ssh on workstation which is in DCN but this is veeery ugly.
+
+
+
+### Nvidia targets
+
+alfred-valet:
+
+alfred-valet.nvidia.com works correct but it forwards to alfred.nvidia.com which does not work!
+
+#### Timeline
+
+* requested 2023-06: not working properly since
