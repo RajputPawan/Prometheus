@@ -38,3 +38,9 @@ configuration.
 
 If you want to go back to the stable environment, also send a mail to the above
 address.
+
+### Teams channel
+
+We have a [Teams channel](
+https://teams.microsoft.com/l/channel/19%3a514facd880df40a5ac2708e20ff8d0fd%40thread.tacv2/Test%2520environment?groupId=13fe2da7-5cab-4525-9f67-b54eefb7a8ca&tenantId=9652d7c2-1ccf-4940-8151-4a92bd474ed0)
+dedicated to the testing branch.
