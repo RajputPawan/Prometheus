@@ -23,7 +23,17 @@ changeCryptKey-gui
 
 Please do not delete or modify Key Slot #7. This is an admin slot for recovery in case you have forgotten your password.
 
-## Windows terminalserver
+## E-Mail
+
+As of today there is no officially supported email client on Linux. You can access your email and calendar with these solutions:
+
+1. Use Outlook on [Terminalserver / GEW](#windows-terminalserver) or on a Windows pc
+2. Use the Outlook WebAccess: [https://outlook.office.com](https://outlook.office.com/) (encrypted email not supported) or the preinstalled Chrome/Edge PWA
+3. [Use Evolution with EWS Plugin](evolution.html) (encrypted email not supported)
+4. Use Thunderbird with EWS Plugin (encrypted email not supported)
+
+### Windows terminalserver
+
 Currently there is no solution to read encrypted e-mails on Linux. Therefore every Linux user needs access to MS Outlook on a Windows computer where she/he will be able to read and write encrypted emails.
 
 In Daimler RD the standard way for Linux users is to use the GEW (Global Engineering Workplace). It is a Windows Terminal Server Solution accessible via Citrix client.
@@ -41,15 +51,6 @@ To be able to use your microphone and camera in GEW you need to change the defau
 ```
 
 ![citrix_recv](images/docs/general_setup/citrix_recv.png)
-
-## E-Mail
-
-As of today there is no officially supported email client on Linux. You can access your email and calendar with these solutions:
-
-1. Use Outlook on [Terminalserver / GEW](#windows-terminalserver) or on a Windows pc
-2. Use the Outlook WebAccess: [https://outlook.office.com](https://outlook.office.com/) (encrypted email not supported) or the preinstalled Chrome/Edge PWA
-3. Use Evolution with EWS Plugin (encrypted email not supported)
-4. Use Thunderbird with EWS Plugin (encrypted email not supported)
 
 ## Sudo
 
