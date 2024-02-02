@@ -4,7 +4,7 @@ permalink: zscaler_issues.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: vpn, zscaler
-last_updated: February 1, 2024
+last_updated: 2024-02-02
 toc: true
 folder: docs
 ---
@@ -19,14 +19,6 @@ Reports and discussion usually happen in `ZPA Linux client BETA` Teams Chat.
 ## broken
 
 Below Applications / Connections do not work.
-
-### VNC
-
-TCP Port Range 5900 - 5999, e.g. to cmtcdeu68384635.rd.corpintra.net
-
-#### Timeline
-
-* 2023-11-17: reported
 
 ### MTTF Dashboards
 
@@ -61,4 +53,13 @@ UDP Port 123, bidirectional.
 * 2023-12-06: reported broken
 * 2024-01-31: reported again
 * 2024-02-02: working (again)
+
+### VNC
+
+TCP Port Range 5900 - 5999, e.g. to cmtcdeu68384635.rd.corpintra.net
+
+#### Timeline
+
+* 2023-11-17: reported
+* 2024-02-02: working
 
