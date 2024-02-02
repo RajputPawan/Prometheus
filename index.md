@@ -59,6 +59,12 @@ An overview of Ubuntu Linux certified hardware that can be ordered via ITShop is
 
 ## Contribute
 
+### Testing
+
+If you feel brave, you can become a [test pilot](/ubunturd/ubuntudoc/beta.html).
+
+### Documentation
+
 Feel free to contribute and help getting new documentation pages and How Tos created.
 
 1. Fork on ([Github](https://git.i.mercedes-benz.com/ubunturd/ubuntudoc/)).

@@ -175,6 +175,10 @@ entries:
           url: /bt-next.html
           output: web, pdf
 
+        - title: Join the testing community
+          url: /beta.html
+          output: web, pdf
+
       - title: Infrastructure
         output: web
         subfolderitems:
