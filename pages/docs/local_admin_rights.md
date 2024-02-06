@@ -27,7 +27,8 @@ Further information about the duties and restrictions that apply can be found he
 
 ### Exception: for India, China, MBRDNA and DTNA
 
-The former process via ['Sudo form'](images/docs/sudo_local_admin/gewaehrung_lokaler_administrationsrechte_ee_final_en_v2019-08-22_wireshark_mehrfach_sudo.pdf) and approval by the E5 is still active.
+The former process via ['Sudo form'](images/docs/sudo_local_admin/sudoform.pdf)
+and approval by the E5 is still active. (Form updated on 2024-02-06.)
 
 ## Restrictions for local admins
 
