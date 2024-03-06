@@ -76,7 +76,7 @@ credentials.
 * `<username>@mercedes-benz.com` works too. _Note that this is not
   the same as your email address!_
 
-[We track current issues with Zscaler in our environment here.](zscaler_issues.html)
+[See here for support information around Zscaler in our environment.](zscaler_issues.html)
 
 ### Certificate-authenticated access: alwayson (legacy option 1)
 
