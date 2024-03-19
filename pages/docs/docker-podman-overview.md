@@ -74,8 +74,13 @@ Registry endpoints
 Our DHC Container Registry (Harbor) is available in the following regions:
 
 Region	URL	Version
-EMEA	https://registry.app.corpintra.net	v2.8.2
-EMEA AWS	https://registry-emea.app.corpintra.net	v2.8.2
-NAFTA	https://registry-americas.app.corpintra.net	v2.8.2
-CHINA	https://reg-dhc-china.app.corpintra.net	v2.8.2
+
+Our DHC Container Registry (Harbor) is available in the following regions:
+
+| Region    | URL                                                                                       | Version
+| ---       | ---                                                                                       | ---
+| EMEA      | [https://registry.app.corpintra.net](https://registry.app.corpintra.net)                  | v2.8.2
+| EMEA AWS  | [https://registry-emea.app.corpintra.net](https://registry-emea.app.corpintra.net)        | v2.8.2
+| NAFTA     | [https://registry-americas.app.corpintra.net](https://registry-americas.app.corpintra.net)| v2.8.2
+| CHINA     | [https://reg-dhc-china.app.corpintra.net](https://reg-dhc-china.app.corpintra.net)        | v2.8.2
 
