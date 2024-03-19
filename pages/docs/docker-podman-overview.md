@@ -14,12 +14,25 @@ Brief overview on how the use of docker/ podman within the MB environment
 * Installation
 * Networking
 * Harbor proxy cache
+* Prerequisite packages
+* Optional packages
 
 
 ## Installation
 
 The docker-ce runtime and the podman runtime are provided over our ubunturepo.rd.corpintra.net as separate 3rd-party repositories
 Both are mirrored directly from upstream and available on all systems by default
+
+## Prerequisite packages
+
+ * docker-ce
+ * docker-compose
+
+## Optional packages
+
+* docker-ce-cli
+* docker-ce-rootless-extras
+* docker-compose-plugin
 
 ## Networking
 
@@ -34,6 +47,7 @@ docker.io / dockerhub
 quay.io
 k8s
 ..etc
+
 
 Taking docker.io/dockerhub as an example:
 
@@ -55,4 +69,13 @@ https://git.i.mercedes-benz.com/DHC/DHC-Container-Registry/blob/main/technical-i
 
 Internal registries:
 https://git.i.mercedes-benz.com/DHC/DHC-Container-Registry/blob/main/README.md#registry-endpoints
+
+Registry endpoints
+Our DHC Container Registry (Harbor) is available in the following regions:
+
+Region	URL	Version
+EMEA	https://registry.app.corpintra.net	v2.8.2
+EMEA AWS	https://registry-emea.app.corpintra.net	v2.8.2
+NAFTA	https://registry-americas.app.corpintra.net	v2.8.2
+CHINA	https://reg-dhc-china.app.corpintra.net	v2.8.2
 
