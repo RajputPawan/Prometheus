@@ -66,15 +66,10 @@ docker pull <endpoint>/dockerhub/<reponame>/<image>:<tag>
 Please consult the documentation below for detailed instructions and a recent list of supported repositories
 https://git.i.mercedes-benz.com/DHC/DHC-Container-Registry/blob/main/technical-information/4-working-with-images/proxy-cache.md
 
-
 Internal registries:
 https://git.i.mercedes-benz.com/DHC/DHC-Container-Registry/blob/main/README.md#registry-endpoints
 
 Registry endpoints
-Our DHC Container Registry (Harbor) is available in the following regions:
-
-Region	URL	Version
-
 Our DHC Container Registry (Harbor) is available in the following regions:
 
 | Region    | URL                                                                                       | Version
