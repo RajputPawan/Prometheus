@@ -14,6 +14,8 @@ Brief overview on how the use of docker/ podman within the MB environment
 * Installation
 * Networking
 * Harbor proxy cache
+* Prerequisite packages
+* Optional packages
 
 
 ## Installation
@@ -21,19 +23,34 @@ Brief overview on how the use of docker/ podman within the MB environment
 The docker-ce runtime and the podman runtime are provided over our ubunturepo.rd.corpintra.net as separate 3rd-party repositories
 Both are mirrored directly from upstream and available on all systems by default
 
+## Prerequisite packages
+
+ * docker-ce
+ * docker-compose
+
+## Optional packages
+
+* docker-ce-cli
+* docker-ce-rootless-extras
+* docker-compose-plugin
+
 ## Networking
 
-We are whitelisting the following network on all UbuntuRD systems, please make sure your containers are within the given range
+We are whitelisting the following network on all UbuntuRD systems, please make sure your containers are within the given range:
+
+```bash
 172.17.0.0/16
-Contact ubuntu-support@mercedes-benz.com if you need an exception
+```
+
+Contact <ubuntu-support@mercedes-benz.com> if you need an exception.
 
 ## Harbour proxy cache
-Due to network access / traffic limitations, MB provides a pull-through proxy cache for the most common container registries
+Due to network access / traffic limitations, MB provides a pull-through proxy cache for the most common container registries:
 
-docker.io / dockerhub
-quay.io
-k8s
-..etc
+* docker.io / dockerhub
+* quay.io
+* k8s
+* ...
 
 Taking docker.io/dockerhub as an example:
 
@@ -49,10 +66,19 @@ To pull un-official images use the below syntax:
 docker pull <endpoint>/dockerhub/<reponame>/<image>:<tag>
 ```
 
-Please consult the documentation below for detailed instructions and a recent list of supported repositories
-https://git.i.mercedes-benz.com/DHC/DHC-Container-Registry/blob/main/technical-information/4-working-with-images/proxy-cache.md
-
+Please consult the documentation below for detailed instructions and a recent list of supported repositories:
+<https://git.i.mercedes-benz.com/DHC/DHC-Container-Registry/blob/main/technical-information/4-working-with-images/proxy-cache.md>
 
 Internal registries:
-https://git.i.mercedes-benz.com/DHC/DHC-Container-Registry/blob/main/README.md#registry-endpoints
+<https://git.i.mercedes-benz.com/DHC/DHC-Container-Registry/blob/main/README.md#registry-endpoints>
+
+## Registry endpoints
+Our DHC Container Registry (Harbor) is available in the following regions:
+
+| Region    | URL                                                                                       | Version
+| ---       | ---                                                                                       | ---
+| EMEA      | [https://registry.app.corpintra.net](https://registry.app.corpintra.net)                  | v2.8.2
+| EMEA AWS  | [https://registry-emea.app.corpintra.net](https://registry-emea.app.corpintra.net)        | v2.8.2
+| NAFTA     | [https://registry-americas.app.corpintra.net](https://registry-americas.app.corpintra.net)| v2.8.2
+| CHINA     | [https://reg-dhc-china.app.corpintra.net](https://reg-dhc-china.app.corpintra.net)        | v2.8.2
 
