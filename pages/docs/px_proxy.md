@@ -92,7 +92,11 @@ As gnome-keyring can also be used on non-graphical used systems (gnome-keyring-d
 
 You can request a PoolID in [EMT](https://iam-tools.iam.corpintra.net/emt)
 
-When you received your Pool-ID name and credentials you can request Proxy-Access for this user at [Information-Office](mailto:information-office@mercedes-benz.com).
+When you received your Pool-ID name and credentials you can [request
+proxy access for this user at the UHD](
+https://servicenow.i.mercedes-benz.com/esc?id=sc_cat_item&sys_id=062eec1f1b0c605093b43113dd4bcbf0
+). (They route this request to the
+Information Office and ISO.)
 
 ### Store password in keyring
 
