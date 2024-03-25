@@ -46,8 +46,8 @@ entries:
       url: /faq.html
       output: web, pdf
 
-    - title: Linux User Group
-      url: /lug.html
+    - title: Home
+      url: /index.html
       output: web, pdf
 
   - title: Documentation
