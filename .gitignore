@@ -1,10 +1,11 @@
-_site/
-.sass-cache/
+.bundle/
+.DS_Store
+Gemfile.lock
+.idea
+.jekyll-cache/
 .jekyll-metadata
 _pdf
-.DS_Store
-.idea
+.sass-cache/
+_site/
 vendor/
-.bundle/
-.jekyll-cache/
 .vscode/
