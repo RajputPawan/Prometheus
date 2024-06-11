@@ -52,7 +52,10 @@ Click OK
 
 Note: Emails can also be read in the web browser via this link: <https://outlook.office.com/>
 
-#### OAUTH2 authorization via an external browser
+#### OAuth2 authorization via an external browser (obsolete)
+
+__As of 2024-06-11, this workaround is not needed anymore and login via the
+built-in browser is working again!__
 
 Due to changes in the scripts redirecting requests to sso.mercedes-benz.com and login.microsoft.com, the embedded browser component no longer can be used for oauth2 authorization. The Ubuntu Operations RD Team therefore backported upstream patches to allow the use of an external browser for the authorization part.
 
