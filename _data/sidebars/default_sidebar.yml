@@ -38,6 +38,10 @@ entries:
       output: web, pdf
       type: homepage
 
+    - title: Ubuntu Orderable Machines
+      url: /ubuntu_orderable.html
+      output: web, pdf
+
     - title: News
       url: /news.html
       output: web, pdf
@@ -85,10 +89,6 @@ entries:
 
         - title: Backup User Data
           url: /backup-user-data.html
-          output: web, pdf
-
-        - title: Ubuntu Orderable Machines
-          url: /ubuntu_orderable.html
           output: web, pdf
 
       - title: Email and Messaging
