@@ -1,0 +1,67 @@
+---
+title: Certificate Management Application (CMA) for Linux
+permalink: cma.html
+sidebar: default_sidebar
+tags: [docs]
+keywords: email, certificates
+last_updated: June 26, 2024
+toc: true
+folder: docs
+---
+
+## Installation
+To download and install personal certificates for signing and encrypting emails as well as for signing documents you will need to do the following:
+
+Start the CMA-Linux application by clicking on the menu entry (search for CMA-Linux)
+
+![cma_01a](images/docs/cma/cma_01a.png)
+
+**Please note:** after clicking it might take a few seconds to initialize.
+
+The first time you start the application, an application key for your useraccount on the current machine will get generated. A progress dialog will be displayed.
+
+![cma_02a](images/docs/cma/cma_02a.png)
+
+Once the application key is generated, you will be asked if you want to download the certificates in case it did not yet happen before.
+
+![cma_02b](images/docs/cma/cma_02b.png)
+
+Click on OK.
+
+You will see an information dialog:
+
+![cma_03](images/docs/cma/cma_03.png)
+
+Click on OK.
+
+Your default browser will open asking you to log in with your regular intranet credentials.
+
+![cma_04](images/docs/cma/cma_04.png)
+
+Log on and authenticate via PingID.
+
+After authentication, a xml file will get opened, containing a token string.
+
+![cma_05](images/docs/cma/cma_05.png)
+
+Mark the string (omitting the <> brackets) and copy it.
+
+![cma_06](images/docs/cma/cma_06.png)
+
+Now change back to the cma dialog window and paste the copied string in the dialog's entry field. Click on OK.
+
+![cma_08](images/docs/cma/cma_08.png)
+
+After a few seconds you should see the following messages.
+
+![cma_09](images/docs/cma/cma_09.png)
+
+A few minutes after a successful installation, you will receive also a mail mentioning the host the certificates were installed to.
+
+![cma_10](images/docs/cma/cma_10.png)
+
+## Known issues
+
+- Necessary scripts are not installed on devices that were installed using 'vanilla' (cli only) flavor.
+- After network changes (e.g. Company-Network -> ZScaler), the generation of an appkey might not work. In such a case normally a reboot helps to get a proper connection to the backends.
+
