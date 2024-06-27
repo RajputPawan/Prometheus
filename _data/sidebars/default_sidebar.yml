@@ -91,6 +91,10 @@ entries:
           url: /backup-user-data.html
           output: web, pdf
 
+        - title: Personal Certificates
+          url: /cma.html
+          output: web, pdf
+
       - title: Email and Messaging
         output: web
         subfolderitems:
