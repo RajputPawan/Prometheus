@@ -108,5 +108,4 @@ Your user must be granted to use AlwaysOn (AlwaysOn User (EMEA) (QEV111AGDB8A)) 
 
 ## WLAN / Wifi
 
-All new enrolled systems come with a set of certificates for the usage of VPN and Wifi / WLAN. To use a wifi connection select SITECONNECTRD to connect to Daimler RD network. If you are prompted for any password or configuration, something went wrong with the configuration of your computer. Please contact the Linux support via [ticket]({{ site.baseurl }}/tickets.html).
-
+All newly enrolled systems come with a set of certificates for the usage of VPN and Wifi / WLAN. For MBTI, a NON-RD location, to connect to a wifi network, select __GLOBAL CONNECT__ to access the Daimler network. For RD locations, select __SITECONNECTRD__ to connect to the Daimler RD network. If you are prompted for any password or additional configuration, there may be an issue with your computer’s setup. Please contact Linux support by submitting a [__Ticket__]({{ site.baseurl }}/incident.html).
