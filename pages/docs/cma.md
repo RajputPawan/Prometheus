@@ -4,7 +4,7 @@ permalink: cma.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: email, certificates
-last_updated: June 26, 2024
+last_updated: June 28, 2024
 toc: true
 folder: docs
 ---
