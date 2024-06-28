@@ -80,7 +80,7 @@ recipients are automatically found in the address book.
 
 ![cma_evolution_02](images/docs/cma/cma_evolution_02.png)
 
-See also our [Evolution setup guide]({% link pages/docs/evolution.md %}).
+See also our [Evolution setup guide](/ubunturd/ubuntudoc/cma.html).
 
 ### Okular for PDFs
 

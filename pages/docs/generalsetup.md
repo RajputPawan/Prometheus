@@ -27,7 +27,7 @@ Please do not delete or modify Key Slot #7. This is an admin slot for recovery i
 
 ### Email with encryption support
 
-1. [__GNOME Evolution__]({% link pages/docs/evolution.md %}) native email
+1. [__GNOME Evolution__](/ubunturd/ubuntudoc/evolution.html) native email
    client, __now with S/MIME certificates!__
 2. Outlook on Terminalserver / GEW] (see below) or on a company Windows
    machine
