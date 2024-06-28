@@ -10,9 +10,13 @@ folder: docs
 ---
 
 ## Installation
+
 To download and install personal certificates for signing and encrypting emails as well as for signing documents you will need to do the following:
 
-Start the CMA-Linux application by clicking on the menu entry (search for CMA-Linux)
+1. Make sure you have valid network credentials (Kerberos).
+   If you are unsure, refresh them using the tray notification that appears when
+   credentials are expired or run `kinit` in a terminal.
+2. Start the CMA-Linux application by clicking on the menu entry (search for CMA-Linux)
 
 ![cma_01a](images/docs/cma/cma_01a.png)
 
