@@ -57,7 +57,7 @@ Note: Emails can also be read in the web browser via this link: <https://outlook
 ### Setup S/MIME encryption
 
 [__Now we also support S/MIME email signing and encryption on our systems!__](
-{% link pages/docs/cma.md %})
+/ubunturd/ubuntudoc/cma.html)
 
 ### OAuth2 authorization via an external browser (obsolete)
 
