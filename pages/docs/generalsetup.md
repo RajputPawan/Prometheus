@@ -4,7 +4,7 @@ permalink: generalsetup.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: disk encryption, encryption
-last_updated: 2024-02-02
+last_updated: 2024-06-28
 toc: true
 folder: docs
 ---
@@ -25,32 +25,45 @@ Please do not delete or modify Key Slot #7. This is an admin slot for recovery i
 
 ## E-Mail
 
-As of today there is no officially supported email client on Linux. You can access your email and calendar with these solutions:
+### Email with encryption support
 
-1. Use Outlook on [Terminalserver / GEW](#windows-terminalserver) or on a Windows pc
-2. Use the Outlook WebAccess: [https://outlook.office.com](https://outlook.office.com/) (encrypted email not supported) or the preinstalled Chrome/Edge PWA
-3. [Use Evolution with EWS Plugin](evolution.html) (encrypted email not supported)
-4. Use Thunderbird with EWS Plugin (encrypted email not supported)
+1. [__GNOME Evolution__]({% link pages/docs/evolution.md %}) native email
+   client, __now with S/MIME certificates!__
+2. Outlook on Terminalserver / GEW] (see below) or on a company Windows
+   machine
+3. Another alternative with encryption support is to use the company provided
+   iPhone
 
-### Windows terminalserver
+### Windows terminalserver (not required anymore)
 
-Currently there is no solution to read encrypted e-mails on Linux. Therefore every Linux user needs access to MS Outlook on a Windows computer where she/he will be able to read and write encrypted emails.
+In Mercedes-Benz RD the standard way for Linux users is to use the GEW (Global
+Engineering Workplace). It is a Windows Terminal Server Solution accessible via
+Citrix client.
 
-In Mercedes-Benz RD the standard way for Linux users is to use the GEW (Global Engineering Workplace). It is a Windows Terminal Server Solution accessible via Citrix client.
+Access to GEW is ordered through ITShop with QEV Number 20019810 (GEW-Basic-RD
+WTS ZUGANG SIFI - CD-ID) for MB employees.
 
-Access to GEW is ordered through ITShop with QEV Number 20019810 (GEW-Basic-RD WTS ZUGANG SIFI - CD-ID) for Daimler employees.
-
-To use GEW, login to [https://gew.rd.corpintra.net/vpn/index.html](https://gew.rd.corpintra.net/vpn/index.html) , select Desktops and then GEW Basic RD -WTS2012-RD-
+To use GEW, login to [https://gew.rd.corpintra.net/vpn/index.html](
+https://gew.rd.corpintra.net/vpn/index.html), select Desktops and then GEW Basic
+RD.
 
 ![gew_picture](images/docs/general_setup/gew_picture.png)
 
-To be able to use your microphone and camera in GEW you need to change the default configuration by running the Citrix configmanager and change Mic & Webcam configuration:
+To be able to use your microphone and camera in GEW you need to change
+the default configuration by running the Citrix configmanager and change
+Mic & Webcam configuration:
 
 ```bash
 /opt/Citrix/ICAClient/util/configmgr
 ```
 
 ![citrix_recv](images/docs/general_setup/citrix_recv.png)
+
+### Email without encryption support
+
+1. Outlook online: [https://outlook.office.com](https://outlook.office.com/)
+   (no encryption/signing)
+2. Use Thunderbird with EWS Plugin (not supported, no encryption/signing)
 
 ## Sudo
 

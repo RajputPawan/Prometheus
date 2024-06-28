@@ -4,7 +4,7 @@ permalink: cma.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: email, certificates
-last_updated: June 26, 2024
+last_updated: June 28, 2024
 toc: true
 folder: docs
 ---
@@ -59,6 +59,33 @@ After a few seconds you should see the following messages.
 A few minutes after a successful installation, you will receive also a mail mentioning the host the certificates were installed to.
 
 ![cma_10](images/docs/cma/cma_10.png)
+
+## Using the certificates
+
+The imported certificates and keys can be used for email (in GNOME Evolution)
+and document signing (in Okular).
+
+### GNOME Evolution for email
+
+Your personal certificates can be used in [Evolution for E-Mail](
+https://help.gnome.org/users/evolution/stable/mail-encryption-s-mime-signing-encrypting.html.en)
+
+Select the certificates in your account settings, where you can also choose
+other default settings for signing and encryption.
+
+![cma_evolution_01](images/docs/cma/cma_evolution_01.png)
+
+Now you can sign and encrypt new messages. The public certificates of the
+recipients are automatically found in the address book.
+
+![cma_evolution_02](images/docs/cma/cma_evolution_02.png)
+
+See also our [Evolution setup guide]({% link pages/docs/evolution.md %}).
+
+### Okular for PDFs
+
+[Okular offers functionality for signing and verifying PDF documents](
+https://docs.kde.org/stable5/en/okular/okular/signatures.html).
 
 ## Known issues
 

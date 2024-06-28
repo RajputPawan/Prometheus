@@ -4,12 +4,14 @@ permalink: evolution.html
 sidebar: default_sidebar
 tags: [docs]
 keywords: email, mail, outlook, office, o365
-last_updated: November 30, 2023
+last_updated: June 28, 2024
 toc: true
 folder: docs
 ---
 
 ## E-Mail with Evolution
+
+GNOME Evolution is our supported native email client.
 
 ### Setup (with Email address @mercedes-benz.com, Office 365)
 
@@ -52,7 +54,12 @@ Click OK
 
 Note: Emails can also be read in the web browser via this link: <https://outlook.office.com/>
 
-#### OAuth2 authorization via an external browser (obsolete)
+### Setup S/MIME encryption
+
+[__Now we also support S/MIME email signing and encryption on our systems!__](
+{% link pages/docs/cma.md %})
+
+### OAuth2 authorization via an external browser (obsolete)
 
 __As of 2024-06-11, this workaround is not needed anymore and login via the
 built-in browser is working again!__
@@ -75,7 +82,7 @@ Copy the entire address line.
 
 Now paste the copied address to the authorization code field in evolution and click on continue to finish the authorization process.
 
-#### Known Issues
+### Known Issues
 
 ![EvolutionErrorAzureAD](images/docs/evolution/EvolutionErrorAzureAD.png)
 
