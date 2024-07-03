@@ -51,6 +51,7 @@ Local admins need to be carefull what they do on their system.
 * Installation of additional software to the system with other package management systems like pip / npm / snap... Install it to userspace or somewhere in /opt and add it to your $PATH.
 * Playing around with uidNumbers and trying to access data of other users.
 * Changing routing tables to bypass vpn routes or acting as a forwarding gateway.
+* Changing ownership of system files/directories.
 
 ### What happens if you don't respect those rules
 
