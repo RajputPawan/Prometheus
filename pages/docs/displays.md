@@ -1,9 +1,9 @@
 ---
-title: ad-self-service
-permalink: ad-self-service.html
+title: Displays / Resolution
+permalink: displays.html
 sidebar: default_sidebar
 tags: [docs]
-keywords: active_directory
+keywords: display, resolution, login
 last_updated: Feb 12, 2021
 toc: true
 folder: docs
