@@ -16,6 +16,7 @@ summary: This site holds information that is necessary or helpful for users of t
   * **[Alternative default shell]({{ site.baseurl }}//shell.html)**
   * **[Backup User Data]({{ site.baseurl }}/backup-user-data.html)**
   * **[Personal Certificates]({{ site.baseurl }}/cma.html)**
+  * **[Displays / Resolution]({{ site.baseurl }}/displays.html)**
 * **Email and Messaging**
   * **[Evolution with EWS plugin]({{ site.baseurl }}/evolution.html)**
   * **[Microsoft Teams]({{ site.baseurl }}/msteams.html)**
@@ -48,7 +49,6 @@ summary: This site holds information that is necessary or helpful for users of t
 * **Legacy Items**
   * **[ADTF installation + license request]({{ site.baseurl }}/adtf.html)**
   * **[Kiosk Mode]({{ site.baseurl }}/kiosk.html)**
-
 
 ## Request help
 
