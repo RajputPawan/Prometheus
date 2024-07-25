@@ -136,7 +136,7 @@ StartLimitBurst=1
 
 [Service]
 EnvironmentFile=-/etc/default/px-proxy
-ExecStart=/usr/bin/px-proxy --hostonly --config=/%h/%u/.config/px-proxy/px-proxy.ini $ARGS
+ExecStart=/usr/bin/px-proxy --hostonly --config=/%h/.config/px-proxy/px-proxy.ini $ARGS
 Restart=on-failure
 
 [Install]
