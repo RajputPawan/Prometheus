@@ -116,9 +116,34 @@ Don't forget to set threads to a high number as this massively impacts on intern
 
 ### Enable custom px-proxy.service to use config file
 
-Create a service file in directory `~/.config/systemd/user/px-proxy.service`
+To set up the `px-proxy` service for a specific user, follow these steps:
 
-Add path to your config file in the service file `--config=/lhome/$USER/.config/px-proxy/px-proxy.ini`
+**1. Copy the Service File**:
+
+  First, copy the system-wide `px-proxy.service` file to the user's systemd directory:
+```bash
+cp /usr/lib/systemd/user/px-proxy.service ~/.config/systemd/user/px-proxy.service
+```
+**2. Update the Service File:**
+
+  Edit the copied service file to update its contents. You can use a text editor or the cat command to view the file's contents.
+
+```bash
+[Unit]
+Description=Px authenticating proxy
+StartLimitIntervalSec=60s
+StartLimitBurst=1
+
+[Service]
+EnvironmentFile=-/etc/default/px-proxy
+ExecStart=/usr/bin/px-proxy --hostonly --config=/%h/.config/px-proxy/px-proxy.ini $ARGS
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+```
+
+These steps are necessary when setting up, modifying, or re-enabling a systemd service to ensure it runs with the correct configuration.
 
 ```bash
 systemctl --user stop px-proxy.service
