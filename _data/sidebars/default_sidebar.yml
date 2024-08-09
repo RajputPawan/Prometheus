@@ -99,6 +99,10 @@ entries:
           url: /displays.html
           output: web, pdf
 
+        - title: Guacamole
+          url: /guacamole.html
+          output: web, pdf
+
       - title: Email and Messaging
         output: web
         subfolderitems:
