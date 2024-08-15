@@ -9,6 +9,48 @@ toc: true
 folder: docs
 ---
 
+## Login to Guacamole
+
+You can login with your AD account.
+
+![install-jammy](images/docs/guacamole/1.png)
+(Image 1)
+
+After login, you will see a list of hosts/connections you can use to access the host remotely.
+ 
+![install-jammy](images/docs/guacamole/2.png)
+(Image 1)
+
+
+## Copy&Paste
+
+VM -> local host: Simply by using copy via right-click context menu, or ctrl+c/z.
+
+
+local host -> VM:
+1. Open the guacamole sidebar with ctrl + left-alt + shift
+2. Copy the text into the "clipboard" text field.
+3. Now the text is available in the VM's clipboard and can be paste via right-click context or ctrl+v.
+
+
+File Transfer via Guacamole: Currently not implemented.
+
+
+Copy file or folder:
+
+scp <username>@<FQDN>:<remote source path> <local target path>
+
+Mount remote path to local path:
+
+sshfs <username>@<FQDN>:<remote directory> <local directory>
+
+
+<username> = AD account, as you used for login.
+
+<FQDN> = full hostname like "cmtcdeu12345678.rd.corpintra.net"
+
+
+
 ## Default Desktop Environment
 
 The default Desktop Environment is GNOME.
@@ -33,4 +75,6 @@ We provide from beginning for every host, 2 different display resolutions.
 ```<hostname>_FHD: 1920x1080, 24bit color depth```
 
 if you need any special settings related to resolution/color depth, you can ask us.
+
+![install-jammy](images/docs/guacamole/2.png)
 
