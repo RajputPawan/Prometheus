@@ -38,16 +38,16 @@ File Transfer via Guacamole: Currently not implemented.
 
 Copy file or folder:
 
-scp <username>@<FQDN>:<remote source path> <local target path>
+```scp <username>@<FQDN>:<remote source path> <local target path>```
 
 Mount remote path to local path:
 
-sshfs <username>@<FQDN>:<remote directory> <local directory>
+```sshfs <username>@<FQDN>:<remote directory> <local directory>```
 
 
-<username> = AD account, as you used for login.
+```<username> = AD account, as you used for login.```
 
-<FQDN> = full hostname like "cmtcdeu12345678.rd.corpintra.net"
+```<FQDN> = full hostname like "cmtcdeu12345678.rd.corpintra.net"```
 
 
 

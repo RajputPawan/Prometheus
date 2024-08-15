@@ -230,15 +230,3 @@ entries:
         - title: Kiosk Mode
           url: /kiosk.html
           output: web, pdf
-
-      - title: Guacamole
-        output: web
-        subfolderitems:
-
-        - title: Login
-          url: /guacamole.html
-          output: web, pdf
-
-        - title: Desktop Environment
-          url: /guacamole_desktop.html
-          output: web, pdf
