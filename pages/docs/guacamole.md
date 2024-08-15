@@ -19,31 +19,55 @@ You can login with your AD account.
 After login, you will see a list of hosts/connections you can use to access the host remotely.
  
 ![install-jammy](images/docs/guacamole/2.png)
-(Image 1)
+(Image 2)
+
+
+## Guacamole Sidebar
+
+Usable while connected to remote host.
+```ctrl+alt+shift```
+
+1. Required for copy&paste text to the remote host.
+2. Usable for copy&paste text from remote host to the local host.
 
 
 ## Copy&Paste
 
-VM -> local host: Simply by using copy via right-click context menu, or ctrl+c/z.
-
+VM -> local host:
+1. Simply by using copy via right-click context menu, or ctrl+c/z.
+2. Text which is copied into clipboard on the remote host, will also appears in the guacamole sidebar. 
 
 local host -> VM:
-1. Open the guacamole sidebar with ctrl + left-alt + shift
-2. Copy the text into the "clipboard" text field.
+1. Open the guacamole sidebar with ctrl + left-alt + shift (Image 3)
+2. Copy the text into the "clipboard" text field. (Image 3)
 3. Now the text is available in the VM's clipboard and can be paste via right-click context or ctrl+v.
 
 
-File Transfer via Guacamole: Currently not implemented.
+![install-jammy](images/docs/guacamole/3.png)
+(Image 3)
 
+
+## File Transfer
+
+File Transfer via Guacamole: Currently not implemented.
 
 Copy file or folder:
 
-```scp <username>@<FQDN>:<remote source path> <local target path>```
+```scp [-R] <username>@<FQDN>:<remote source path> <local target path>```
 
-Mount remote path to local path:
+or
+
+```scp [-R] <local source path> <username>@<FQDN>:<remote target path>```
+
+-R = Recursive
+
+
+Mount remote path to local path (or remote if used on the remote host):
 
 ```sshfs <username>@<FQDN>:<remote directory> <local directory>```
 
+
+Placeholders:
 
 ```<username> = AD account, as you used for login.```
 
@@ -77,4 +101,22 @@ We provide from beginning for every host, 2 different display resolutions.
 if you need any special settings related to resolution/color depth, you can ask us.
 
 ![install-jammy](images/docs/guacamole/2.png)
+
+
+
+## Multiple Remote Connections
+
+If you have more then one remote hosts assigned to your account, you can also show multiple of them in one window.
+
+1. Go within a open session to the Guaccamole sidebar with ctrl+alt+shift.
+2. Open the menu via the down arrow.
+3. Select the reote session which should shown in the same window.
+
+![install-jammy](images/docs/guacamole/3.png)
+(Image 4)
+
+
+## Contact
+
+If any further questions, contact Ubuntu Operations via Teams chat, Teams group or mailto:ubuntu-operations@mercedes-benz.com
 
