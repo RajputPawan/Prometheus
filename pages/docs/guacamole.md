@@ -15,29 +15,32 @@ folder: docs
 
 ### Available for
 
-1. requested FPP VM's (see [FPP](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/fpp.html))
-2. non FPP VM's
+1. (New requested) FPP Virtual Machines
+2. non FPP Virtual Machines
 3. Workstations
 
 ### How to order
 
-- Ensure that, in IT-Shop, you are named as the owner of the device you want to have access to.
-- File a [Individual Service Request](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/inquiry-help.html)
-- or for already existing Hosts, request via email [ubuntu-operations@mercedes-benz.com](mailto:ubuntu-operations@mercedes-benz.com)
+1. For a new FPP VM request
+    1. please file a [Individual Service Request](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/inquiry-help.html)
+    2. see also [FPP](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/fpp.html)
+2. For already existing Hosts:
+    1. Ensure that you are named, in IT-Shop, as the owner of the device for which you want to have access to.
+    2. Request via email [ubuntu-operations@mercedes-benz.com](mailto:ubuntu-operations@mercedes-benz.com)
 
-IMPORTANT: Don't forget to name the hostname and what you want to have!
+IMPORTANT: Don't forget to name the hostname, your AD account name and what you want to have!
 
 
 ## Login to RDP / Guacamole
 
 You can login to our Remote Desktop Portal under [https://mb4.me/uordp](https://mb4.me/uordp) with your AD account.
 
-![install-jammy](images/docs/guacamole/1.png)
+![guacamole](images/docs/guacamole/1.png)
 (Image 1)
 
 After login, you will see a list of hosts/connections you can use to access the host remotely.
  
-![install-jammy](images/docs/guacamole/2.png)
+![guacamole](images/docs/guacamole/2.png)
 (Image 2)
 
 
@@ -62,7 +65,7 @@ local host -> VM:
 3. Now the text is available in the VM's clipboard and can be paste via right-click context or ctrl+v.
 
 
-![install-jammy](images/docs/guacamole/3.png)
+![guacamole](images/docs/guacamole/3.png)
 (Image 3)
 
 
@@ -94,26 +97,26 @@ or
 2. Enter ```sftp://<FQDN>/``` (Image 5)
 3. Provide your Login username/password if you get asked for it (Image 6)
 
-![install-jammy](images/docs/guacamole/5.png)
+![guacamole](images/docs/guacamole/5.png)
 (Image 5)
 
-![install-jammy](images/docs/guacamole/6.png)
+![guacamole](images/docs/guacamole/6.png)
 (Image 6)
 
-### Using KDE Nautilus
+### Using KDE Dolphin
 
-1. Open Nautilus and click in the address bar (Image 7)
-![install-jammy](images/docs/guacamole/7.png)
+1. Open Dolphin and click in the address bar (Image 7)
+![guacamole](images/docs/guacamole/7.png)
 (Image 7)
 
 
 2. Enter ```sftp://<FQDN>/``` and press Enter (Image 8)
-![install-jammy](images/docs/guacamole/8.png)
+![guacamole](images/docs/guacamole/8.png)
 (Image 8)
 
 
 3. If shown up, accept the warning for unkown host key (Image 9)
-![install-jammy](images/docs/guacamole/9.png)
+![guacamole](images/docs/guacamole/9.png)
 (Image 9)
 
 
@@ -150,7 +153,7 @@ We provide from beginning for every host, 2 different display resolutions.
 
 if you need any special settings related to resolution/color depth, you can ask us.
 
-![install-jammy](images/docs/guacamole/2.png)
+![guacamole](images/docs/guacamole/2.png)
 
 
 
@@ -162,7 +165,7 @@ If you have more then one remote hosts assigned to your account, you can also sh
 2. Open the menu via the down arrow.
 3. Select the reote session which should shown in the same window.
 
-![install-jammy](images/docs/guacamole/4.png)
+![guacamole](images/docs/guacamole/4.png)
 (Image 4)
 
 

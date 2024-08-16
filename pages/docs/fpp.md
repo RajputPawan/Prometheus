@@ -9,12 +9,12 @@ toc: true
 folder: docs
 ---
 
-# VM's from the Fast Provisioning Portal
+# Virtual Machines from the Fast Provisioning Portal
 
-- Ubuntu based VM's
+- Ubuntu based Virtual Machines
 - Supported and managed by Ubuntu Operations
 - Individual configurable CPU/RAM/Hard drive capacities
-- VM from [Fast Provisioning Portal](https://rdvcprod-fpp.rd.corpintra.net/catalog/#/consume/library)
+- Hosted on/by [Fast Provisioning Portal](https://rdvcprod-fpp.rd.corpintra.net/catalog/#/consume/library)
 
 
 ## Ordering
@@ -23,7 +23,7 @@ As we know, the Ubuntu based variant is not requestable from everyone via the FP
 
 If you want to test/use a Ubuntu based FPP VM, please file a [Individual Service Request](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/inquiry-help.html)
 
-ATTENTION: The ordered VM will charge via your charing cost center.
+ATTENTION: The ordered VM will be charged via your charging cost center.
 
 
 ## Variants
