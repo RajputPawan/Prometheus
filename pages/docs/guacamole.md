@@ -15,17 +15,20 @@ folder: docs
 
 ### Available for
 
-1. requested FPP VM's (see [FPP](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/fpp.html))
-2. non FPP VM's
+1. (New requested) FPP Virtual Machines
+2. non FPP Virtual Machines
 3. Workstations
 
 ### How to order
 
-- Ensure that, in IT-Shop, you are named as the owner of the device you want to have access to.
-- File a [Individual Service Request](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/inquiry-help.html)
-- or for already existing Hosts, request via email [ubuntu-operations@mercedes-benz.com](mailto:ubuntu-operations@mercedes-benz.com)
+1. For a new FPP VM request
+    1. please file a [Individual Service Request](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/inquiry-help.html)
+    2. see also [FPP](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/fpp.html)
+2. For already existing Hosts:
+    1. Ensure that you are named, in IT-Shop, as the owner of the device for which you want to have access to.
+    2. Request via email [ubuntu-operations@mercedes-benz.com](mailto:ubuntu-operations@mercedes-benz.com)
 
-IMPORTANT: Don't forget to name the hostname and what you want to have!
+IMPORTANT: Don't forget to name the hostname, your AD account name and what you want to have!
 
 
 ## Login to RDP / Guacamole
