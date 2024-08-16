@@ -11,6 +11,23 @@ folder: docs
 
 # Remote Desktop Portal / Guacamole
 
+## Ordering
+
+### Available for
+
+1. requested FPP VM's (see [FPP](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/fpp.html))
+2. non FPP VM's
+3. Workstations
+
+### How to order
+
+- Ensure that, in IT-Shop, you are named as the owner of the device you want to have access to.
+- File a [Individual Service Request](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/inquiry-help.html)
+- or for already existing Hosts, request via email [ubuntu-operations@mercedes-benz.com](mailto:ubuntu-operations@mercedes-benz.com)
+
+IMPORTANT: Don't forget to name the hostname and what you want to have!
+
+
 ## Login to RDP / Guacamole
 
 You can login to our Remote Desktop Portal under [https://mb4.me/uordp](https://mb4.me/uordp) with your AD account.
