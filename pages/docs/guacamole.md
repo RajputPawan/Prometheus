@@ -9,9 +9,11 @@ toc: true
 folder: docs
 ---
 
-## Login to Guacamole
+# Remote Desktop Portal / Guacamole
 
-You can login with your AD account.
+## Login to RDP / Guacamole
+
+You can login to our Remote Desktop Portal under [RDP](https://mb4.me/uordp) with your AD account.
 
 ![install-jammy](images/docs/guacamole/1.png)
 (Image 1)
@@ -118,5 +120,6 @@ If you have more then one remote hosts assigned to your account, you can also sh
 
 ## Contact
 
-If any further questions, contact Ubuntu Operations via Teams chat, Teams group or mailto:ubuntu-operations@mercedes-benz.com
+If any further questions, contact Ubuntu Operations via Teams chat, Teams group or [Ubuntu Operations Team](mailto:ubuntu-operations@mercedes-benz.com)
+or open a [SNOW ticket](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/incident.html)
 
