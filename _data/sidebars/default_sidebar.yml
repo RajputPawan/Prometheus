@@ -103,7 +103,7 @@ entries:
           url: /guacamole.html
           output: web, pdf
 
-        - title: FPP VM's'
+        - title: FPP VM's
           url: /fpp.html
           output: web, pdf
 
