@@ -13,7 +13,7 @@ folder: docs
 
 ## Login to RDP / Guacamole
 
-You can login to our Remote Desktop Portal under [RDP](https://mb4.me/uordp) with your AD account.
+You can login to our Remote Desktop Portal under [https://mb4.me/uordp](https://mb4.me/uordp) with your AD account.
 
 ![install-jammy](images/docs/guacamole/1.png)
 (Image 1)
@@ -53,7 +53,8 @@ local host -> VM:
 
 File Transfer via Guacamole: Currently not implemented.
 
-Copy file or folder:
+
+### Copy file or folder via scp
 
 ```scp [-R] <username>@<FQDN>:<remote source path> <local target path>```
 
@@ -64,12 +65,42 @@ or
 -R = Recursive
 
 
-Mount remote path to local path (or remote if used on the remote host):
+### Mount remote path to local path (or remote if used on the remote host)
 
 ```sshfs <username>@<FQDN>:<remote directory> <local directory>```
 
 
-Placeholders:
+
+### Using GNOME Files
+
+1. Go to "other locations" (Image 5)
+2. Enter ```sftp://<FQDN>/``` (Image 5)
+3. Provide your Login username/password if you get asked for it (Image 6)
+
+![install-jammy](images/docs/guacamole/5.png)
+(Image 5)
+
+![install-jammy](images/docs/guacamole/6.png)
+(Image 6)
+
+### Using KDE Nautilus
+
+1. Open Nautilus and click in the address bar (Image 7)
+![install-jammy](images/docs/guacamole/7.png)
+(Image 7)
+
+
+2. Enter ```sftp://<FQDN>/``` and press Enter (Image 8)
+![install-jammy](images/docs/guacamole/8.png)
+(Image 8)
+
+
+3. If shown up, accept the warning for unkown host key (Image 9)
+![install-jammy](images/docs/guacamole/9.png)
+(Image 9)
+
+
+### Placeholders:
 
 ```<username> = AD account, as you used for login.```
 
@@ -114,12 +145,12 @@ If you have more then one remote hosts assigned to your account, you can also sh
 2. Open the menu via the down arrow.
 3. Select the reote session which should shown in the same window.
 
-![install-jammy](images/docs/guacamole/3.png)
+![install-jammy](images/docs/guacamole/4.png)
 (Image 4)
 
 
 ## Contact
 
-If any further questions, contact Ubuntu Operations via Teams chat, Teams group or [Ubuntu Operations Team](mailto:ubuntu-operations@mercedes-benz.com)
+If any further questions, contact Ubuntu Operations via Teams chat, Teams group or [ubuntu-operations@mercedes-benz.com](mailto:ubuntu-operations@mercedes-benz.com)
 or open a [SNOW ticket](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/incident.html)
 
