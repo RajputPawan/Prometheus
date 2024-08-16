@@ -99,7 +99,7 @@ entries:
           url: /displays.html
           output: web, pdf
 
-        - title: Guacamole
+        - title: RDP / Guacamole
           url: /guacamole.html
           output: web, pdf
 
