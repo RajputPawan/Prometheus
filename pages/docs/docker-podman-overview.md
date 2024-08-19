@@ -12,6 +12,8 @@ folder: docs
 Brief overview on how the use of docker/ podman within the MB environment
 
 * Installation
+* Automatic Installation of Preconfigured Docker Runtime
+* Requesting Rollout of Docker Configuration
 * Networking
 * Harbor proxy cache
 * Prerequisite packages
@@ -33,6 +35,21 @@ Both are mirrored directly from upstream and available on all systems by default
 * docker-ce-cli
 * docker-ce-rootless-extras
 * docker-compose-plugin
+
+## Automatic Installation of Preconfigured Docker Runtime
+
+Users can now automatically install a preconfigured Docker runtime on their system by executing the following command:
+
+```bash
+$ salt-call state.apply client.docker
+```
+
+This command uses SaltStack to apply the client.docker state, which installs and configures Docker with predefined settings suitable for most environments.
+
+### Requesting Rollout of Docker Configuration
+
+In addition to manual installation, users can also request the rollout of this Docker configuration automatically to their project or host group.
+To request this change you can open a “generic service request”. [Link](inquiry-help.html) to requests how-to page.
 
 ## Networking
 
