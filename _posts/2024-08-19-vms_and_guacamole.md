@@ -26,4 +26,4 @@ Shortlinks:
 
 * [mb4.me/ubuntufpp](https://mb4.me/ubuntufpp) How to get a VM
 * [mb4.me/ubunturdp](https://mb4.me/ubunturdp) Remote desktop portal
-* [mb4.me/uordb](https://mb4.me/uordp) Login page of Guacamole
+* [mb4.me/uordp](https://mb4.me/uordp) Login page of Guacamole
