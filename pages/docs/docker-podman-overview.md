@@ -41,7 +41,7 @@ Both are mirrored directly from upstream and available on all systems by default
 Users can now automatically install a preconfigured Docker runtime on their system by executing the following command:
 
 ```bash
-$ salt-call state.apply client.docker
+$ salt-call state.apply client.docker.install
 ```
 
 This command uses SaltStack to apply the client.docker state, which installs and configures Docker with predefined settings suitable for most environments.
