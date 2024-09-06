@@ -16,6 +16,7 @@ Users coming from the standard Windows client environment are used to the
 ![My Documents on Windows](images/whome/win.png)
 
 This folder is also by default available on Ubuntu clients.
+Make sure you have a valid kerberos ticket when connecting.
 
 ### Access through /whome/$USER
 
@@ -54,5 +55,20 @@ $ ls /remote/emtc
 Apps  CAD  Install  PRJ  Software
 ```
 
-(Because of issues in the DFS path, the our automount configuration
+(Because of issues in the DFS path, the automount configuration
 contains the hardcoded path of the actual file server.)
+
+## Most common issues
+
+There are couple of issues that may prevent automounting a share, esp. `/whome`:
+
+- Missing or invalid kerberos ticket
+  - You can check your ticket validity with `$ klist`, renew your ticket by running `$ kinit`
+- Stale sssd caches
+  - To clear your cache (and force an update thereof), you can run `$ sudo /opt/support/bin/clear-sssd-cache.sh`
+- Home drive not configured in AD
+- Home drive not synced to OpenLDAP (nismaps not generated yet); we run updates once a day 00:25 CEST
+- NetApp permissions may be incorrect
+- NetApp appliance your home is hosted on does not have kerberos authentication configured correctly
+- Your AD UID does not match your OpenLDAP UID
+
