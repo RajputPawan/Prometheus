@@ -59,12 +59,13 @@ Note: Emails can also be read in the web browser via this link: <https://outlook
 [__Now we also support S/MIME email signing and encryption on our systems!__](
 /ubunturd/ubuntudoc/cma.html)
 
-### OAuth2 authorization via an external browser (obsolete)
+### OAuth2 authorization via an external browser
 
-__As of 2024-06-11, this workaround is not needed anymore and login via the
-built-in browser is working again!__
-
-Due to changes in the scripts redirecting requests to sso.mercedes-benz.com and login.microsoft.com, the embedded browser component no longer can be used for oauth2 authorization. The Ubuntu Operations RD Team therefore backported upstream patches to allow the use of an external browser for the authorization part.
+Due to changes in the scripts redirecting requests to
+sso.mercedes-benz.com and login.microsoft.com, the embedded browser
+component somtimes can not be used for OAuth2 authorization. The Ubuntu
+Operations RD Team therefore backported upstream patches to allow the
+use of an external browser for the authorization part.
 
 When the authorization dialog opens in the embedded component, click on the small arrow symbol in the right corner of the address line.
 
