@@ -13,6 +13,29 @@ folder: docs
 
 GNOME Evolution is our supported native email client.
 
+### Request UBUNTUUSERS role in Alice
+
+The prerequisite for logging into your account in Evolution is that you are a
+member of a certain Azure / Entra ID group.
+
+[You can self-request membership in Alice.](
+https://alice.mercedes-benz.com/access/accessRequest)
+
+See below Screenshots on how to do this:
+
+![alice1](images/docs/evolution/alice_1.png)
+
+![alice2](images/docs/evolution/alice_2.png)
+
+![alice3](images/docs/evolution/alice_3.png)
+
+![alice4](images/docs/evolution/alice_4.png)
+
+![alice5](images/docs/evolution/alice_5.png)
+
+__After assigning yourself the UBUNTUUSERS role, please wait for about one day for
+the synchronization between Alice and Azure / Entra ID to happen!__
+
 ### Setup (with Email address @mercedes-benz.com, Office 365)
 
 Outlook (MS Exchange) can be used on Ubuntu with Evolution and the Evolution EWS plugin.
@@ -89,7 +112,8 @@ Now paste the copied address to the authorization code field in evolution and cl
 
 If you see an error message "Your administrator has cofigured the Application GNOME Evolution EWS [...] to block users unless they are specifically granted [...]" you most likely are not part of the AzureAD group that is allowed to use Evolution as email client.
 
-You can request to have your users added to this group by sending an email to [michael.denison@mercedes-benz.com](mailto:michael.denison@mercedes-benz.com) or [ubuntu@mercedes-benz.com](mailto:ubuntu@mercedes-benz.com) and request to be added to az_059_UbuntuUsers group or a subgroup.
+[See above for instructions on how to get access](
+#request-ubuntuusers-role-in-alice)
 
 ### Setup (mailbox not yet migrated to O365)
 
