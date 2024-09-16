@@ -25,8 +25,9 @@ folder: docs
     1. please file a [Individual Service Request](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/inquiry-help.html)
     2. see also [FPP](https://pages.git.i.mercedes-benz.com/ubunturd/ubuntudoc/fpp.html)
 2. For already existing Hosts:
-    1. Ensure that you are named, in IT-Shop, as the owner of the device for which you want to have access to.
-    2. Request via email [ubuntu-operations@mercedes-benz.com](mailto:ubuntu-operations@mercedes-benz.com)
+    1. For access to a specific host, ensure that you are named as the owner of the host in IT-Shop ...
+    2. ... or there is already an existing profile folder from your AD account on the named host.
+    3. Request via email [ubuntu-operations@mercedes-benz.com](mailto:ubuntu-operations@mercedes-benz.com)
 
 IMPORTANT: Don't forget to name the hostname, your AD account name and what you want to have!
 
