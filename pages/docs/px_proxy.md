@@ -93,12 +93,12 @@ As gnome-keyring can also be used on non-graphical used systems (gnome-keyring-d
 You can request a PoolID in [EMT](https://emt.iam.corpintra.net/emt/)
 
 When you received your Pool-ID name and credentials you can [request
-proxy access for this user at the UHD](
+proxy access for this via UHD](
 https://servicenow.i.mercedes-benz.com/esc?id=sc_cat_item&sys_id=062eec1f1b0c605093b43113dd4bcbf0
 ). (They route this request to the
 Information Office and ISO.)
 
-### Store password in keyring
+### Store password in your default keyring
 
 ```bash
 banholp@cmtcleu60250979:~$ px-proxy --set-password 'EMEA\pid131as11'
@@ -106,15 +106,16 @@ Password:
 Password stored in default keyring service Px and user EMEA\pid131as11
 ```
 
-### Create custom config
+### Create a custom configuration for px-proxy
 
-To create your custom config you can run `px-proxy` without any additional options and use the gui to save the config into a .ini file.
+To create your custom config you can run `px-proxy` without any additional options and use the gui to save the config into a .ini file.  
+Make sure "NTLM" authentication mechanism is selected!
 
 ![px gui](images/docs/px_proxy/px-proxy_115.png)
 
 Don't forget to set threads to a high number as this massively impacts on internet performance.
 
-### Enable custom px-proxy.service to use config file
+### Enable custom px-proxy.service to use your config file
 
 To set up the `px-proxy` service for a specific user, follow these steps:
 
@@ -136,7 +137,7 @@ StartLimitBurst=1
 
 [Service]
 EnvironmentFile=-/etc/default/px-proxy
-ExecStart=/usr/bin/px-proxy --hostonly --config=/%h/.config/px-proxy/px-proxy.ini $ARGS
+ExecStart=/usr/bin/px-proxy --config=/%h/.config/px-proxy/px-proxy.ini $ARGS
 Restart=on-failure
 
 [Install]
