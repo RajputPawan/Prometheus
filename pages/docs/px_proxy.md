@@ -9,13 +9,9 @@ toc: true
 folder: docs
 ---
 
-## Preamble
-
->`px-proxy` is only available for Ubuntu 18.04 LTS or higher and _NOT_ for other Ubuntu distributions. Users with Ubuntu 16.04 LTS should upgrade to Ubuntu 18.04 LTS.
-
 ## Prerequisites
 
-For the new proxy-forwarder to work properly a valid kerberos ticket is required. Normally the ticket will be renewed on every login/unlocking when connected to corporate network or VPN. If this fails renew your credentials yourself by executing the following on the command line:
+For the new proxy-forwarder to work properly, a valid kerberos ticket is required. Normally the ticket will be renewed on every login/unlocking when connected to corporate network or VPN. If this fails, renew your credentials yourself by executing the following on the command line:
 
 ```bash
 kinit
@@ -27,15 +23,11 @@ Or use the auth dialog available in the system tray.
 
 ### Install
 
-Installation is currently only necessary on Sunnyvale-Clients. German systems are configured automatically.
+All systems running a Ubuntu RD image are configured automatically, configuration of the px-proxy user service is done during a GUI session startup by executing `/etc/X11/Xsession.d/97px-proxy`.
 
-```bash
-sudo apt-get install px-proxy krb5-auth-dialog
-```
+### Manual installation(legacy):
 
-### Configure
-
-- Stop, disable and mask CNTLM
+- Stop, disable and mask CNTLM(if present)
 
 ```bash
 sudo systemctl stop cntlm.service
@@ -43,15 +35,22 @@ sudo systemctl disable cntlm.service
 sudo systemctl mask cntlm.service
 ```
 
-**Sunnyvale:**
+- Install the px-proxy package
 
 ```bash
-sudo bash -c "echo 'ARGS=\"--pac=http://browsercfg.rd.corpintra.net:8899/624-kerberos/proxy.pac\"' > /etc/default/px-proxy"
+sudo apt-get install px-proxy krb5-auth-dialog
 ```
 
-## Enable for your user
+- Update your system
+
+```bash 
+sudo salt-call state.highstate
+```
+
+## Service controls
 
 ```bash
+systemctl --user status px-proxy
 systemctl --user enable px-proxy
 systemctl --user start px-proxy
 ```
@@ -83,7 +82,7 @@ The service `DL INTERNETFREISCHALTUNG FAK IN RD (QEV111AFLIDX)` needs to be acti
 
 ## Configure px-proxy for automated jobs
 
-Sometimes it is necessary to run the local proxy without active Kerberos tickets. For example if a system does automated tasks when nobody is logged in. Therefore px-proxy has the possibility to store the password in the gnome-keyring.
+Sometimes it is necessary to run a local proxy without active Kerberos tickets. For example if a system does automated tasks when nobody is logged in. Px-proxy has the possibility to store passwords in gnome-keyring.
 As gnome-keyring can also be used on non-graphical used systems (gnome-keyring-daemon) this is much more secure than storing passwords cntlm like in cleartext config files.
 
 ### Requesting a pool-id for automation proxy access
@@ -101,33 +100,64 @@ Information Office and ISO.)
 ### Store password in your default keyring
 
 ```bash
-banholp@cmtcleu60250979:~$ px-proxy --set-password 'EMEA\pid131as11'
+banholp@cmtcleu60250979:~$ px-proxy --set-password 'EMEA\PID1234'
 Password:
-Password stored in default keyring service Px and user EMEA\pid131as11
+Password stored in default keyring service Px and user EMEA\PID1234
 ```
 
 ### Create a custom configuration for px-proxy
 
-To create your custom config you can run `px-proxy` without any additional options and use the gui to save the config into a .ini file.  
-Make sure "NTLM" authentication mechanism is selected!
+To create your custom config you can run `px-proxy` without any additional options and use the gui to save the config into a .ini file(see below screenshot as reference):
+
+1) Configuration is by default stored in `~/.config/px-proxy/px-proxy.ini`
+2) Tick "**Save configuration**" before hitting the "**Start**" button
+3) Your default px-proxy pac url is located in `/etc/default/px-proxy`, for EMEA users there is one difference though, `http://browsercfg.edc.corpintra.net:8899/059/proxy.pac?location=proxy-sf0-krb` returns proxy addresses with their kerberos-auth endpoints which would fail for NTLM, you need to configure the default location instead `http://browsercfg.edc.corpintra.net:8899/059/proxy.pac`
+4) Listen address, for local-only setups use `127.0.0.1`
+5) Make sure "**NTLM**" authentication mechanism is selected
+6) Hit the "**Start**" button to write the configuration to disk
 
 ![px gui](images/docs/px_proxy/px-proxy_115.png)
 
-Don't forget to set threads to a high number as this massively impacts on internet performance.
+Don't forget to set threads to a high number as this massively impacts performance.  
+Your configuration file should look as follows(you can create it manually as well):
 
-### Enable custom px-proxy.service to use your config file
+```bash
+$ cat ~/.config/px-proxy/px-proxy.ini 
+[proxy]
+pac = http://browsercfg.url.for.your.location/proxy.pac
+port = 3128
+listen = 127.0.0.1
+allow = 172.17.*.*
+gateway = 1
+hostonly = 1
+noproxy = 127.0.0.0/8,100.64.0.0/16,172.17.0.0/16
+useragent = 
+username = EMEA\PID1234
+auth = NTLM
+
+[settings]
+workers = 4
+threads = 5
+idle = 30
+socktimeout = 20
+proxyreload = 60
+foreground = 0
+log = 1
+
+```
+
+### Configure your user px-proxy.service to use the new configuration file
 
 To set up the `px-proxy` service for a specific user, follow these steps:
 
-**1. Copy the Service File**:
+1) **Copy the system-wide `px-proxy.service` file to the user's systemd directory**
 
-  First, copy the system-wide `px-proxy.service` file to the user's systemd directory:
 ```bash
 cp /usr/lib/systemd/user/px-proxy.service ~/.config/systemd/user/px-proxy.service
 ```
-**2. Update the Service File:**
 
-  Edit the copied service file to update its contents. You can use a text editor or the cat command to view the file's contents.
+2) **Edit the copied service file to update its contents.**  
+You can use a text editor or the cat command to view the file's contents.
 
 ```bash
 [Unit]
@@ -136,15 +166,14 @@ StartLimitIntervalSec=60s
 StartLimitBurst=1
 
 [Service]
-EnvironmentFile=-/etc/default/px-proxy
-ExecStart=/usr/bin/px-proxy --config=/%h/.config/px-proxy/px-proxy.ini $ARGS
+ExecStart=/usr/bin/px-proxy --hostonly --config=/%h/.config/px-proxy/px-proxy.ini
 Restart=on-failure
 
 [Install]
 WantedBy=default.target
 ```
 
-These steps are necessary when setting up, modifying, or re-enabling a systemd service to ensure it runs with the correct configuration.
+Below steps are necessary when setting up, modifying, or re-enabling a systemd service to ensure it runs with the correct configuration.
 
 ```bash
 systemctl --user stop px-proxy.service
