@@ -109,12 +109,12 @@ Password stored in default keyring service Px and user EMEA\PID1234
 
 To create your custom config you can run `px-proxy` without any additional options and use the gui to save the config into a .ini file(see below screenshot as reference):
 
-1) Configuration is by default stored in `~/.config/px-proxy/px-proxy.ini`
-2) Tick "**Save configuration**" before hitting the "**Start**" button
-3) Your default px-proxy pac url is located in `/etc/default/px-proxy`, for EMEA users there is one difference though, `http://browsercfg.edc.corpintra.net:8899/059/proxy.pac?location=proxy-sf0-krb` returns proxy addresses with their kerberos-auth endpoints which would fail for NTLM, you need to configure the default location instead `http://browsercfg.edc.corpintra.net:8899/059/proxy.pac`
-4) Listen address, for local-only setups use `127.0.0.1`
-5) Make sure "**NTLM**" authentication mechanism is selected
-6) Hit the "**Start**" button to write the configuration to disk
+1) Configuration is by default stored in `~/.config/px-proxy/px-proxy.ini`  
+2) Tick "**Save configuration**" before hitting the "**Start**" button  
+3) Your default px-proxy pac url is located in `/etc/default/px-proxy`, for EMEA users there is one difference though, `http://browsercfg.edc.corpintra.net:8899/059/proxy.pac?location=proxy-sf0-krb` returns proxy addresses with their kerberos-auth endpoints which would fail for NTLM, you need to configure the default location instead `http://browsercfg.edc.corpintra.net:8899/059/proxy.pac`  
+4) Listen address, for local-only setups use `127.0.0.1`  
+5) Make sure "**NTLM**" authentication mechanism is selected  
+6) Hit the "**Start**" button to write the configuration to disk  
 
 ![px gui](images/docs/px_proxy/px-proxy_115.png)
 
