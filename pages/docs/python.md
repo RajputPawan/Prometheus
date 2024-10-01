@@ -62,7 +62,25 @@ If there are still build errors, check [https://github.com/pyenv/pyenv/wiki/Comm
 
 The installation can be done completly in the users home directory, no root rights required. Except for installing the prerequisites)
 
-How to install, is explained on the Projects github page.
+```curl https://pyenv.run | bash```
+
+If installation is successful, you can install different Python version with
+```~/.pyenv/bin/pyenv install <version>```
+or first get a list of all available versions
+```~/.pyenv/bin/pyenv install --list```
+
+A more detailed installation howto on the Projects github page.
 [https://github.com/pyenv/pyenv?tab=readme-ov-file#automatic-installer](https://github.com/pyenv/pyenv?tab=readme-ov-file#automatic-installer)
 
+
+### Using
+
+Virtual environment with pyenv
+
+```~/.pyenv/bin/pyenv virtualenv <python version> <environnment name>```
+
+If installed as normal user, the environments are stored under "~.pyenv/versions/<python version>/envs/"
+
+To make your life easier, i suggest to create symlinks to the important directorys/executables, e.g.
+```ln -s ~/.pyenv/bin/pyenv ~/pyenv```
 
