@@ -26,9 +26,9 @@ Easiest variant, use a Python venv instead of installing Libraries sytem wide.
 
 ```python3 -m venv <venv path>```
 
-Requirements:
+Requirements
 
-<venv path>: A directory where the vitual environment should be installed to.
+<venv path> A directory where the vitual environment should be installed to.
 The package python3-venv. If missing, can be installed via ```apt-get install python3-venv```
 
 
