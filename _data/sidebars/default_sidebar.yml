@@ -199,6 +199,10 @@ entries:
           url: /beta.html
           output: web, pdf
 
+        - title: Python
+          url: /python.html
+          output: web, pdf
+
       - title: Infrastructure
         output: web
         subfolderitems:
