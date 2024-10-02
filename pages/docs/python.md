@@ -69,9 +69,12 @@ If there are still build errors, check [https://github.com/pyenv/pyenv/wiki/Comm
 
 The installation can be done completely in the users home directory, no root rights required. Except for installing the prerequisites)
 
-```curl https://pyenv.run | bash```
+```git clone https://github.com/pyenv/pyenv.git ~/.pyenv```
 
-A more detailed installation howto and also a howto for cloning the repo and do the steps manually, can be found on:
+you also can choose another target loation instead of ```~/.pyenv``` (the further documentation on this page is using the default location)
+
+
+A more detailed installation howto and also a howto, can be found on:
 
 [https://github.com/pyenv/pyenv?tab=readme-ov-file#automatic-installer](https://github.com/pyenv/pyenv?tab=readme-ov-file#automatic-installer)
 
@@ -79,18 +82,18 @@ A more detailed installation howto and also a howto for cloning the repo and do 
 ### Using
 
 If installation is successful, you can install different Python version with
-```~/.pyenv/bin/pyenv install <version>```
+```~/.pyenv/libexec/pyenv install <version>```
 or first get a list of all available versions
-```~/.pyenv/bin/pyenv install --list```
+```~/.pyenv/libexec/pyenv install --list```
 
 Virtual environment with pyenv
 
-```~/.pyenv/bin/pyenv virtualenv <python version> <environnment name>```
+```~/.pyenv/libexec/pyenv virtualenv <python version> <environnment name>```
 
 If installed as normal user, the environments are stored under ```~/.pyenv/versions/<python version>/envs/```
 
 To make your life easier, i suggest to create symlinks to the important directorys/executables, e.g.
-```ln -s ~/.pyenv/bin/pyenv ~/pyenv```
+```ln -s ~/.pyenv/libexec/pyenv ~/pyenv```
 
 
 For a more detailed how to use or work with Python venv, please check the Internet, where a lot of entries can be found about that topic.
