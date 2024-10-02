@@ -98,6 +98,19 @@ Virtual environment with pyenv
 
 If installed as normal user, the environments are stored under ```~/.pyenv/versions/<python version>/envs/```
 
+
+### Executables
+
+To use it easily via commandline, you can create symlinks of the files under ```~/.pyenv/libexec``` into one of two predefined user binary directories.
+
+1. ```~/.local/bin```
+2. ```~/bin```
+
+Will be usable after the next login.
+
+(e.g. ```ln -s ~/.pyenv/libexec/pyenv ~/bin/pyenv```
+
+Or you can also modify the file ```~/.profile``` or ```~/.bashrc``` to add an custom directory to your PATH variable.
 To make your life easier, i suggest to create symlinks to the important directorys/executables, e.g.
 ```ln -s ~/.pyenv/libexec/pyenv ~/pyenv```
 
