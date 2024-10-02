@@ -11,10 +11,8 @@ folder: docs
 
 # How to deal with Python, and not break the system
 
-ATTENTION: Do not install different Python versions. Especially not Python 2.X on a Python 3.X system.
-
-If your Python customization will break your system, we will reinstall it.
-
+<code style="color : Red">ATTENTION: Do not install different Python versions. Especially not Python 2.X on a Python 3.X system.</code>
+<code style="color : Red">If your Python customization will break your system, we will reinstall it.</code>
 
 
 ## Virtual environment
@@ -40,6 +38,12 @@ Additional packages/libraries can be installed within this venv via the command
 ```./bin/python3 -m pip install <package>``` (if your current terminal directory is the venv directory)
 
 
+For a more detailed how to use or work with Python venv, please check the Internet, where a lot of entries can be found about that topic.
+
+I don't want to write another one, and increase the already to high count.
+
+
+
 ### Restrictions
 
 Python virtual environments uses the Python version which are installed on the system.
@@ -48,6 +52,9 @@ Python venv can only prevent that you have to install libraries/packages system 
 
 
 ## Pyenv
+
+Provides Python venv with the ability to change/choose the used Python version.
+
 
 ### Prerequisites
 
@@ -60,27 +67,35 @@ If there are still build errors, check [https://github.com/pyenv/pyenv/wiki/Comm
 
 ### Install
 
-The installation can be done completly in the users home directory, no root rights required. Except for installing the prerequisites)
+The installation can be done completely in the users home directory, no root rights required. Except for installing the prerequisites)
 
 ```curl https://pyenv.run | bash```
+
+A more detailed installation howto and also a howto for cloning the repo and do the steps manually, can be found on:
+
+[https://github.com/pyenv/pyenv?tab=readme-ov-file#automatic-installer](https://github.com/pyenv/pyenv?tab=readme-ov-file#automatic-installer)
+
+
+### Using
 
 If installation is successful, you can install different Python version with
 ```~/.pyenv/bin/pyenv install <version>```
 or first get a list of all available versions
 ```~/.pyenv/bin/pyenv install --list```
 
-A more detailed installation howto on the Projects github page.
-[https://github.com/pyenv/pyenv?tab=readme-ov-file#automatic-installer](https://github.com/pyenv/pyenv?tab=readme-ov-file#automatic-installer)
-
-
-### Using
-
 Virtual environment with pyenv
 
 ```~/.pyenv/bin/pyenv virtualenv <python version> <environnment name>```
 
-If installed as normal user, the environments are stored under "~.pyenv/versions/<python version>/envs/"
+If installed as normal user, the environments are stored under ```~/.pyenv/versions/<python version>/envs/```
 
 To make your life easier, i suggest to create symlinks to the important directorys/executables, e.g.
 ```ln -s ~/.pyenv/bin/pyenv ~/pyenv```
+
+
+For a more detailed how to use or work with Python venv, please check the Internet, where a lot of entries can be found about that topic.
+
+I don't want to write another one, and increase the already to high count.
+
+
 
