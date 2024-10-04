@@ -111,8 +111,6 @@ Will be usable after the next login.
 (e.g. ```ln -s ~/.pyenv/libexec/pyenv ~/bin/pyenv```
 
 Or you can also modify the file ```~/.profile``` or ```~/.bashrc``` to add an custom directory to your PATH variable.
-To make your life easier, i suggest to create symlinks to the important directorys/executables, e.g.
-```ln -s ~/.pyenv/libexec/pyenv ~/pyenv```
 
 
 For a more detailed how to use or work with Python venv, please check the Internet, where a lot of entries can be found about that topic.
