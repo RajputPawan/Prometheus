@@ -21,12 +21,8 @@ summary: List of documented topics
         <tr>
             <td><a href="{{page.permalink}}">{{page.title}}</a></td>
             <td>{{page.summary}}</td>
-            <td>
-                {% for kw in page.keywords %}{{kw}} {% endfor %}
-            </td>
-            <td>
-                {% for tag in page.tags %}{{tag}} {% endfor %}
-            </td>
+            <td>{% for kw in page.keywords %}{{kw}} {% endfor %}</td>
+            <td>{% for tag in page.tags %}{{tag}} {% endfor %}</td>
         </tr>
     {% endfor %}
 {% endfor %}
