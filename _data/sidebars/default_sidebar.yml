@@ -175,6 +175,10 @@ entries:
         output: web
         subfolderitems:
 
+        - title: Git credentials in keyring
+          url: /git_http_credentials.html
+          output: web, pdf
+
         - title: Custom apt sources
           url: /install_sw_from_custom_apt_sources.html
           output: web, pdf

@@ -60,3 +60,7 @@ topnav_dropdowns:
           url: /adtf.html
         - title: Kiosk Mode
           url: /kiosk.html
+        - title: Git credentials in keyring
+          url: /git_http_credentials.html
+          output: web, pdf
+
