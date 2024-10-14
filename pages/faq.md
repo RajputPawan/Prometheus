@@ -3,6 +3,7 @@ title: FAQ
 permalink: faq.html
 sidebar: default_sidebar
 keywords: frequently asked questions, FAQ, question and answer, collapsible sections, expand, collapse
+tags: [docs]
 last_updated: January 24, 2020
 toc: false
 folder: mydoc

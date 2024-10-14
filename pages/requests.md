@@ -2,6 +2,7 @@
 title: "Ubuntu RD Desktop Webtickets (SNOW, deprecated)"
 keywords: ubuntu documentation webticket ticket request
 sidebar: default_sidebar
+tags: [docs]
 permalink: requests.html
 ---
 

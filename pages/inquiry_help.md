@@ -2,6 +2,7 @@
 title: "Ubuntu RD Desktop Webtickets (SNOW Inquiry/help)"
 keywords: ubuntu documentation webticket ticket request help
 sidebar: default_sidebar
+tags: [docs]
 permalink: inquiry-help.html
 ---
 

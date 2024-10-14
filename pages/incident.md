@@ -2,6 +2,7 @@
 title: "Incident, functionality is broken"
 keywords: ubuntu documentation webticket ticket incident
 sidebar: default_sidebar
+tags: [docs]
 permalink: incident.html
 ---
 
