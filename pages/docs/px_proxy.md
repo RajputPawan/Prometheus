@@ -227,3 +227,52 @@ After that a symlink from the default service file to your service file is gener
         </div>
     </div>
 </div>
+
+## Configure px proxy with PoolID, new variant
+
+### Requisites
+
+1. sudo/root access to the related host.
+2. PoolID/Password
+3. Stop the running px-proxy with ```systemctl --user stop px-proxy```
+
+
+### Setup
+
+Create the directory ```/opt/pxproxy``` and save following example config to ```/opt/pxproxy/px.ini```
+
+```
+[proxy]
+server =
+pac =
+listen = 127.0.0.1
+port = 3128
+gateway = 0
+hostonly = 1
+allow = 172.17.*.*
+noproxy =
+useragent =
+username = 
+password = 
+auth = NTLM
+
+[client]
+client_username =
+client_auth = 
+client_nosspi = 0
+
+[settings]
+workers = 2
+threads = 32
+idle = 30
+socktimeout = 20.0
+proxyreload = 60
+foreground = 0
+log = 0
+```
+Add the username formated as ```DOMAIN\PoolID``` and add the password for the PoolID account.
+
+Afterwards, run a highstate via ```highstate.sh```
+
+The px-proxy should work now as expected for every user who can logon and after every reboot.
+
