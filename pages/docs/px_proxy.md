@@ -247,13 +247,13 @@ server =
 pac =
 listen = 127.0.0.1
 port = 3128
-gateway = 0
+gateway = 1
 hostonly = 1
 allow = 172.17.*.*
 noproxy =
 useragent =
-username = 
-password = 
+username = <DOMAIN\PoolID>
+password = <password>
 auth = NTLM
 
 [client]
@@ -270,9 +270,14 @@ proxyreload = 60
 foreground = 0
 log = 0
 ```
-Add the username formated as ```DOMAIN\PoolID``` and add the password for the PoolID account.
 
-Afterwards, run a highstate via ```highstate.sh```
 
-The px-proxy should work now as expected for every user who can logon and after every reboot.
+1. Add the PoolID to the ```username``` key. Syntax: ```DOMAIN\PoolID``` (e.g. EMEA\PID12345)
+2. Add the PoolID password to the ```password``` key. (Without quotes)
+3. Run the command ```highstate.sh``` in a terminal.
+
+After the highstate is done, which can take some time, the proxy should already be up and running.
+If not, a reboot could help.
+
+If it is working as expected, there is no further interaction required.
 
