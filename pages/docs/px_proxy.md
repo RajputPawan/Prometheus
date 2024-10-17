@@ -228,7 +228,7 @@ After that a symlink from the default service file to your service file is gener
     </div>
 </div>
 
-## Configure px proxy with PoolID, new variant
+## Configure px proxy for PoolID (NEW VARIANT!)
 
 ### Requisites
 
