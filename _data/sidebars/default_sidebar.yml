@@ -135,6 +135,10 @@ entries:
           url: /zscaler_issues.html
           output: web, pdf
 
+        - title: Network Manager
+          url: /network_manager.html
+          output: web, pdf
+
       - title: Installation
         output: web
         subfolderitems:
