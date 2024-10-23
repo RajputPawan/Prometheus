@@ -246,3 +246,12 @@ entries:
         - title: Kiosk Mode
           url: /kiosk.html
           output: web, pdf
+
+      - title: Repo
+        output: web
+        subfolderitems:
+
+        - title: Mirrors Upstream URLs
+          url: /mirrors_upstream_urls.html
+          output: web, pdf
+
