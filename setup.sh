@@ -1,5 +1,10 @@
 #!/bin/bash
-DEPS="ruby-full build-essential zlib1g-dev"
+DEPS='
+build-essential
+ruby-bundler
+ruby-full
+zlib1g-dev
+'
 for dep in $DEPS; do
     /usr/bin/apt list --installed "$dep" ||
         sudo apt-get install "$dep"
