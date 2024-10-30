@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ex
 DEPS='
 build-essential
 ruby-bundler
