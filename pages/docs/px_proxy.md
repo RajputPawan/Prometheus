@@ -104,6 +104,13 @@ Information Office and ISO.)
 ![px-proxy request](images/docs/px_proxy/px-proxy-request.png)
 
 
+If your request gets approved:
+
+![px-proxy approve](images/docs/px_proxy/px-proxy-approve.png)
+
+
+
+
 
 ### Setup
 
