@@ -80,7 +80,77 @@ If there is no ticket or the ticket has expired: use the krb5-auth-dialog to ren
 Make sure that internet access has been granted in ITShop
 The service `DL INTERNETFREISCHALTUNG FAK IN RD (QEV111AFLIDX)` needs to be activated.
 
-## Configure px-proxy for automated jobs
+
+## Configure px proxy for PoolID (NEW VARIANT!)
+
+### Requisites
+
+1. sudo/root access to the related host.
+2. PoolID/Password
+3. Stop the running px-proxy with ```systemctl --user stop px-proxy```
+
+
+### Requesting a pool-id for automation proxy access
+
+> Please do never save your personal user accounts password for automation-jobs. Especially never store your password on a shared system. Request a pool-id for this purpose:
+
+You can request a PoolID in [EMT](https://emt.iam.corpintra.net/emt/)
+
+When you received your Pool-ID name and credentials you can [request
+proxy access for this via UHD](
+https://servicenow.i.mercedes-benz.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=74f00e051b8160502f8a3113dd4bcbce). (They route this request to the
+Information Office and ISO.)
+
+![px-proxy request](images/docs/px_proxy/px-proxy-request.png)
+
+
+
+### Setup
+
+Create the directory ```/opt/pxproxy``` and save following example config to ```/opt/pxproxy/px.ini```
+
+```
+[proxy]
+server =
+pac =
+listen = 127.0.0.1
+port = 3128
+gateway = 1
+hostonly = 1
+allow = 127.0.0.0/8,172.16.0.0/12
+noproxy = 127.0.0.0/8,100.64.0.0/16,172.16.0.0/12
+useragent =
+username = <DOMAIN\PoolID>
+password = <password>
+auth = NTLM
+
+[client]
+client_username =
+client_auth = 
+client_nosspi = 0
+
+[settings]
+workers = 2
+threads = 32
+idle = 30
+socktimeout = 20.0
+proxyreload = 60
+foreground = 0
+log = 0
+```
+
+
+1. Add the PoolID to the ```username``` key. Syntax: ```DOMAIN\PoolID``` (e.g. EMEA\PID12345)
+2. Add the PoolID password to the ```password``` key. (Without quotes)
+3. Run the command ```highstate.sh``` in a terminal.
+
+After the highstate is done, which can take some time, the proxy should already be up and running.
+If not, a reboot could help.
+
+If it is working as expected, there is no further interaction required.
+
+
+## Configure px-proxy for automated jobs (old/legacy variant)
 
 Sometimes it is necessary to run a local proxy without active Kerberos tickets. For example if a system does automated tasks when nobody is logged in. Px-proxy has the possibility to store passwords in gnome-keyring.
 As gnome-keyring can also be used on non-graphical used systems (gnome-keyring-daemon) this is much more secure than storing passwords cntlm like in cleartext config files.
@@ -227,57 +297,4 @@ After that a symlink from the default service file to your service file is gener
         </div>
     </div>
 </div>
-
-## Configure px proxy for PoolID (NEW VARIANT!)
-
-### Requisites
-
-1. sudo/root access to the related host.
-2. PoolID/Password
-3. Stop the running px-proxy with ```systemctl --user stop px-proxy```
-
-
-### Setup
-
-Create the directory ```/opt/pxproxy``` and save following example config to ```/opt/pxproxy/px.ini```
-
-```
-[proxy]
-server =
-pac =
-listen = 127.0.0.1
-port = 3128
-gateway = 1
-hostonly = 1
-allow = 127.0.0.0/8,172.16.0.0/12
-noproxy = 127.0.0.0/8,100.64.0.0/16,172.16.0.0/12
-useragent =
-username = <DOMAIN\PoolID>
-password = <password>
-auth = NTLM
-
-[client]
-client_username =
-client_auth = 
-client_nosspi = 0
-
-[settings]
-workers = 2
-threads = 32
-idle = 30
-socktimeout = 20.0
-proxyreload = 60
-foreground = 0
-log = 0
-```
-
-
-1. Add the PoolID to the ```username``` key. Syntax: ```DOMAIN\PoolID``` (e.g. EMEA\PID12345)
-2. Add the PoolID password to the ```password``` key. (Without quotes)
-3. Run the command ```highstate.sh``` in a terminal.
-
-After the highstate is done, which can take some time, the proxy should already be up and running.
-If not, a reboot could help.
-
-If it is working as expected, there is no further interaction required.
 
