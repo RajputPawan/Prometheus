@@ -106,7 +106,7 @@ Information Office and ISO.)
 
 If your request gets approved:
 
-![px-proxy request](images/docs/px_proxy/px-proxy-approve.png)
+![px-proxy approve](images/docs/px_proxy/px-proxy-approve.png)
 
 
 
